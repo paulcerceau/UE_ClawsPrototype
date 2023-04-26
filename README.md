@@ -9,4 +9,5 @@ Git commits convention:
 - feat: (*feature*) create something new
 - ref: (*refactoring*) modify an already existing thing
 - fix: (*fix*) bug fixes
+- res: (*resources*) adding an asset (or anything in the resource folder)
 - git: (*git*) git only related stuff
