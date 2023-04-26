@@ -11,3 +11,5 @@ Git commits convention:
 - fix: (*fix*) bug fixes
 - res: (*resources*) adding an asset (or anything in the resource folder)
 - git: (*git*) git only related stuff
+
+Using Git with UE5: [here](https://docs.unrealengine.com/5.0/en-US/source-control-in-unreal-engine/)
