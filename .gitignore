@@ -72,3 +72,4 @@ UE_ClawsPrototype/Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 UE_ClawsPrototype/DerivedDataCache/*
+UE_ClawsPrototype/Config/HoloLens
