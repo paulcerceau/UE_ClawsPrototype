@@ -13,3 +13,4 @@ Git commits convention:
 - git: (*git*) git only related stuff
 
 Using Git with UE5: [here](https://docs.unrealengine.com/5.0/en-US/source-control-in-unreal-engine/)
+Naming convention tool: [here](https://www.unrealdirective.com/resource/asset-naming-conventions)
