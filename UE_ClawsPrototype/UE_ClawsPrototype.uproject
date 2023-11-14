@@ -22,7 +22,7 @@
 			]
 		},
 		{
-			"Name": "HoudiniEngine",
+			"Name": "HDRIBackdrop",
 			"Enabled": true
 		}
 	]
