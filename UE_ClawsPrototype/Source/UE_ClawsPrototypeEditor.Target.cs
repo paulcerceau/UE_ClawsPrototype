@@ -16,6 +16,6 @@ public class UE_ClawsPrototypeEditorTarget : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] { "PlayModeExtension" });
+		//ExtraModuleNames.AddRange(new string[] { "" });
 	}
 }
