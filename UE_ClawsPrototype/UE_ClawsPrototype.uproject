@@ -32,11 +32,7 @@
 		},
 		{
 			"Name": "HoudiniEngine",
-			"Enabled": false
-		},
-		{
-			"Name": "SideFX_Labs",
-			"Enabled": false
+			"Enabled": true
 		}
 	]
 }
