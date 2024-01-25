@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="AMB_Play" ID="{D78B0134-0B53-4166-BCA2-70B845315761}">
-					<ChildrenList>
-						<Action Name="" ID="{2508CF29-8C97-421F-B33D-BA48A76C19C9}" ShortID="350073237">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMBIENT_Cave_Blue" ID="{4916DA24-DBD6-4AE1-A820-BBE60A82767D}" WorkUnitID="{9D74BACE-DE72-47A4-8735-3AE831D2BC2C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="AMB_Stop" ID="{4F22A9EE-4188-4A8A-B18C-AE0E7D060453}">
-					<ChildrenList>
-						<Action Name="" ID="{3946F3A5-B969-451C-8ED5-1D3D70EFA9C8}" ShortID="553552127">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMBIENT_Cave_Blue" ID="{4916DA24-DBD6-4AE1-A820-BBE60A82767D}" WorkUnitID="{9D74BACE-DE72-47A4-8735-3AE831D2BC2C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

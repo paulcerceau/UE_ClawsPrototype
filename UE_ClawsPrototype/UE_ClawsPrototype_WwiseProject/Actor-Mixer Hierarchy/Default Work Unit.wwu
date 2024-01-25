@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9D74BACE-DE72-47A4-8735-3AE831D2BC2C}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{9D74BACE-DE72-47A4-8735-3AE831D2BC2C}" PersistMode="Standalone">
-			<ChildrenList>
-				<ActorMixer Name="AMB" ID="{1B04580F-E8CB-45D0-87DC-173249643585}" ShortID="1034736726">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="AMBIENT_Cave_Blue" ID="{4916DA24-DBD6-4AE1-A820-BBE60A82767D}" ShortID="1069173853">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMBIENT_Cave_Blue" ID="{F39121D0-8006-433C-9042-70581378987B}">
-									<Language>SFX</Language>
-									<AudioFile>AMBIENT_Cave_Blue.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="885646293"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMBIENT_Cave_Blue" ID="{F39121D0-8006-433C-9042-70581378987B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</ActorMixer>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{9D74BACE-DE72-47A4-8735-3AE831D2BC2C}" PersistMode="Standalone"/>
 	</AudioObjects>
 </WwiseDocument>
