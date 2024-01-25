@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{DAD931E8-FFF5-0DD5-1CCF-C9EBB0E602A4}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -12,9 +12,23 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="1162281553" Name="Bus_Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Music" GUID="{6F2710B8-524C-45F5-B6E3-54D0B818FCA9}"/>
+				<Bus Id="1494799530" Name="Bus_FX" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_FX" GUID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}"/>
+				<Bus Id="3501367136" Name="Bus_Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Ambience" GUID="{CCE68D02-5AAE-42C8-8CA9-E50267445E7D}"/>
+				<Bus Id="3670784133" Name="Bus_Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Foley" GUID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="4277214558" Name="Bus_Voice" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Voice" GUID="{6B316893-9DA3-435B-A527-64B8BFE2BBB1}"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="3964766495" Name="Floor_Material" ObjectPath="\Switches\Default Work Unit\Floor_Material" GUID="{99D3914B-A48D-4224-855E-5476BA48E8A4}">
+					<Switches>
+						<Switch Id="4027286224" Name="Material02" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material02" GUID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
+						<Switch Id="4027286225" Name="Material03" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material03" GUID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+						<Switch Id="4027286227" Name="Material01" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material01" GUID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C822A26-E01B-5D79-A50A-AEC6C1B22FF3}</FileHash>
+	<FileHash>{7DE94574-B9EB-D903-8721-3DACC850C051}</FileHash>
 </SoundBanksInfo>

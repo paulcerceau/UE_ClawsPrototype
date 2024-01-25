@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_WaterClaw" ID="{929B570F-AFAE-4D33-8C56-BBA5C5E38BFE}">
+					<ChildrenList>
+						<Action Name="" ID="{940255AD-C6EF-49AE-AA4D-41E2A1D1B080}" ShortID="167636015">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterClaw" ID="{30CAE1F0-DA07-4A4F-868D-12BE77EFD68E}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

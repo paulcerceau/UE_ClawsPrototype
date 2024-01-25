@@ -1,5 +1,10 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
+	1494799530	Bus_FX			\Default Work Unit\Master Audio Bus\Bus_FX	
+	3501367136	Bus_Ambience			\Default Work Unit\Master Audio Bus\Bus_Ambience	
+	3670784133	Bus_Foley			\Default Work Unit\Master Audio Bus\Bus_Foley	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4277214558	Bus_Voice			\Default Work Unit\Master Audio Bus\Bus_Voice	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
