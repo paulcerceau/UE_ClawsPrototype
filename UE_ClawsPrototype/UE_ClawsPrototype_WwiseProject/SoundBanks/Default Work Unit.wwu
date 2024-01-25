@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9FFF905C-21D9-4968-ABD5-0AE94D923224}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{9FFF905C-21D9-4968-ABD5-0AE94D923224}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="AMB_CaveBlue" ID="{4694D07C-20AE-49D3-8EA6-DF0024A1E836}">
-					<ObjectInclusionList>
-						<ObjectRef Name="AMB_Play" ID="{D78B0134-0B53-4166-BCA2-70B845315761}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AMB_Stop" ID="{4F22A9EE-4188-4A8A-B18C-AE0E7D060453}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{9FFF905C-21D9-4968-ABD5-0AE94D923224}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>

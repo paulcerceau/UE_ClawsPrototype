@@ -4,16 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{23465E35-7C84-433F-8BB5-208ADB722A41}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{DF6519DF-EC2F-45ED-BB75-25A142455D92}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="AMB_Play" ID="{D78B0134-0B53-4166-BCA2-70B845315761}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="AMB_Stop" ID="{4F22A9EE-4188-4A8A-B18C-AE0E7D060453}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
