@@ -9,7 +9,181 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1258724141" Type="User" GUID="{CB4F4904-31FE-415E-A997-DA35425A86FA}" Language="SFX" Hash="{F46CE395-6775-BBAB-EAEB-2FB3FA875715}">
+			<ObjectPath>\SoundBanks\Elise\Powerclaw</ObjectPath>
+			<ShortName>Powerclaw</ShortName>
+			<Path>Powerclaw.bnk</Path>
+			<Media>
+				<File Id="577789" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_04.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="22100767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_05.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="44406965" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_06.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="112202913" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_02.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="136525551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_02.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="142239864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_06.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="189337946" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_05.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="230620629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_04.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="302688598" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_06.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="335312547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_05.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="464318529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_02.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="496630311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_02.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="590012328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_04.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="602904386" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_06.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="624886003" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_02.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="653078776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_03.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="666428243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_01.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="800482599" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_06.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="815250102" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_05.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="825516958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_04.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="830223609" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_03.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="881909881" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_No_Hit_03.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_No_Hit_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="905417769" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Deploying_01.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Deploying_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="909348170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_04.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="910913181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_03.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1009486592" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_Retracting_01.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_Retracting_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1014996887" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitFail_01.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitFail_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1019310611" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_01.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1041010801" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_03.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1048140003" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>POWERCLAW_HitSuccess_05.wav</ShortName>
+					<CachePath>SFX/POWERCLAW_HitSuccess_05_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1915907018" Name="Play_Powerclaw_Deploying" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Deploying" GUID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" DurationType="OneShot" DurationMin="0.33333334" DurationMax="0.44494662">
+					<MediaRefs>
+						<MediaRef Id="189337946"/>
+						<MediaRef Id="230620629"/>
+						<MediaRef Id="302688598"/>
+						<MediaRef Id="624886003"/>
+						<MediaRef Id="653078776"/>
+						<MediaRef Id="905417769"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2215897978" Name="Play_Powerclaw_Hit" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Hit" GUID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" DurationType="OneShot" DurationMin="0.4" DurationMax="0.42378527">
+					<MediaRefs>
+						<MediaRef Id="44406965"/>
+						<MediaRef Id="112202913"/>
+						<MediaRef Id="136525551"/>
+						<MediaRef Id="142239864"/>
+						<MediaRef Id="335312547"/>
+						<MediaRef Id="496630311"/>
+						<MediaRef Id="590012328"/>
+						<MediaRef Id="602904386"/>
+						<MediaRef Id="666428243"/>
+						<MediaRef Id="815250102"/>
+						<MediaRef Id="825516958"/>
+						<MediaRef Id="830223609"/>
+						<MediaRef Id="881909881"/>
+						<MediaRef Id="909348170"/>
+						<MediaRef Id="1014996887"/>
+						<MediaRef Id="1019310611"/>
+						<MediaRef Id="1041010801"/>
+						<MediaRef Id="1048140003"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2915524786" Name="Play_Powerclaw_Retracting" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Retracting" GUID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" DurationType="OneShot" DurationMin="0.23333333" DurationMax="0.31146264">
+					<MediaRefs>
+						<MediaRef Id="577789"/>
+						<MediaRef Id="22100767"/>
+						<MediaRef Id="464318529"/>
+						<MediaRef Id="800482599"/>
+						<MediaRef Id="910913181"/>
+						<MediaRef Id="1009486592"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1939547783" Name="Hit_Type" ObjectPath="\Game Parameters\Default Work Unit\Hit_Type" GUID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C103B7C7-C4F3-08BF-6B76-A162F4EF2E8C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,28 +194,26 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="1162281553" Name="Bus_Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Music" GUID="{6F2710B8-524C-45F5-B6E3-54D0B818FCA9}"/>
+				<Bus Id="1494799530" Name="Bus_FX" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_FX" GUID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}"/>
+				<Bus Id="3501367136" Name="Bus_Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Ambience" GUID="{CCE68D02-5AAE-42C8-8CA9-E50267445E7D}"/>
+				<Bus Id="3670784133" Name="Bus_Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Foley" GUID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="4277214558" Name="Bus_Voice" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Voice" GUID="{6B316893-9DA3-435B-A527-64B8BFE2BBB1}"/>
 			</Busses>
-		</SoundBank>
-		<SoundBank Id="2564551637" Type="User" GUID="{4694D07C-20AE-49D3-8EA6-DF0024A1E836}" Language="SFX" Hash="{0FF2EC58-7706-1EC7-BF63-C1456A95D60A}">
-			<ObjectPath>\SoundBanks\Default Work Unit\AMB_CaveBlue</ObjectPath>
-			<ShortName>AMB_CaveBlue</ShortName>
-			<Path>AMB_CaveBlue.bnk</Path>
-			<Media>
-				<File Id="885646293" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMBIENT_Cave_Blue.wav</ShortName>
-					<CachePath>SFX/AMBIENT_Cave_Blue_FBC78EF0.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="2381502256" Name="AMB_Play" ObjectPath="\Events\Default Work Unit\AMB_Play" GUID="{D78B0134-0B53-4166-BCA2-70B845315761}" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="885646293"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="729984210" Name="AMB_Stop" ObjectPath="\Events\Default Work Unit\AMB_Stop" GUID="{4F22A9EE-4188-4A8A-B18C-AE0E7D060453}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
+			<GameParameters>
+				<GameParameter Id="1939547783" Name="Hit_Type" ObjectPath="\Game Parameters\Default Work Unit\Hit_Type" GUID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3964766495" Name="Floor_Material" ObjectPath="\Switches\Default Work Unit\Floor_Material" GUID="{99D3914B-A48D-4224-855E-5476BA48E8A4}">
+					<Switches>
+						<Switch Id="4027286224" Name="Material02" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material02" GUID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
+						<Switch Id="4027286225" Name="Material03" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material03" GUID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+						<Switch Id="4027286227" Name="Material01" ObjectPath="\Switches\Default Work Unit\Floor_Material\Material01" GUID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F14F5B12-D9CF-723A-0C10-FE83BC59CDE9}</FileHash>
+	<FileHash>{006B122D-A25B-DC66-EF17-CC8427AC434E}</FileHash>
 </SoundBanksInfo>

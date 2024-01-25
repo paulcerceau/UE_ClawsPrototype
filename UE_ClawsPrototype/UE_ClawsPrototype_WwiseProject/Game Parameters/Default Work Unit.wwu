@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C38CC755-884B-4438-A675-BDD72A7EF7AB}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{C38CC755-884B-4438-A675-BDD72A7EF7AB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C38CC755-884B-4438-A675-BDD72A7EF7AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Hit_Type" ID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
