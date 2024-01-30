@@ -32,14 +32,10 @@
 		},
 		{
 			"Name": "HoudiniEngine",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "Wwise",
-			"Enabled": false
-		},
-		{
-			"Name": "SideFX_Labs",
 			"Enabled": false
 		}
 	]
