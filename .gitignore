@@ -78,3 +78,12 @@ UE_ClawsPrototype/Config/HoloLens
 UE_ClawsPrototype/Plugins/Wwise
 UE_ClawsPrototype/Content/WwiseAudio/DefaultGeometrySurfacePropertiesTable.uasset
 UE_ClawsPrototype/Content/WwiseAudio/DefaultReverbAssignmentTable.uasset
+
+# Wwise
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+IncrementalSoundBankData.xml
