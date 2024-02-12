@@ -76,3 +76,12 @@ UE_ClawsPrototype/Config/HoloLens
 
 # Remove Wwise plugin from source control
 UE_ClawsPrototype/Plugins/Wwise
+
+# Wwise
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+IncrementalSoundBankData.xml
