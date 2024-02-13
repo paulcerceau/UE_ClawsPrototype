@@ -11,5 +11,12 @@ public class UE_ClawsPrototypeEditorTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 
 		ExtraModuleNames.AddRange( new string[] { "UE_ClawsPrototype" } );
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] {  });
+		//ExtraModuleNames.AddRange(new string[] { "" });
 	}
 }
