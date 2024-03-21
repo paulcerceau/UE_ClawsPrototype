@@ -30,7 +30,11 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+						<CurrentSwitchRef Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
+						<CurrentSwitchRef Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
