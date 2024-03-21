@@ -3,13 +3,40 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{7FB185D1-8478-4561-9C40-A3DA378A4469}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Floor_Material" ID="{99D3914B-A48D-4224-855E-5476BA48E8A4}">
+				<Folder Name="Jump" ID="{7BB12E35-D645-4F91-985C-9DF9E61090D5}" ShortID="119772174">
 					<ChildrenList>
-						<Switch Name="Material01" ID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
-						<Switch Name="Material02" ID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
-						<Switch Name="Material03" ID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+						<SwitchGroup Name="Floor_Material_Jump" ID="{99D3914B-A48D-4224-855E-5476BA48E8A4}">
+							<ChildrenList>
+								<Switch Name="Vegetation" ID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
+								<Switch Name="Sand" ID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
+								<Switch Name="Crystals" ID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+								<Switch Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Movement_Jump" ID="{6F22BCB4-1063-46D9-ABBE-2E780CCC68E8}">
+							<ChildrenList>
+								<Switch Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
-				</SwitchGroup>
+				</Folder>
+				<Folder Name="Land" ID="{FB1C17E2-A5B0-4A05-BE5A-64C4580D6F18}" ShortID="564578418">
+					<ChildrenList>
+						<SwitchGroup Name="Floor_Material_Land" ID="{8DB64239-442B-4F85-BCA4-5A588EA6FC74}">
+							<ChildrenList>
+								<Switch Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
+								<Switch Name="Crystals" ID="{44A09355-C4E2-40CF-BBD0-9F09ECB01115}"/>
+								<Switch Name="Vegetation" ID="{33F5E517-FCDD-47F7-83AF-8F67D3C1EE37}"/>
+								<Switch Name="Sand" ID="{A148653E-1014-4F3D-ABFC-C896A8067E91}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Movement_Land" ID="{3E9DD183-CBC2-4413-A897-FA603F0E81D5}">
+							<ChildrenList>
+								<Switch Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

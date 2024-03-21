@@ -15,6 +15,15 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Bus_AMB_Cave_Blue" ID="{7739B8B3-082F-435F-8DA7-59852F42F085}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Bus_AMB_Cave_Purple" ID="{EB9EC2A3-4172-4D42-A6A8-EB41033B7D4E}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="Bus_AMB_Cave_Forest" ID="{42B76DAA-704D-4CF9-A56B-553EACA55FCE}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Folder Name="Foley_Remi" ID="{A30E6956-1965-40D2-A473-DC2A49B47BB6}" ShortID="344773216">
@@ -82,9 +91,536 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Movement_Jump" ID="{6F22BCB4-1063-46D9-ABBE-2E780CCC68E8}" WorkUnitID="{7FB185D1-8478-4561-9C40-A3DA378A4469}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Foley_Remi_Jump_Material01" ID="{D4913EA0-8312-4273-94A4-ABD003F76869}" ShortID="229358940">
+										<SwitchContainer Name="Foley_Remi_Jump_Materials" ID="{414E26BB-E6E4-4209-9CF7-65C2074476B0}" ShortID="458527381">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Floor_Material_Jump" ID="{99D3914B-A48D-4224-855E-5476BA48E8A4}" WorkUnitID="{7FB185D1-8478-4561-9C40-A3DA378A4469}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Foley_Remi_Jump_Corals" ID="{1C53A009-5FDB-405D-B500-6D8CA9E01D1D}" ShortID="849448284">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8B5E4E56-81E6-4119-9721-72686F68950F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="51"/>
+																			<Property Name="Min" Type="Real64" Value="-76"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Raise_Corals_01" ID="{C1650409-1667-41E7-A8C3-A3337508DC76}" ShortID="212337486">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Corals_01" ID="{82181168-6D54-4365-A07C-E4C250A88902}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Corals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="650345197"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Corals_01" ID="{82181168-6D54-4365-A07C-E4C250A88902}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Corals_02" ID="{B2E89D94-A329-4E94-B242-A51C0CFF35FF}" ShortID="305634111">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Corals_02" ID="{983AE8CE-9F9D-4EC1-8BF0-0A094B1A08EB}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Corals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="781749312"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Corals_02" ID="{983AE8CE-9F9D-4EC1-8BF0-0A094B1A08EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Corals_03" ID="{275C8D85-7BB7-495A-B63A-F5D63A91ECC5}" ShortID="947162781">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Corals_03" ID="{0E203DEB-2379-4552-9480-6D567DCF385B}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Corals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1016624219"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Corals_03" ID="{0E203DEB-2379-4552-9480-6D567DCF385B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Corals_04" ID="{E5FEC751-0A70-41F0-9AF0-B8ADE6E0E9FF}" ShortID="881450580">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Corals_04" ID="{B1CB43DE-7EA1-41AB-A35F-675C42DD4473}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Corals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="430870624"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Corals_04" ID="{B1CB43DE-7EA1-41AB-A35F-675C42DD4473}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Jump_Sand" ID="{D4913EA0-8312-4273-94A4-ABD003F76869}" ShortID="229358940">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B76DCDB4-8E9A-4D08-B39D-7BB4358355AC}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="76"/>
+																			<Property Name="Min" Type="Real64" Value="-101"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Raise_Sand_01" ID="{9F9557F8-10C1-4F7A-A5EE-4BE07B05EF04}" ShortID="840244568">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Sand_01" ID="{72E87BE9-7AFB-4895-B81D-7572B93875ED}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Sand_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="441843541"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Sand_01" ID="{72E87BE9-7AFB-4895-B81D-7572B93875ED}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Sand_02" ID="{FFB4513C-9F40-4F08-9F3B-383C10B90B25}" ShortID="491431291">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Sand_02" ID="{63DC6D3E-8F87-4DE2-AA97-D5A6578CF731}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Sand_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="455895334"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Sand_02" ID="{63DC6D3E-8F87-4DE2-AA97-D5A6578CF731}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Sand_03" ID="{BCC4E273-1190-4569-86DF-332D3FC9A3F2}" ShortID="323465968">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Sand_03" ID="{E70D9A8A-92F9-434F-A15A-A5B32B5C245A}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Sand_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1025784415"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Sand_03" ID="{E70D9A8A-92F9-434F-A15A-A5B32B5C245A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Sand_04" ID="{3901CB34-3D44-48DF-B3B5-7B204FAB5D7D}" ShortID="785040539">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Sand_04" ID="{8806EF7A-A5C4-4D98-BC9D-1ADA2422D75B}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Sand_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="383396869"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Sand_04" ID="{8806EF7A-A5C4-4D98-BC9D-1ADA2422D75B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Jump_Crystals" ID="{EFD5C70D-7052-4F1B-8444-1D943D8DAA08}" ShortID="535873945">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2725E9E2-F26E-4B0D-8FA5-1FB575F6047B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="126"/>
+																			<Property Name="Min" Type="Real64" Value="-126"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Raise_Crystals_01" ID="{D5418772-40A4-45FA-A22F-BE2FE5AEF32E}" ShortID="1014693115">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Crystals_01" ID="{72DCBF8B-CD60-43BE-88B6-175FAE895853}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Crystals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="476913261"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Crystals_01" ID="{72DCBF8B-CD60-43BE-88B6-175FAE895853}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Crystals_02" ID="{BC70BD47-01EC-4068-8950-AEBCB6DA2FF5}" ShortID="658030544">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Crystals_02" ID="{F5A7F7D2-F9CB-451B-B8AB-BBD7BD74C91A}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Crystals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="259829286"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Crystals_02" ID="{F5A7F7D2-F9CB-451B-B8AB-BBD7BD74C91A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Crystals_03" ID="{049A9D64-0DAA-43A0-BE65-B75AE4D25547}" ShortID="741424282">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Crystals_03" ID="{E5A8CD5E-9F19-4B97-B275-0AD48F7BBF8F}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Crystals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="886687609"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Crystals_03" ID="{E5A8CD5E-9F19-4B97-B275-0AD48F7BBF8F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Crystals_04" ID="{8CC81E8A-1B99-4C63-B9EB-5AD08B16932B}" ShortID="465417026">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Crystals_04" ID="{B0A3EE83-3191-4EAD-9855-3243293FCB5D}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Crystals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="255993013"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Crystals_04" ID="{B0A3EE83-3191-4EAD-9855-3243293FCB5D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Jump_Vegetation" ID="{96D2AFD6-FD0D-4ED8-AEA8-2F1E86646E6F}" ShortID="205853511">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{92C24AAF-0986-453A-9704-873F3F03D0B4}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="126"/>
+																			<Property Name="Min" Type="Real64" Value="-76"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Raise_Vegetation_01" ID="{4A32520D-D49B-44F2-9FE5-6C8AA7D05FA4}" ShortID="64582148">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Vegetation_01" ID="{4F4CDBC1-93B3-4ACC-BCBE-767C5F72241E}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Vegetation_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="447311588"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Vegetation_01" ID="{4F4CDBC1-93B3-4ACC-BCBE-767C5F72241E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Vegetation_02" ID="{67258E3C-0269-4854-AA33-2FB101D0063B}" ShortID="1010272813">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Vegetation_02" ID="{02D59A42-14F3-476A-A7F7-8482C1D1F849}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Vegetation_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="891782627"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Vegetation_02" ID="{02D59A42-14F3-476A-A7F7-8482C1D1F849}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Vegetation_03" ID="{510FE2E2-77E2-4B9A-B9B4-534F2F22A57A}" ShortID="492788754">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Vegetation_03" ID="{129574CE-6F2F-4360-862F-D97958A74A2D}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Vegetation_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="58619379"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Vegetation_03" ID="{129574CE-6F2F-4360-862F-D97958A74A2D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Raise_Vegetation_04" ID="{A1433C7D-79C4-4EB7-AECE-7EB7441E6538}" ShortID="95092489">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Raise_Vegetation_04" ID="{16D5991C-49D5-4ECE-B594-0B7E1DFB6913}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Raise_Vegetation_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="506819010"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Raise_Vegetation_04" ID="{16D5991C-49D5-4ECE-B594-0B7E1DFB6913}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Jump_Corals" ID="{1C53A009-5FDB-405D-B500-6D8CA9E01D1D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Jump_Crystals" ID="{EFD5C70D-7052-4F1B-8444-1D943D8DAA08}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Jump_Sand" ID="{D4913EA0-8312-4273-94A4-ABD003F76869}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Jump_Vegetation" ID="{96D2AFD6-FD0D-4ED8-AEA8-2F1E86646E6F}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Crystals" ID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Jump_Crystals" ID="{EFD5C70D-7052-4F1B-8444-1D943D8DAA08}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Vegetation" ID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Jump_Vegetation" ID="{96D2AFD6-FD0D-4ED8-AEA8-2F1E86646E6F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Jump_Corals" ID="{1C53A009-5FDB-405D-B500-6D8CA9E01D1D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Sand" ID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Jump_Sand" ID="{D4913EA0-8312-4273-94A4-ABD003F76869}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<Sound Name="Foley_Remi_Jump_Hards" ID="{185742AC-FCF6-4DFD-9BE6-4BF20CD365AF}" ShortID="445467983">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -93,40 +629,38 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Foley_Remi_Jump_Material02" ID="{1C53A009-5FDB-405D-B500-6D8CA9E01D1D}" ShortID="849448284">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Foley_Remi_Jump_Material03" ID="{EFD5C70D-7052-4F1B-8444-1D943D8DAA08}" ShortID="535873945">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
+											<ChildrenList>
+												<AudioFileSource Name="REMI_Jump_HardS" ID="{29E2BEF9-2ACE-4069-A5E5-251262B9709A}">
+													<Language>SFX</Language>
+													<AudioFile>REMI_Jump_HardS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="273254375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="REMI_Jump_HardS" ID="{29E2BEF9-2ACE-4069-A5E5-251262B9709A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Jump_Material02" ID="{1C53A009-5FDB-405D-B500-6D8CA9E01D1D}"/>
+												<ItemRef Name="Foley_Remi_Jump_Hards" ID="{185742AC-FCF6-4DFD-9BE6-4BF20CD365AF}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Jump_Material03" ID="{EFD5C70D-7052-4F1B-8444-1D943D8DAA08}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Jump_Material01" ID="{D4913EA0-8312-4273-94A4-ABD003F76869}"/>
+												<ItemRef Name="Foley_Remi_Jump_Materials" ID="{414E26BB-E6E4-4209-9CF7-65C2074476B0}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
+												<ItemList>
+													<ItemRef Name="Foley_Remi_Jump_Materials" ID="{414E26BB-E6E4-4209-9CF7-65C2074476B0}"/>
+													<ItemRef Name="Foley_Remi_Jump_Hards" ID="{185742AC-FCF6-4DFD-9BE6-4BF20CD365AF}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="Foley_Remi_Land" ID="{61A6C0EF-AC76-467E-A90A-D6EEA2E3660E}" ShortID="997723126">
@@ -137,9 +671,497 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Movement_Land" ID="{3E9DD183-CBC2-4413-A897-FA603F0E81D5}" WorkUnitID="{7FB185D1-8478-4561-9C40-A3DA378A4469}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Foley_Remi_Land_Material01" ID="{ABF51BE4-3A1D-4DED-8A50-CE20DA08FBC7}" ShortID="669542999">
+										<SwitchContainer Name="Foley_Remi_Land_Materials" ID="{ADAEEBBC-5358-4B14-97B3-80EA6A6359C5}" ShortID="155821682">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Vegetation" ID="{33F5E517-FCDD-47F7-83AF-8F67D3C1EE37}" WorkUnitID="{7FB185D1-8478-4561-9C40-A3DA378A4469}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Floor_Material_Land" ID="{8DB64239-442B-4F85-BCA4-5A588EA6FC74}" WorkUnitID="{7FB185D1-8478-4561-9C40-A3DA378A4469}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Foley_Remi_Land_Vegetation" ID="{ABF51BE4-3A1D-4DED-8A50-CE20DA08FBC7}" ShortID="669542999">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Landing_Vegetation_01" ID="{B44C61AA-FD92-425E-BA14-D0364C08CA55}" ShortID="832131203">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Vegetation_01" ID="{CCF78CB9-4EDC-442C-A25B-CEAED643EE6F}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Vegetation_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="817350607"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Vegetation_01" ID="{CCF78CB9-4EDC-442C-A25B-CEAED643EE6F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Vegetation_02" ID="{5E38636B-0FB6-461F-9175-C0E0114CF5F7}" ShortID="596564090">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Vegetation_02" ID="{B566C495-2C9B-42CF-841B-0A98CEF7FF86}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Vegetation_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="441413197"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Vegetation_02" ID="{B566C495-2C9B-42CF-841B-0A98CEF7FF86}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Vegetation_03" ID="{4E3E9A26-9893-438C-A572-DE222668CAD5}" ShortID="217932504">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Vegetation_03" ID="{5A84FD4F-B6FA-4D76-A367-C5F763AF01D2}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Vegetation_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="58459941"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Vegetation_03" ID="{5A84FD4F-B6FA-4D76-A367-C5F763AF01D2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Vegetation_04" ID="{7AC9E58D-F0EA-45C5-89E7-A74E67D4E7CB}" ShortID="466766564">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Vegetation_04" ID="{700B969C-6304-401E-BAA3-0FCA0D647ABA}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Vegetation_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="132841984"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Vegetation_04" ID="{700B969C-6304-401E-BAA3-0FCA0D647ABA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Land_Corals" ID="{B6664906-D2B7-49DF-96C4-9BC0824770D2}" ShortID="761899143">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Landing_Corals_01" ID="{3B5B89A9-4D44-4FED-9FBF-910415905A03}" ShortID="365574602">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Corals_01" ID="{F0165503-0525-4AB7-B260-5F2BC6390173}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Corals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="351566940"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Corals_01" ID="{F0165503-0525-4AB7-B260-5F2BC6390173}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Corals_02" ID="{1F27111A-F1DF-4AC7-881E-AA0B96A7B2EF}" ShortID="639103189">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Corals_02" ID="{697885EB-6A30-4CC7-A2B1-D2242AAF74DB}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Corals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="68888001"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Corals_02" ID="{697885EB-6A30-4CC7-A2B1-D2242AAF74DB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Corals_03" ID="{43680118-5B55-40E7-8A54-C68AFDDE3837}" ShortID="1029495823">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Corals_03" ID="{8961E54D-6436-4499-A762-14E875E149EE}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Corals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="246519746"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Corals_03" ID="{8961E54D-6436-4499-A762-14E875E149EE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Corals_04" ID="{0BE716C0-4F5B-4ADC-A8E4-CAC84D652FFE}" ShortID="138172478">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Corals_04" ID="{307CD811-9398-47CF-A09F-51A403D3AACE}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Corals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="750000837"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Corals_04" ID="{307CD811-9398-47CF-A09F-51A403D3AACE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Land_Crystals" ID="{7EB1E88A-DF82-4FC4-B016-86F8F75140B9}" ShortID="384764288">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Landing_Crystals_01" ID="{88B5C82F-2FDC-46FE-80DB-0594ADAA3494}" ShortID="294194847">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Crystals_01" ID="{A6280B86-8DBB-4217-BE77-CA1C291B208A}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Crystals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="799342202"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Crystals_01" ID="{A6280B86-8DBB-4217-BE77-CA1C291B208A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Crystals_02" ID="{23F68223-0398-46A5-AB24-4693B7171972}" ShortID="448013136">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Crystals_02" ID="{04CAE313-E976-4142-9300-0E60ED80D0D8}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Crystals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="318352530"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Crystals_02" ID="{04CAE313-E976-4142-9300-0E60ED80D0D8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Crystals_03" ID="{0EA85AFA-002D-4077-A82C-141A3CDA78D0}" ShortID="274393399">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Crystals_03" ID="{5CB81D31-B1D3-4072-B0AA-D34849233014}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Crystals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="440654129"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Crystals_03" ID="{5CB81D31-B1D3-4072-B0AA-D34849233014}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Crystals_04" ID="{565AECAF-4BB3-49CB-9CB9-64B159D3350A}" ShortID="235097245">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Crystals_04" ID="{E35898B3-4EEB-4486-B3B8-DAC5194BF6DB}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Crystals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="10736698"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Crystals_04" ID="{E35898B3-4EEB-4486-B3B8-DAC5194BF6DB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Land_Sand" ID="{46975B3C-4D88-45B6-A9EE-0FB1BD84BACB}" ShortID="859823421">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Foley" ID="{B1567F55-AAA5-4FF9-9B3D-A5339D411B94}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Jump_Landing_Sand_01" ID="{C39F10B3-7E46-4DA2-8134-CCDDF93C5FC8}" ShortID="638645583">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Sand_01" ID="{058FA9F1-D5A2-47E6-BD69-20AC312CFCAF}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Sand_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="930574246"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Sand_01" ID="{058FA9F1-D5A2-47E6-BD69-20AC312CFCAF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Sand_02" ID="{C44F79C2-E4EF-42E0-B4EF-3D75C5341756}" ShortID="409509038">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Sand_02" ID="{B2929A2F-566A-47AA-8CBC-109D3140E53C}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Sand_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="205510176"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Sand_02" ID="{B2929A2F-566A-47AA-8CBC-109D3140E53C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Sand_03" ID="{81431654-0E94-4A07-AE9E-E8CF470B438E}" ShortID="809278801">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Sand_03" ID="{BC760B82-94BC-478D-96B9-D3341DFDBE13}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Sand_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="946891744"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Sand_03" ID="{BC760B82-94BC-478D-96B9-D3341DFDBE13}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Jump_Landing_Sand_04" ID="{D150E16D-695F-462C-BDE9-A1D0BB384524}" ShortID="204563439">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Jump_Landing_Sand_04" ID="{CA5DDC77-BEF4-422B-95AB-71E800685375}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Jump_Landing_Sand_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="791008288"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Jump_Landing_Sand_04" ID="{CA5DDC77-BEF4-422B-95AB-71E800685375}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Land_Corals" ID="{B6664906-D2B7-49DF-96C4-9BC0824770D2}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Land_Sand" ID="{46975B3C-4D88-45B6-A9EE-0FB1BD84BACB}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Land_Crystals" ID="{7EB1E88A-DF82-4FC4-B016-86F8F75140B9}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Land_Vegetation" ID="{ABF51BE4-3A1D-4DED-8A50-CE20DA08FBC7}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Vegetation" ID="{33F5E517-FCDD-47F7-83AF-8F67D3C1EE37}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Land_Vegetation" ID="{ABF51BE4-3A1D-4DED-8A50-CE20DA08FBC7}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Sand" ID="{A148653E-1014-4F3D-ABFC-C896A8067E91}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Land_Sand" ID="{46975B3C-4D88-45B6-A9EE-0FB1BD84BACB}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crystals" ID="{44A09355-C4E2-40CF-BBD0-9F09ECB01115}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Land_Crystals" ID="{7EB1E88A-DF82-4FC4-B016-86F8F75140B9}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Land_Corals" ID="{B6664906-D2B7-49DF-96C4-9BC0824770D2}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<Sound Name="Foley_Remi_Land_Hards" ID="{6A367F5B-0CAA-4FCF-BCF2-F18EC14AFB54}" ShortID="495584418">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{73675579-48DD-42EA-8470-4E41211B79ED}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="253"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{260B5805-B4D0-4227-AF89-1A6B6AD08795}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -148,40 +1170,38 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Foley_Remi_Land_Material02" ID="{B6664906-D2B7-49DF-96C4-9BC0824770D2}" ShortID="761899143">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Foley_Remi_Land_Material03" ID="{7EB1E88A-DF82-4FC4-B016-86F8F75140B9}" ShortID="384764288">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
+											<ChildrenList>
+												<AudioFileSource Name="REMI_Landing_HardS" ID="{5D31C756-50B7-47C0-92EC-C018ABC6772E}">
+													<Language>SFX</Language>
+													<AudioFile>REMI_Landing_HardS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359125677"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="REMI_Landing_HardS" ID="{5D31C756-50B7-47C0-92EC-C018ABC6772E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Land_Material02" ID="{B6664906-D2B7-49DF-96C4-9BC0824770D2}"/>
+												<ItemRef Name="Foley_Remi_Land_Hards" ID="{6A367F5B-0CAA-4FCF-BCF2-F18EC14AFB54}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Land_Material03" ID="{7EB1E88A-DF82-4FC4-B016-86F8F75140B9}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Foley_Remi_Land_Material01" ID="{ABF51BE4-3A1D-4DED-8A50-CE20DA08FBC7}"/>
+												<ItemRef Name="Foley_Remi_Land_Materials" ID="{ADAEEBBC-5358-4B14-97B3-80EA6A6359C5}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
+												<ItemList>
+													<ItemRef Name="Foley_Remi_Land_Hards" ID="{6A367F5B-0CAA-4FCF-BCF2-F18EC14AFB54}"/>
+													<ItemRef Name="Foley_Remi_Land_Materials" ID="{ADAEEBBC-5358-4B14-97B3-80EA6A6359C5}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
