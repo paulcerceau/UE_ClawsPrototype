@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2964282900	Play_BREAKABLEWALL_PowerClaw			\Default Work Unit\Play_BREAKABLEWALL_PowerClaw	
+

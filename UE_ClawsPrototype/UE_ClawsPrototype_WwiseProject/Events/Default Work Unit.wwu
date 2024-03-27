@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BREAKABLEWALL_PowerClaw" ID="{075BB087-F9FE-4E59-B346-0AE775269933}">
+					<ChildrenList>
+						<Action Name="" ID="{EC515A1E-E5E4-4C6F-A6EF-557A4F643AA3}" ShortID="1072655851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FX_BREAKABLEWALL_PowerClaw" ID="{B5FDEE41-BA39-410A-9CCC-70E6F84145DD}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -3,7 +3,7 @@
   "Project": {
    "Name": "UE_ClawsPrototype_WwiseProject",
    "GUID": "{97D65703-1023-404C-AAA9-2C0A640AD00A}",
-   "Generator": "2023.1.0.8367"
+   "Generator": "2023.1.1.8417"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{FA2D9ECF-BE24-15FD-FA24-21F05FE883B7}"
+  "FileHash": "{B7353A39-C8AC-B24F-1971-149C007D1B83}"
  }
 }

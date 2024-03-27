@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="UE_ClawsPrototype_WwiseProject" GUID="{97D65703-1023-404C-AAA9-2C0A640AD00A}" Generator="2023.1.0.8367"/>
+	<Project Name="UE_ClawsPrototype_WwiseProject" GUID="{97D65703-1023-404C-AAA9-2C0A640AD00A}" Generator="2023.1.1.8417"/>
 	<CacheRoot>../.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{68092389-7FF0-4361-B888-EE0AC953F931}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{2CE2C345-A9EC-4D31-9816-28BA7090D8AE}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{1145B874-4FC0-D62B-D4E8-E868296EFA45}</FileHash>
+	<FileHash>{74585D88-BB8D-0FD2-ED0C-F21A1201845D}</FileHash>
 </ProjectInfo>

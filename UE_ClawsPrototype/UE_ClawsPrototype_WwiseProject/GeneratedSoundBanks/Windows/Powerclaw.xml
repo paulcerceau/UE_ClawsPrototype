@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1258724141" Type="User" GUID="{CB4F4904-31FE-415E-A997-DA35425A86FA}" Language="SFX" Hash="{F46CE395-6775-BBAB-EAEB-2FB3FA875715}">
+		<SoundBank Id="1258724141" Type="User" GUID="{CB4F4904-31FE-415E-A997-DA35425A86FA}" Language="SFX" Hash="{FD0448CB-4D8A-13D5-3A43-D45E7706C127}">
 			<ObjectPath>\SoundBanks\Elise\Powerclaw</ObjectPath>
 			<ShortName>Powerclaw</ShortName>
 			<Path>Powerclaw.bnk</Path>
@@ -128,7 +128,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1915907018" Name="Play_Powerclaw_Deploying" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Deploying" GUID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" DurationType="OneShot" DurationMin="0.33333334" DurationMax="0.44494662">
+				<Event Id="1915907018" Name="Play_Powerclaw_Deploying" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Deploying" GUID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="0.33333334" DurationMax="0.44494662">
 					<MediaRefs>
 						<MediaRef Id="189337946"/>
 						<MediaRef Id="230620629"/>
@@ -138,7 +138,7 @@
 						<MediaRef Id="905417769"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2215897978" Name="Play_Powerclaw_Hit" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Hit" GUID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" DurationType="OneShot" DurationMin="0.4" DurationMax="0.42378527">
+				<Event Id="2215897978" Name="Play_Powerclaw_Hit" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Hit" GUID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="0.4" DurationMax="0.42378527">
 					<MediaRefs>
 						<MediaRef Id="44406965"/>
 						<MediaRef Id="112202913"/>
@@ -160,7 +160,7 @@
 						<MediaRef Id="1048140003"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2915524786" Name="Play_Powerclaw_Retracting" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Retracting" GUID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" DurationType="OneShot" DurationMin="0.23333333" DurationMax="0.31146264">
+				<Event Id="2915524786" Name="Play_Powerclaw_Retracting" ObjectPath="\Events\Default Work Unit\Play_Powerclaw_Retracting" GUID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="0.23333333" DurationMax="0.31146264">
 					<MediaRefs>
 						<MediaRef Id="577789"/>
 						<MediaRef Id="22100767"/>
@@ -176,5 +176,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{08FB8194-5D0B-6859-A445-5E4D1A25AD6A}</FileHash>
+	<FileHash>{1911B3D8-102D-7380-314F-5800F8E70954}</FileHash>
 </SoundBanksInfo>

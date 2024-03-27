@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "1736823119",
+    "Type": "Bus",
+    "GUID": "{13559916-53B9-40F5-AE9B-0A99531610FF}",
+    "Language": "SFX",
+    "Hash": "{09922363-A05C-8016-E1AC-C971F4810076}",
+    "ObjectPath": "Bus_AMB_Cave_Pink",
+    "ShortName": "Bus_AMB_Cave_Pink",
+    "Path": "Bus/Bus_AMB_Cave_Pink.bnk",
+    "AuxBusses": [
+     {
+      "Id": "1736823119",
+      "Name": "Bus_AMB_Cave_Pink",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Bus_Ambience\\Bus_AMB_Cave_Pink",
+      "GUID": "{13559916-53B9-40F5-AE9B-0A99531610FF}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AC6F4E1D-05F3-7AFD-5704-D107432C0113}"
+ }
+}

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{CB4F4904-31FE-415E-A997-DA35425A86FA}",
     "Language": "SFX",
-    "Hash": "{F46CE395-6775-BBAB-EAEB-2FB3FA875715}",
+    "Hash": "{FD0448CB-4D8A-13D5-3A43-D45E7706C127}",
     "ObjectPath": "\\SoundBanks\\Elise\\Powerclaw",
     "ShortName": "Powerclaw",
     "Path": "Powerclaw.bnk",
@@ -262,6 +262,7 @@
       "Name": "Play_Powerclaw_Deploying",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Deploying",
       "GUID": "{899A8F47-E80F-4126-A4F5-76DE56F375B7}",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "0.33333334",
       "DurationMax": "0.44494662",
@@ -291,6 +292,7 @@
       "Name": "Play_Powerclaw_Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Hit",
       "GUID": "{74F9B796-8EE6-4B78-97E2-77F92ABB4974}",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "0.4",
       "DurationMax": "0.42378527",
@@ -356,6 +358,7 @@
       "Name": "Play_Powerclaw_Retracting",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Retracting",
       "GUID": "{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "0.23333333",
       "DurationMax": "0.31146264",
@@ -391,6 +394,6 @@
     ]
    }
   ],
-  "FileHash": "{653FEE45-F744-6298-6EDF-52DFF52EEEF5}"
+  "FileHash": "{6157D831-D154-C530-9E08-FE09AD801FF8}"
  }
 }

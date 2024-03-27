@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1393849164" Type="Bus" GUID="{D21C99BD-EC21-46B9-A36E-E3B66C937B40}" Language="SFX" Hash="{77EEACAA-B635-3270-77BA-4E07560815C0}">
+			<ObjectPath>Bus_AMB_Cave_Garden</ObjectPath>
+			<ShortName>Bus_AMB_Cave_Garden</ShortName>
+			<Path>Bus/Bus_AMB_Cave_Garden.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="1393849164" Name="Bus_AMB_Cave_Garden" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Garden" GUID="{D21C99BD-EC21-46B9-A36E-E3B66C937B40}"/>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7961F649-BA1C-3D4C-0EEF-4170E5C8590B}</FileHash>
+</SoundBanksInfo>

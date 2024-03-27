@@ -1,0 +1,109 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2964282900",
+    "Type": "Event",
+    "GUID": "{075BB087-F9FE-4E59-B346-0AE775269933}",
+    "Language": "SFX",
+    "Hash": "{E6A07D6E-C9CF-166B-3353-B20F0DD235BF}",
+    "ObjectPath": "Play_BREAKABLEWALL_PowerClaw",
+    "ShortName": "Play_BREAKABLEWALL_PowerClaw",
+    "Path": "Event/Play_BREAKABLEWALL_PowerClaw.bnk",
+    "Media": [
+     {
+      "Id": "111127005",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_03.wav",
+      "Path": "Media/111127005.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_03_818F3B66.wem"
+     },
+     {
+      "Id": "273936683",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_04.wav",
+      "Path": "Media/273936683.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_04_818F3B66.wem"
+     },
+     {
+      "Id": "322150583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_05.wav",
+      "Path": "Media/322150583.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_05_818F3B66.wem"
+     },
+     {
+      "Id": "709333462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_01.wav",
+      "Path": "Media/709333462.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_01_818F3B66.wem"
+     },
+     {
+      "Id": "790350036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_02.wav",
+      "Path": "Media/790350036.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_02_818F3B66.wem"
+     },
+     {
+      "Id": "825303567",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BREAKABLEWALL_PowerClaw_06.wav",
+      "Path": "Media/825303567.wem",
+      "CachePath": "SFX/BREAKABLEWALL_PowerClaw_06_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2964282900",
+      "Name": "Play_BREAKABLEWALL_PowerClaw",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BREAKABLEWALL_PowerClaw",
+      "GUID": "{075BB087-F9FE-4E59-B346-0AE775269933}",
+      "MaxAttenuation": "10000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9620916",
+      "DurationMax": "2.7748165",
+      "MediaRefs": [
+       {
+        "Id": "111127005"
+       },
+       {
+        "Id": "273936683"
+       },
+       {
+        "Id": "322150583"
+       },
+       {
+        "Id": "709333462"
+       },
+       {
+        "Id": "790350036"
+       },
+       {
+        "Id": "825303567"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{65A182F6-1A37-305C-9213-0F09DE05FEA7}"
+ }
+}
