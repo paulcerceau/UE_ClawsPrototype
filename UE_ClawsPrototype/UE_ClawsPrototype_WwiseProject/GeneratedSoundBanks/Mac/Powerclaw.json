@@ -1,0 +1,399 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "1258724141",
+    "Type": "User",
+    "GUID": "{CB4F4904-31FE-415E-A997-DA35425A86FA}",
+    "Language": "SFX",
+    "Hash": "{FD0448CB-4D8A-13D5-3A43-D45E7706C127}",
+    "ObjectPath": "\\SoundBanks\\Elise\\Powerclaw",
+    "ShortName": "Powerclaw",
+    "Path": "Powerclaw.bnk",
+    "Media": [
+     {
+      "Id": "577789",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_04.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_04_818F3B66.wem"
+     },
+     {
+      "Id": "22100767",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_05.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_05_818F3B66.wem"
+     },
+     {
+      "Id": "44406965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_06.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_06_818F3B66.wem"
+     },
+     {
+      "Id": "112202913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_02.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_02_818F3B66.wem"
+     },
+     {
+      "Id": "136525551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_02.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_02_818F3B66.wem"
+     },
+     {
+      "Id": "142239864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_06.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_06_818F3B66.wem"
+     },
+     {
+      "Id": "189337946",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_05.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_05_818F3B66.wem"
+     },
+     {
+      "Id": "230620629",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_04.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_04_818F3B66.wem"
+     },
+     {
+      "Id": "302688598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_06.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_06_818F3B66.wem"
+     },
+     {
+      "Id": "335312547",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_05.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_05_818F3B66.wem"
+     },
+     {
+      "Id": "464318529",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_02.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_02_818F3B66.wem"
+     },
+     {
+      "Id": "496630311",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_02.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_02_818F3B66.wem"
+     },
+     {
+      "Id": "590012328",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_04.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_04_818F3B66.wem"
+     },
+     {
+      "Id": "602904386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_06.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_06_818F3B66.wem"
+     },
+     {
+      "Id": "624886003",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_02.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_02_818F3B66.wem"
+     },
+     {
+      "Id": "653078776",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_03.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_03_818F3B66.wem"
+     },
+     {
+      "Id": "666428243",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_01.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_01_818F3B66.wem"
+     },
+     {
+      "Id": "800482599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_06.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_06_818F3B66.wem"
+     },
+     {
+      "Id": "815250102",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_05.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_05_818F3B66.wem"
+     },
+     {
+      "Id": "825516958",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_04.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_04_818F3B66.wem"
+     },
+     {
+      "Id": "830223609",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_03.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_03_818F3B66.wem"
+     },
+     {
+      "Id": "881909881",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_No_Hit_03.wav",
+      "CachePath": "SFX/POWERCLAW_No_Hit_03_818F3B66.wem"
+     },
+     {
+      "Id": "905417769",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Deploying_01.wav",
+      "CachePath": "SFX/POWERCLAW_Deploying_01_818F3B66.wem"
+     },
+     {
+      "Id": "909348170",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_04.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_04_818F3B66.wem"
+     },
+     {
+      "Id": "910913181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_03.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_03_818F3B66.wem"
+     },
+     {
+      "Id": "1009486592",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_Retracting_01.wav",
+      "CachePath": "SFX/POWERCLAW_Retracting_01_818F3B66.wem"
+     },
+     {
+      "Id": "1014996887",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitFail_01.wav",
+      "CachePath": "SFX/POWERCLAW_HitFail_01_818F3B66.wem"
+     },
+     {
+      "Id": "1019310611",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_01.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_01_818F3B66.wem"
+     },
+     {
+      "Id": "1041010801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_03.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_03_818F3B66.wem"
+     },
+     {
+      "Id": "1048140003",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "POWERCLAW_HitSuccess_05.wav",
+      "CachePath": "SFX/POWERCLAW_HitSuccess_05_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1915907018",
+      "Name": "Play_Powerclaw_Deploying",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Deploying",
+      "GUID": "{899A8F47-E80F-4126-A4F5-76DE56F375B7}",
+      "MaxAttenuation": "10000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33333334",
+      "DurationMax": "0.44494662",
+      "MediaRefs": [
+       {
+        "Id": "189337946"
+       },
+       {
+        "Id": "230620629"
+       },
+       {
+        "Id": "302688598"
+       },
+       {
+        "Id": "624886003"
+       },
+       {
+        "Id": "653078776"
+       },
+       {
+        "Id": "905417769"
+       }
+      ]
+     },
+     {
+      "Id": "2215897978",
+      "Name": "Play_Powerclaw_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Hit",
+      "GUID": "{74F9B796-8EE6-4B78-97E2-77F92ABB4974}",
+      "MaxAttenuation": "10000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4",
+      "DurationMax": "0.42378527",
+      "MediaRefs": [
+       {
+        "Id": "44406965"
+       },
+       {
+        "Id": "112202913"
+       },
+       {
+        "Id": "136525551"
+       },
+       {
+        "Id": "142239864"
+       },
+       {
+        "Id": "335312547"
+       },
+       {
+        "Id": "496630311"
+       },
+       {
+        "Id": "590012328"
+       },
+       {
+        "Id": "602904386"
+       },
+       {
+        "Id": "666428243"
+       },
+       {
+        "Id": "815250102"
+       },
+       {
+        "Id": "825516958"
+       },
+       {
+        "Id": "830223609"
+       },
+       {
+        "Id": "881909881"
+       },
+       {
+        "Id": "909348170"
+       },
+       {
+        "Id": "1014996887"
+       },
+       {
+        "Id": "1019310611"
+       },
+       {
+        "Id": "1041010801"
+       },
+       {
+        "Id": "1048140003"
+       }
+      ]
+     },
+     {
+      "Id": "2915524786",
+      "Name": "Play_Powerclaw_Retracting",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Powerclaw_Retracting",
+      "GUID": "{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}",
+      "MaxAttenuation": "10000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23333333",
+      "DurationMax": "0.31146264",
+      "MediaRefs": [
+       {
+        "Id": "577789"
+       },
+       {
+        "Id": "22100767"
+       },
+       {
+        "Id": "464318529"
+       },
+       {
+        "Id": "800482599"
+       },
+       {
+        "Id": "910913181"
+       },
+       {
+        "Id": "1009486592"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1939547783",
+      "Name": "Hit_Type",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Hit_Type",
+      "GUID": "{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6157D831-D154-C530-9E08-FE09AD801FF8}"
+ }
+}

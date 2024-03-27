@@ -1,0 +1,3 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1393849164	Bus_AMB_Cave_Garden			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Garden	
+

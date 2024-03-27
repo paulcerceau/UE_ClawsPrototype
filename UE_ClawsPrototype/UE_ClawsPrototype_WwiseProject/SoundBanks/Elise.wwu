@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{87ACE47B-CA8C-4DEE-A8F9-A003533CC7BE}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Elise" ID="{87ACE47B-CA8C-4DEE-A8F9-A003533CC7BE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Powerclaw" ID="{CB4F4904-31FE-415E-A997-DA35425A86FA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Powerclaw_Retracting" ID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Powerclaw_Hit" ID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

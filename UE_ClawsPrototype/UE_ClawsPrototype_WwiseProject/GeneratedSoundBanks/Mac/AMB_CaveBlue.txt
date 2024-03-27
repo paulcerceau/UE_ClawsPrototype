@@ -1,7 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	729984210	AMB_Stop			\Default Work Unit\AMB_Stop	
-	2381502256	AMB_Play			\Default Work Unit\AMB_Play	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	885646293	AMBIENT_Cave_Blue	D:\Git\PFE\UE_ClawsPrototype\UE_ClawsPrototype\UE_ClawsPrototype_WwiseProject\.cache\Mac\SFX\AMBIENT_Cave_Blue_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMBIENT_Cave_Blue		5760096
-

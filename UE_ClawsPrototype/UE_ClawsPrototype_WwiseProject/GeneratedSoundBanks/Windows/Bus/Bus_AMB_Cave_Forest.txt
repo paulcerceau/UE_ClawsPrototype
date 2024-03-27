@@ -1,0 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1755969671	RVB_Ambiences			\Default Work Unit\RVB_Ambiences	
+
+State	ID	Name	State Group			Notes
+	748895195	None	RVB_Ambiences			
+	1479891785	Cave_Blue	RVB_Ambiences			
+	1993929655	Cave_Purple	RVB_Ambiences			
+	4062653982	Cave_Forest	RVB_Ambiences			
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3103917296	Bus_AMB_Cave_Forest			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Forest	
+
+Effect plug-ins	ID	Name	Type				Notes
+	840782453	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
+

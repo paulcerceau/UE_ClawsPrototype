@@ -1,5 +1,31 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1755969671	RVB_Ambiences			\Default Work Unit\RVB_Ambiences	
+
+State	ID	Name	State Group			Notes
+	748895195	None	RVB_Ambiences			
+	1479891785	Cave_Blue	RVB_Ambiences			
+	1993929655	Cave_Purple	RVB_Ambiences			
+	4062653982	Cave_Forest	RVB_Ambiences			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
+	1494799530	Bus_FX			\Default Work Unit\Master Audio Bus\Bus_FX	
+	3501367136	Bus_Ambience			\Default Work Unit\Master Audio Bus\Bus_Ambience	
+	3670784133	Bus_Foley			\Default Work Unit\Master Audio Bus\Bus_Foley	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4277214558	Bus_Voice			\Default Work Unit\Master Audio Bus\Bus_Voice	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	729618863	Bus_AMB_Cave_Blue			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Blue	
+	1393849164	Bus_AMB_Cave_Garden			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Garden	
+	1736823119	Bus_AMB_Cave_Pink			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Pink	
+	3103917296	Bus_AMB_Cave_Forest			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Forest	
+	3338563989	Bus_AMB_Cave_Purple			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Purple	
+
+Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
+	840782453	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
+	2513915904	Hall_Large	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

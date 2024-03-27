@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="729618863" Type="Bus" GUID="{7739B8B3-082F-435F-8DA7-59852F42F085}" Language="SFX" Hash="{7DAB3775-CF43-835E-3D53-7222AB1ED0A8}">
+			<ObjectPath>Bus_AMB_Cave_Blue</ObjectPath>
+			<ShortName>Bus_AMB_Cave_Blue</ShortName>
+			<Path>Bus/Bus_AMB_Cave_Blue.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2513915904" Name="Hall_Large" ObjectPath="\Effects\Factory Effects\RoomVerb\Halls\Hall_Large" GUID="{6D154498-FF6D-4823-96FC-56841B70E079}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="729618863" Name="Bus_AMB_Cave_Blue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Blue" GUID="{7739B8B3-082F-435F-8DA7-59852F42F085}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2513915904"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<StateGroups>
+				<StateGroup Id="1755969671" Name="RVB_Ambiences" ObjectPath="\States\Default Work Unit\RVB_Ambiences" GUID="{ACBA6F10-55D1-44A6-94A1-0641C5A4CA55}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\RVB_Ambiences\None" GUID="{C0B1A4CF-96ED-48D9-94FC-385691C7AB64}"/>
+						<State Id="1479891785" Name="Cave_Blue" ObjectPath="\States\Default Work Unit\RVB_Ambiences\Cave_Blue" GUID="{652E50A6-AA8D-46DF-9774-D1782F57945B}"/>
+						<State Id="1993929655" Name="Cave_Purple" ObjectPath="\States\Default Work Unit\RVB_Ambiences\Cave_Purple" GUID="{CB84772E-F652-4282-8A5C-198BBFFB631F}"/>
+						<State Id="4062653982" Name="Cave_Forest" ObjectPath="\States\Default Work Unit\RVB_Ambiences\Cave_Forest" GUID="{93860E22-779E-4F03-8B07-97143A4150DC}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{CEEDA813-102C-BD17-62ED-EDBE8467F22B}</FileHash>
+</SoundBanksInfo>
