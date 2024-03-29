@@ -1,3 +1,0 @@
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1736823119	Bus_AMB_Cave_Pink			\Default Work Unit\Master Audio Bus\Bus_Ambience\Bus_AMB_Cave_Pink	
-
