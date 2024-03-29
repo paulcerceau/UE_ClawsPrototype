@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Baptiste GP" ID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>

@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}">
-					<ChildrenList>
-						<Action Name="" ID="{3771E23D-832C-4F22-9545-AED78927BC5E}" ShortID="24931322">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FX_Powerclaw_Deploying" ID="{35B2C58F-11A4-42C6-841D-5ABBF2FCA556}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Powerclaw_Retracting" ID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}">
-					<ChildrenList>
-						<Action Name="" ID="{59C303DA-FBEC-4E9A-9345-9AFE2E7AC117}" ShortID="668447299">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FX_Powerclaw_Retracting" ID="{48253868-0071-4D29-B278-EE78C39709B2}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Powerclaw_Hit" ID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}">
-					<ChildrenList>
-						<Action Name="" ID="{BF824676-F3F6-4F42-BDCF-2EC2D22D84B8}" ShortID="542790633">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FX_Powerclaw_Hit" ID="{F0984DDF-68F2-421B-BBA9-EF1843E5800C}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BREAKABLEWALL_PowerClaw" ID="{075BB087-F9FE-4E59-B346-0AE775269933}">
-					<ChildrenList>
-						<Action Name="" ID="{EC515A1E-E5E4-4C6F-A6EF-557A4F643AA3}" ShortID="1072655851">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FX_BREAKABLEWALL_PowerClaw" ID="{B5FDEE41-BA39-410A-9CCC-70E6F84145DD}" WorkUnitID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

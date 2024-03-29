@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7B1882FA-9408-4888-BF83-3218B72DB56F}" SchemaVersion="119" RootDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" ParentDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}">
+	<AudioObjects>
+		<WorkUnit Name="FX_DoubleJump" ID="{7B1882FA-9408-4888-BF83-3218B72DB56F}" OwnerID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" PersistMode="Nested"/>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A0A79823-8C00-47AC-B1B5-5E403A07A81F}" SchemaVersion="119" RootDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" ParentDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}">
+	<AudioObjects>
+		<WorkUnit Name="FX_WaterClaw" ID="{A0A79823-8C00-47AC-B1B5-5E403A07A81F}" OwnerID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" PersistMode="Nested"/>
+	</AudioObjects>
+</WwiseDocument>

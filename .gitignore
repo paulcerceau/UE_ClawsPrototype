@@ -85,3 +85,4 @@ UE_ClawsPrototype/Plugins/Wwise
 *.validationcache
 *.wsettings
 IncrementalSoundBankData.xml
+UE_ClawsPrototype/UE_ClawsPrototype_WwiseProject/GeneratedSoundBanks

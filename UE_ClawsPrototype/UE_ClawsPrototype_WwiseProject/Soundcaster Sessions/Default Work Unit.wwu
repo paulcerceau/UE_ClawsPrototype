@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{23465E35-7C84-433F-8BB5-208ADB722A41}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{23465E35-7C84-433F-8BB5-208ADB722A41}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundcasterSession Name="New Soundcaster Session" ID="{DF6519DF-EC2F-45ED-BB75-25A142455D92}">
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
-				</SoundcasterSession>
-				<SoundcasterSession Name="Test01" ID="{32D91EA6-CD90-42CA-9C77-4C23EF7E53E9}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Powerclaw_Hit" ID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Powerclaw_Retracting" ID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" WorkUnitID="{44DB294E-6C77-4412-A900-C5ACF999BAA5}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="Hit_Type" ID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"/>
-							<Value>0.723</Value>
-						</RTPCValue>
-					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{C0B1A4CF-96ED-48D9-94FC-385691C7AB64}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
-						<CurrentSwitchRef Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
-						<CurrentSwitchRef Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
-					</CurrentSwitchList>
-				</SoundcasterSession>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{23465E35-7C84-433F-8BB5-208ADB722A41}" PersistMode="Standalone"/>
 	</SoundcasterSessions>
 </WwiseDocument>
