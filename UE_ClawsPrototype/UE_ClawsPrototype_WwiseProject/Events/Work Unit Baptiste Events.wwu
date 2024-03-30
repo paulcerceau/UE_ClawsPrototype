@@ -326,6 +326,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="DoubleJump" ID="{12C9DF28-43FD-40C5-8199-D56891CB9D2B}" ShortID="579376777">
+							<ChildrenList>
+								<Event Name="Play_DoubleJump" ID="{CEB7D37D-D61B-4536-BFF4-6CD95AB63429}">
+									<ChildrenList>
+										<Action Name="" ID="{7E93B27B-5C26-419A-89E7-A845E66174F1}" ShortID="410966710">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENMUSTACHE_DoubleJump" ID="{8B1CFAD2-6534-425E-A382-FF31F6EA62A1}" WorkUnitID="{7B1882FA-9408-4888-BF83-3218B72DB56F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
