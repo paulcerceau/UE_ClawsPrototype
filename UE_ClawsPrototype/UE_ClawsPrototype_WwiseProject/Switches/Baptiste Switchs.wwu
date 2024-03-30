@@ -13,11 +13,6 @@
 								<Switch Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
 							</ChildrenList>
 						</SwitchGroup>
-						<SwitchGroup Name="Movement_Jump" ID="{6F22BCB4-1063-46D9-ABBE-2E780CCC68E8}">
-							<ChildrenList>
-								<Switch Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
-							</ChildrenList>
-						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Land" ID="{FB1C17E2-A5B0-4A05-BE5A-64C4580D6F18}" ShortID="564578418">
@@ -28,11 +23,6 @@
 								<Switch Name="Crystals" ID="{44A09355-C4E2-40CF-BBD0-9F09ECB01115}"/>
 								<Switch Name="Vegetation" ID="{33F5E517-FCDD-47F7-83AF-8F67D3C1EE37}"/>
 								<Switch Name="Sand" ID="{A148653E-1014-4F3D-ABFC-C896A8067E91}"/>
-							</ChildrenList>
-						</SwitchGroup>
-						<SwitchGroup Name="Movement_Land" ID="{3E9DD183-CBC2-4413-A897-FA603F0E81D5}">
-							<ChildrenList>
-								<Switch Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>
