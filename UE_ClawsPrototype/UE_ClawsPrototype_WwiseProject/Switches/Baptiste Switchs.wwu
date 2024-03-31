@@ -27,6 +27,18 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Walk" ID="{E57C78F2-183C-4460-8B05-4CF620A44FFE}" ShortID="742600355">
+					<ChildrenList>
+						<SwitchGroup Name="Floor_Material_Walk" ID="{204E7F1E-BB13-49C9-851F-05BFD1F3AB80}">
+							<ChildrenList>
+								<Switch Name="Corals" ID="{33230FFC-78F4-4F00-AFA0-088D09C618FC}"/>
+								<Switch Name="Crystals" ID="{46C3AC2C-470E-44E9-8FBF-44A262F18491}"/>
+								<Switch Name="Sand" ID="{692CDE5B-2217-4903-95DF-9E86FC9124FA}"/>
+								<Switch Name="Vegetation" ID="{AFFE9DFC-9252-4866-A84A-2EB21A33C1DC}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

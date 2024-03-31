@@ -1368,6 +1368,984 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Foley_Remi_Walk" ID="{C23E11B6-5D5D-4539-8B10-05C526CBFE7F}" ShortID="751967831">
+									<PropertyList>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Foley_Remi_Walk_Materials" ID="{44402FC3-0C87-4A2A-B1FE-9BE18CA04365}" ShortID="1386983">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Floor_Material_Walk" ID="{204E7F1E-BB13-49C9-851F-05BFD1F3AB80}" WorkUnitID="{A6B446B7-B1EB-46B4-9100-33BB0D2DA8A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Foley_Remi_Walk_Corals" ID="{BEA26060-846D-4B1C-8847-4114AA1AC59F}" ShortID="605001939">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6307C4EC-A744-4392-8260-3FE235DE7B40}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-126"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Walk_Corals_01" ID="{42794EC9-FBFD-4F72-848D-07DFC6561F6F}" ShortID="105665781">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_01" ID="{FD8638B7-DD84-491A-A243-AF41F4621F5F}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="859279286"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_01" ID="{FD8638B7-DD84-491A-A243-AF41F4621F5F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_02" ID="{44229FC7-689F-4EFC-A6D2-A98206C2ABE7}" ShortID="744741116">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_02" ID="{A454A290-15A9-4CA7-8570-26A66AB422CE}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="769283871"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_02" ID="{A454A290-15A9-4CA7-8570-26A66AB422CE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_03" ID="{D0121D53-A1EE-4D1A-8890-2B02416E4041}" ShortID="379167742">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_03" ID="{14A0A56A-78EB-4A1F-AA29-8926514F85BE}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="355473117"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_03" ID="{14A0A56A-78EB-4A1F-AA29-8926514F85BE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_04" ID="{1071205D-2B9B-419E-850F-277B3CFD67A0}" ShortID="617753977">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_04" ID="{DB65C985-E2F2-4C90-9AB5-2BF211572942}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="694354975"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_04" ID="{DB65C985-E2F2-4C90-9AB5-2BF211572942}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_05" ID="{0E2B4BD7-2D33-441B-A95B-062861457E50}" ShortID="1071801778">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_05" ID="{42677937-796C-4CC1-BCE4-BCBC3647096C}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="137824536"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_05" ID="{42677937-796C-4CC1-BCE4-BCBC3647096C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_06" ID="{8D614D36-FD03-4499-815D-291E61E8D928}" ShortID="431107769">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_06" ID="{A07511E5-4E78-4DB6-9800-AA706BD4C0E0}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="592812802"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_06" ID="{A07511E5-4E78-4DB6-9800-AA706BD4C0E0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Corals_07" ID="{12D3B7CE-6460-4DB0-B5DE-F5EC544678AA}" ShortID="148455898">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Corals_07" ID="{AA06BD3A-78E6-45ED-BF56-28968DD38767}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Corals_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="459784752"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Corals_07" ID="{AA06BD3A-78E6-45ED-BF56-28968DD38767}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Walk_Crystals" ID="{71175FC1-E3E3-4F3D-B4AD-087A73A34EE3}" ShortID="42127106">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{AA48C888-3A31-4512-9B12-A3522D70A9B8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-152"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Walk_Crystals_01" ID="{E98FA708-2BA5-4544-A7AB-A9744620E146}" ShortID="853471004">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_01" ID="{7AE5D8EC-F52D-4E6A-B368-53B85F6DC611}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="692303157"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_01" ID="{7AE5D8EC-F52D-4E6A-B368-53B85F6DC611}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_02" ID="{FE9F6CA4-564A-4F9A-A11C-5076D0F98073}" ShortID="486397021">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_02" ID="{D890DFFF-8CB1-4864-BFB7-9F7289A4CD58}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="793560967"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_02" ID="{D890DFFF-8CB1-4864-BFB7-9F7289A4CD58}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_03" ID="{918B4AE8-CDCB-4682-BCA5-7594B67DCD2F}" ShortID="223981775">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_03" ID="{4CC71CE1-B95E-4F56-A82E-CFE93F44C774}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="394269613"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_03" ID="{4CC71CE1-B95E-4F56-A82E-CFE93F44C774}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_04" ID="{49F8D8BC-EBAC-48C5-93A0-3A5BC8159D37}" ShortID="1027546378">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_04" ID="{7AC2D1F6-F3CD-4F16-B672-31780EB07B05}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="739271476"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_04" ID="{7AC2D1F6-F3CD-4F16-B672-31780EB07B05}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_05" ID="{C3F1E206-A04C-41F9-86F1-89AEFFA2A02D}" ShortID="750762956">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_05" ID="{A27B0742-BBAD-4836-9539-0F40C299AA63}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="296059862"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_05" ID="{A27B0742-BBAD-4836-9539-0F40C299AA63}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_06" ID="{308A7BD9-28F2-4D2A-96AE-B45BBBCF9A62}" ShortID="387956905">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_06" ID="{E3A135ED-AEE7-4020-91F7-709CE0EE1678}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="721305872"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_06" ID="{E3A135ED-AEE7-4020-91F7-709CE0EE1678}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Crystals_07" ID="{098A20B7-05FE-484A-94A6-7FC5BE47AD8C}" ShortID="292264235">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Crystals_07" ID="{C2E37905-D6AF-4330-93DF-A956E52F6480}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Crystals_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="112111083"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Crystals_07" ID="{C2E37905-D6AF-4330-93DF-A956E52F6480}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Walk_Sand" ID="{DF52E4FE-F1F3-4EB6-9E29-FECC47994DEE}" ShortID="494787721">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{518AFB81-D1FA-4D46-B846-246EBBFA2B57}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-126"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Walk_Sand_01" ID="{7D5A45E8-CED3-42AE-8003-52E79EF5FFDA}" ShortID="60686244">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_01" ID="{08008F16-B60C-4506-B3B4-0DD078759974}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="755670965"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_01" ID="{08008F16-B60C-4506-B3B4-0DD078759974}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_02" ID="{D40F6262-E523-4AB9-A112-F32D0C316A5D}" ShortID="592475978">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_02" ID="{75876E86-383B-4A45-92A0-78A93162A3C5}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="439535126"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_02" ID="{75876E86-383B-4A45-92A0-78A93162A3C5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_03" ID="{A57EBAA4-ED86-4B14-B08B-C61DE26756F0}" ShortID="504633277">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_03" ID="{7EAB02C5-B219-4C15-83DC-3462D84E6E9B}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1005515632"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_03" ID="{7EAB02C5-B219-4C15-83DC-3462D84E6E9B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_04" ID="{CA76E932-6A75-4CE7-AA0E-30B44AF04EEC}" ShortID="562498204">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_04" ID="{07F7C377-57F8-4E7A-8931-22BA90065C91}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="898881083"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_04" ID="{07F7C377-57F8-4E7A-8931-22BA90065C91}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_05" ID="{A13EBD75-BCB4-4722-9449-FD93A7B3A9FB}" ShortID="921254740">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_05" ID="{E77D731F-35E1-495C-B33C-030A3F5EA066}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="996596447"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_05" ID="{E77D731F-35E1-495C-B33C-030A3F5EA066}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_06" ID="{477A2466-3F09-4666-B133-C98E2B2F31D4}" ShortID="605788786">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_06" ID="{B3107B4D-0D5E-426B-AC7C-AA323F4A055B}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="304716894"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_06" ID="{B3107B4D-0D5E-426B-AC7C-AA323F4A055B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Sand_07" ID="{56714E48-EB4F-458D-94EB-A81634E18BF4}" ShortID="793460675">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Sand_07" ID="{8D1D7BC6-B2F9-43BB-B121-315A6C668347}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Sand_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="593656954"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Sand_07" ID="{8D1D7BC6-B2F9-43BB-B121-315A6C668347}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Remi_Walk_Vegetation" ID="{54C3A630-B21B-4418-9480-ABAECCBB1F95}" ShortID="788941606">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8B907FC0-B210-48DB-9509-40AD3956EC22}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-152"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="REMI_Walk_Vegetation_01" ID="{974E13DC-1446-4724-84E4-763295EAD4CB}" ShortID="966856035">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_01" ID="{85B2F25D-B414-4ADD-8FC9-4CB8541990DC}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="968009700"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_01" ID="{85B2F25D-B414-4ADD-8FC9-4CB8541990DC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_02" ID="{0AA9F70F-54A9-4F4B-A7E5-D9E305BAEE16}" ShortID="698754261">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_02" ID="{9BF5F810-0392-4F57-9B4F-E3D650E3C70F}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="107393888"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_02" ID="{9BF5F810-0392-4F57-9B4F-E3D650E3C70F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_03" ID="{4C361802-209D-454A-A769-B8ABD4579CC7}" ShortID="669694449">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_03" ID="{6D69D46D-4551-4C9D-9FF3-31FC1F43A19F}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="88710366"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_03" ID="{6D69D46D-4551-4C9D-9FF3-31FC1F43A19F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_04" ID="{AB3D1A3D-BE5B-4D62-8AA2-CAB10CD72268}" ShortID="82384718">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_04" ID="{CD34B8E7-3866-4F6D-ACFE-893A0A420BE2}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="793506391"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_04" ID="{CD34B8E7-3866-4F6D-ACFE-893A0A420BE2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_05" ID="{02017FAD-F1F5-4CDD-8129-A10897EE168C}" ShortID="972091153">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_05" ID="{4C43CA04-8BB2-4EA8-A538-C30A88BF5C1A}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="780473829"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_05" ID="{4C43CA04-8BB2-4EA8-A538-C30A88BF5C1A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_06" ID="{2AFBEF35-F383-4AF1-A5AC-E110D9866670}" ShortID="600515982">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_06" ID="{1E7BA44F-7EA5-4FD4-9F93-879EA7D491B6}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="871895346"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_06" ID="{1E7BA44F-7EA5-4FD4-9F93-879EA7D491B6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="REMI_Walk_Vegetation_07" ID="{7E8B1190-3C5D-45F2-AAFD-AA47D576F35E}" ShortID="918468205">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="REMI_Walk_Vegetation_07" ID="{EDA7B1DA-8704-4492-908B-FF55CED7DA18}">
+																	<Language>SFX</Language>
+																	<AudioFile>REMI_Walk_Vegetation_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="278750658"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="REMI_Walk_Vegetation_07" ID="{EDA7B1DA-8704-4492-908B-FF55CED7DA18}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Walk_Vegetation" ID="{54C3A630-B21B-4418-9480-ABAECCBB1F95}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Walk_Corals" ID="{BEA26060-846D-4B1C-8847-4114AA1AC59F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Walk_Crystals" ID="{71175FC1-E3E3-4F3D-B4AD-087A73A34EE3}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Foley_Remi_Walk_Sand" ID="{DF52E4FE-F1F3-4EB6-9E29-FECC47994DEE}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Crystals" ID="{46C3AC2C-470E-44E9-8FBF-44A262F18491}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Walk_Crystals" ID="{71175FC1-E3E3-4F3D-B4AD-087A73A34EE3}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Sand" ID="{692CDE5B-2217-4903-95DF-9E86FC9124FA}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Walk_Sand" ID="{DF52E4FE-F1F3-4EB6-9E29-FECC47994DEE}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Corals" ID="{33230FFC-78F4-4F00-AFA0-088D09C618FC}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Walk_Corals" ID="{BEA26060-846D-4B1C-8847-4114AA1AC59F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Vegetation" ID="{AFFE9DFC-9252-4866-A84A-2EB21A33C1DC}"/>
+														<ItemList>
+															<ItemRef Name="Foley_Remi_Walk_Vegetation" ID="{54C3A630-B21B-4418-9480-ABAECCBB1F95}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<RandomSequenceContainer Name="Foley_Remi_Walk_Movements" ID="{D1C94989-DC78-4200-8D0B-47CCA6F67161}" ShortID="572538772">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D5EC9B6C-6BC5-4033-BE76-955944A58D23}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-152"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="REMI_Walk_HardSurface_01" ID="{298B4134-BEC5-46E9-8373-854484C27D9B}" ShortID="1053162788">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_01" ID="{46F1CDF2-1B4D-409D-83D9-7E51017FB718}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="646440740"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_01" ID="{46F1CDF2-1B4D-409D-83D9-7E51017FB718}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_02" ID="{2DBEC5DE-AF69-457A-9CA9-9EC6E8823E5B}" ShortID="204079420">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_02" ID="{5B1ACE28-B17E-4DFA-81A0-E95A5FF6170D}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="505311545"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_02" ID="{5B1ACE28-B17E-4DFA-81A0-E95A5FF6170D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_03" ID="{57988585-4647-4946-8917-33D72575BD7C}" ShortID="59512940">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_03" ID="{7900B375-EBE9-4E94-AC57-42F39F83E692}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="411515914"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_03" ID="{7900B375-EBE9-4E94-AC57-42F39F83E692}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_04" ID="{15AE416B-30D6-451B-9B3B-AFC95715D7CB}" ShortID="265746252">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_04" ID="{14410F07-124D-4D5F-9420-62674FDC459F}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="774271186"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_04" ID="{14410F07-124D-4D5F-9420-62674FDC459F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_05" ID="{7DE88EE2-F952-499C-A340-FC8FD9297427}" ShortID="159444514">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_05" ID="{CCF729BC-4017-41DF-A34D-F466E4A642FB}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="124003154"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_05" ID="{CCF729BC-4017-41DF-A34D-F466E4A642FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_06" ID="{FABB6B46-32AB-480D-B02A-B7011B904C94}" ShortID="69832758">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_06" ID="{6747EF9A-AB6C-4195-8F96-EDEF29796865}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1032558133"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_06" ID="{6747EF9A-AB6C-4195-8F96-EDEF29796865}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="REMI_Walk_HardSurface_07" ID="{BD174BE0-7165-42BE-8995-CDBD0837DBBE}" ShortID="357685652">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="REMI_Walk_HardSurface_07" ID="{B913F892-51B4-4B0B-9217-B7AAEEE78B71}">
+															<Language>SFX</Language>
+															<AudioFile>REMI_Walk_HardSurface_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="798577108"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="REMI_Walk_HardSurface_07" ID="{B913F892-51B4-4B0B-9217-B7AAEEE78B71}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
