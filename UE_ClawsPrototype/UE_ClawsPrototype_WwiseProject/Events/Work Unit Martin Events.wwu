@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Work Unit Martin Events" ID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Work Unit Martin Events" ID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Boxing" ID="{0B81FE85-A86C-4670-AA63-81F3D1416664}" ShortID="935645997">
+					<ChildrenList>
+						<Event Name="Play_Boxing_JumpedOn" ID="{9DEA2DC2-3EDC-4840-8313-3B871F37CF18}">
+							<ChildrenList>
+								<Action Name="" ID="{B5A67A22-4F7B-422A-BF22-8E1ED12AAAA7}" ShortID="96839644">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boxing_JumpedOn" ID="{1561F1A0-A699-440F-BEBD-FD5A99E990EC}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boxing_Fills" ID="{6AF3AA5A-AC58-4649-BD23-765F5FCBDDAC}">
+							<ChildrenList>
+								<Action Name="" ID="{41B9A877-E7F9-410E-ABB4-37307F306CDE}" ShortID="498094588">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BOXING_Fills" ID="{F5F4C6D5-31E5-4122-9BE7-5C74220E4AA8}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boxing_Bumps" ID="{9AAEF49C-980D-44B6-84C4-6051418F1661}">
+							<ChildrenList>
+								<Action Name="" ID="{F9B08DC3-2DA0-45AA-A8A6-662428DF19D6}" ShortID="611001375">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BOXING_Bumps" ID="{BE95BE03-0AAD-4D0B-B763-FF848BD43122}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Anemone" ID="{76C85392-35C3-4AA2-BD8F-2AB605B9686B}" ShortID="129419728">
+					<ChildrenList>
+						<Event Name="Play_Anemone_Idle" ID="{880BD0DB-A288-4CBB-A625-57955950795D}">
+							<ChildrenList>
+								<Action Name="" ID="{C27A6B8D-E30A-4A27-81C9-45DDF0197127}" ShortID="614993158">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANEMONE_Idle_Wet" ID="{B1B37FDA-78E5-42D1-841C-B7718FBD4348}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Anemone_JumpedOn" ID="{DC259A80-17A2-4CB4-8832-2234B2C75272}">
+							<ChildrenList>
+								<Action Name="" ID="{3451F328-348A-45B2-A0F8-99A403598825}" ShortID="946728400">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Anemone_WaterClawed" ID="{A4604A12-9D4F-404E-B883-06CAB560A09D}">
+							<ChildrenList>
+								<Action Name="" ID="{E2C5EE32-716D-475B-85B7-FA3516A7D1A4}" ShortID="313988861">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Anemone_Empties" ID="{DB760B28-232D-46E1-998D-2C9385D19791}">
+							<ChildrenList>
+								<Action Name="" ID="{9FF4DAF6-A696-42F0-997D-067369413EA7}" ShortID="557280922">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANEMONE_Empties" ID="{DC983A2E-15D4-496C-AB69-166F0E2C4A38}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Pissou" ID="{54783791-23C5-4CB1-A31B-F5B5A689EEA8}" ShortID="803168195">
+					<ChildrenList>
+						<Event Name="Play_Pissou_Empties" ID="{98F6100F-110A-47EE-BE06-2A372A6A58D2}">
+							<ChildrenList>
+								<Action Name="" ID="{215CC0A0-C4CE-4928-8C3C-6A326E69E1BF}" ShortID="432026902">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PISSOU_Empties" ID="{F285FCAE-1B5E-479D-8B0F-DC4A5F2C2AF3}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pissou_Fills" ID="{534EC101-7B2A-44CB-ACE2-E6ADB0EDD2C6}">
+							<ChildrenList>
+								<Action Name="" ID="{08E6B615-045D-499D-A1E3-70EC544375C5}" ShortID="74717967">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PISSOU_Fills" ID="{2CF6CDC1-05F7-47FE-B190-E29E4AB75076}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

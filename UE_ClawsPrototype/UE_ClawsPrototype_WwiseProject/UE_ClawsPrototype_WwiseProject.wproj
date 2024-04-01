@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.1" WwiseBuild="8417">
+<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.0" WwiseBuild="8367">
 	<ProjectInfo>
 		<Project Name="UE_ClawsPrototype_WwiseProject" ID="{97D65703-1023-404C-AAA9-2C0A640AD00A}">
 			<Platforms>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" SchemaVersion="119" RootDocumentID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}" ParentDocumentID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}">
+	<AudioObjects>
+		<WorkUnit Name="Anemone" ID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" OwnerID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="AnemoneMixer" ID="{1D1F4769-26C4-4C40-B315-A5C7244020FF}" ShortID="852345328">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="ANEMONE_Idle_Wet" ID="{B1B37FDA-78E5-42D1-841C-B7718FBD4348}" ShortID="60625148">
+							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ANEMONE_Idle_Wet_01" ID="{DC839B34-00B3-4DF9-8123-9092EA833C1D}" ShortID="110029618">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_Idle_Wet_01" ID="{6BAD606C-5E75-4157-84E7-01E95AE3758E}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_Idle_Wet_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="638553600"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_Idle_Wet_01" ID="{6BAD606C-5E75-4157-84E7-01E95AE3758E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANEMONE_Idle_Wet_02" ID="{822BA9F2-6D8E-43D5-A996-B3DF9638EAA1}" ShortID="228160038">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_Idle_Wet_02" ID="{348CCFA6-1A82-47A6-9C6C-4B2B29E0AD71}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_Idle_Wet_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="307661730"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_Idle_Wet_02" ID="{348CCFA6-1A82-47A6-9C6C-4B2B29E0AD71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANEMONE_Idle_Wet_03" ID="{686A0DF2-039A-4898-99FE-A1DFE65F4DE6}" ShortID="1031331151">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_Idle_Wet_03" ID="{EBB04EF5-6CD4-46A0-A753-AB13FB15B6A1}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_Idle_Wet_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="325113557"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_Idle_Wet_03" ID="{EBB04EF5-6CD4-46A0-A753-AB13FB15B6A1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANEMONE_Idle_Wet_04" ID="{C56A636F-D008-4F38-A4F3-9C75714761C6}" ShortID="725637575">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_Idle_Wet_04" ID="{244F2688-B6C9-448F-B657-D185DCF7A7A2}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_Idle_Wet_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="426989546"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_Idle_Wet_04" ID="{244F2688-B6C9-448F-B657-D185DCF7A7A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="ANEMONE_Empties" ID="{DC983A2E-15D4-496C-AB69-166F0E2C4A38}" ShortID="338524090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANEMONE_Empties" ID="{25922CBD-53E2-4CC4-A5A4-FD79C8BA46CF}">
+									<Language>SFX</Language>
+									<AudioFile>ANEMONE_Empties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="477986519"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANEMONE_Empties" ID="{25922CBD-53E2-4CC4-A5A4-FD79C8BA46CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" ShortID="459712093">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}" ShortID="174435946">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_JumpedOn_Wet" ID="{1AB28991-DB54-4B3E-80FB-A7C51C677DAB}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_JumpedOn_Wet.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="263367464"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_JumpedOn_Wet" ID="{1AB28991-DB54-4B3E-80FB-A7C51C677DAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}" ShortID="578358291">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_JumpedOn_Dry" ID="{652A8899-7156-4CBD-95B4-AC7798F826EF}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_JumpedOn_Dry.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="140388533"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_JumpedOn_Dry" ID="{652A8899-7156-4CBD-95B4-AC7798F826EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" ShortID="109218555">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ANEMONE_WaterClaw_Dry" ID="{9F01A2BD-8460-41B9-9ECC-D6B18630BC8A}" ShortID="704010946">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_WaterClaw_Dry" ID="{E9280478-D51E-4292-A27E-03C1A856FC1C}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_WaterClaw_Dry.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620237042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_WaterClaw_Dry" ID="{E9280478-D51E-4292-A27E-03C1A856FC1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}" ShortID="729675609">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANEMONE_WaterClaw_Wet" ID="{99732FB6-9226-4F4E-80BB-51A16BF30C10}">
+											<Language>SFX</Language>
+											<AudioFile>ANEMONE_WaterClaw_Wet.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="416891992"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANEMONE_WaterClaw_Wet" ID="{99732FB6-9226-4F4E-80BB-51A16BF30C10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ANEMONE_WaterClaw_Dry" ID="{9F01A2BD-8460-41B9-9ECC-D6B18630BC8A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

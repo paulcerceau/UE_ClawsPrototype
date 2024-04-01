@@ -6,6 +6,10 @@
 				<Property Name="Color" Type="int16" Value="11"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Anemone" ID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" PersistMode="Reference"/>
+				<WorkUnit Name="Pissou" ID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}" PersistMode="Reference"/>
+			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
