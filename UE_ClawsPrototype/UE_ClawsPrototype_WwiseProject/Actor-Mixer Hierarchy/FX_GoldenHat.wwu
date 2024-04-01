@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}" SchemaVersion="119" RootDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" ParentDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}">
+	<AudioObjects>
+		<WorkUnit Name="FX_GoldenHat" ID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}" OwnerID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" PersistMode="Nested"/>
+	</AudioObjects>
+</WwiseDocument>

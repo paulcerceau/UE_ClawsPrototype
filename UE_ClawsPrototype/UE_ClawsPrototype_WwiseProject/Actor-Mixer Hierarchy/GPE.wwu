@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="GPE" ID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

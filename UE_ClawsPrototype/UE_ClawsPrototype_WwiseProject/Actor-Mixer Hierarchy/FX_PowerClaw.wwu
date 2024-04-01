@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}" SchemaVersion="119" RootDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" ParentDocumentID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}">
+	<AudioObjects>
+		<WorkUnit Name="FX_PowerClaw" ID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}" OwnerID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="FX_PowerClaw_Mix" ID="{D845D2D6-1C1C-4154-957B-AD01FF745910}" ShortID="727893182">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="FX_Powerclaw" ID="{7565B908-0B60-4FE2-B3C5-7E952A3355CE}" ShortID="103832245">
+							<ChildrenList>
+								<RandomSequenceContainer Name="FX_Powerclaw_Deploying" ID="{35B2C58F-11A4-42C6-841D-5ABBF2FCA556}" ShortID="122522581">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C1FFD09A-2796-434B-BB0A-94D1D14E49F9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-500"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="POWERCLAW_Deploying_01" ID="{5C1201C7-FE88-4901-AF39-F23B00B1ADEB}" ShortID="333842473">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_01" ID="{FE4B486A-7243-43D1-BF34-1EF8DB41098A}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="905417769"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_01" ID="{FE4B486A-7243-43D1-BF34-1EF8DB41098A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Deploying_02" ID="{BB595C8F-4210-4083-85F9-2BE24A0D474C}" ShortID="1071041965">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_02" ID="{EB0B6361-74EA-4C01-AA5C-0853EAF4A60C}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624886003"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_02" ID="{EB0B6361-74EA-4C01-AA5C-0853EAF4A60C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Deploying_03" ID="{1197D3DC-3FD2-4EA8-9217-A4022143CCA7}" ShortID="990413304">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_03" ID="{D36C2121-71E4-4F43-9CA4-988068C84BA2}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="653078776"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_03" ID="{D36C2121-71E4-4F43-9CA4-988068C84BA2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Deploying_04" ID="{95C89FC9-A36A-4782-B02C-5AB5E4776063}" ShortID="558463181">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_04" ID="{45923F35-E8E5-4673-9025-E7D3D347624D}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="230620629"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_04" ID="{45923F35-E8E5-4673-9025-E7D3D347624D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Deploying_05" ID="{45F127F9-1850-41E4-AEFA-E354DDE548C8}" ShortID="111206946">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_05" ID="{F13E0C8C-C1FA-44FC-9F8B-7363E049A3EE}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="189337946"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_05" ID="{F13E0C8C-C1FA-44FC-9F8B-7363E049A3EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Deploying_06" ID="{AB331A7D-89BE-4B5D-98BF-D219B9D16E8A}" ShortID="964006925">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Deploying_06" ID="{7B66C9BD-E4E9-4D9E-90A7-EA114DA87A2B}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Deploying_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="302688598"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Deploying_06" ID="{7B66C9BD-E4E9-4D9E-90A7-EA114DA87A2B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="FX_Powerclaw_Hit" ID="{F0984DDF-68F2-421B-BBA9-EF1843E5800C}" ShortID="1007359940">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="FX_Powerclaw_Hit_Nothing" ID="{F569C006-CF45-4E62-BA9F-53E577987F02}" ShortID="519104198">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{186FEA44-7BD3-456B-9ABC-F0E8D74417C7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="POWERCLAW_No_Hit_01" ID="{72425691-617F-45C0-86E4-75877AF3292C}" ShortID="584598778">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_01" ID="{DA9DCC85-B651-4436-A921-C3446005EEB6}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="666428243"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_01" ID="{DA9DCC85-B651-4436-A921-C3446005EEB6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_No_Hit_02" ID="{883FA928-151B-4F62-99A1-7B986EF37181}" ShortID="415611197">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_02" ID="{E0764C4D-1460-4D9F-83EA-08FFE44B4DB5}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="136525551"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_02" ID="{E0764C4D-1460-4D9F-83EA-08FFE44B4DB5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_No_Hit_03" ID="{2E766480-3CAA-4C81-8B58-833E241EF675}" ShortID="858757896">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_03" ID="{E6CAC450-D486-4A92-B159-3B3D1C8E3CF6}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="881909881"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_03" ID="{E6CAC450-D486-4A92-B159-3B3D1C8E3CF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_No_Hit_04" ID="{819E8F65-1086-4E14-9290-677679969127}" ShortID="529835846">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_04" ID="{29BB9B2D-54CC-4AFE-B659-DC2BFAA6199F}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="825516958"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_04" ID="{29BB9B2D-54CC-4AFE-B659-DC2BFAA6199F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_No_Hit_05" ID="{91DD37A4-B9E1-4065-A5E5-21F4F1EF9DFB}" ShortID="175583079">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_05" ID="{897FA7F8-3372-4765-A797-9C7B54F5596E}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="335312547"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_05" ID="{897FA7F8-3372-4765-A797-9C7B54F5596E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_No_Hit_06" ID="{133B2C95-A933-4E3F-83B9-FCBA09961DCE}" ShortID="254269207">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_No_Hit_06" ID="{944F97F4-D050-4924-89E2-49AA1256FAF5}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_No_Hit_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="602904386"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_No_Hit_06" ID="{944F97F4-D050-4924-89E2-49AA1256FAF5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FX_Powerclaw_Hit_Fail" ID="{2A698C43-6091-473D-BC2D-7E1DC3BD5A5A}" ShortID="379159267">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FA33492A-34DC-472A-B50D-C3657964BCE9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="POWERCLAW_HitFail_01" ID="{6539F0BD-CEA4-4A04-A311-9C28158A13DC}" ShortID="900968806">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_01" ID="{A618FB58-F825-40B2-A408-5E7CD4CEA1D8}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1014996887"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_01" ID="{A618FB58-F825-40B2-A408-5E7CD4CEA1D8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitFail_02" ID="{A941B55C-9896-497F-AA96-B944282291FA}" ShortID="604433553">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_02" ID="{83E4B018-B054-42F2-92A4-493317FA4651}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="112202913"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_02" ID="{83E4B018-B054-42F2-92A4-493317FA4651}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitFail_03" ID="{4CEEB01A-3049-48C3-9181-EEB5BE2D27A7}" ShortID="623888216">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_03" ID="{539BB95D-0475-49AB-AB28-CE38B40B3D3C}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="830223609"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_03" ID="{539BB95D-0475-49AB-AB28-CE38B40B3D3C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitFail_04" ID="{40DDC0E5-8113-4ABA-BA39-6EF5E876B297}" ShortID="965752177">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_04" ID="{1653AE8A-9691-4E1C-8E99-A4DE09DE22E7}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="909348170"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_04" ID="{1653AE8A-9691-4E1C-8E99-A4DE09DE22E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitFail_05" ID="{388DD291-A4D6-487F-AB93-08E853C716D3}" ShortID="961654728">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_05" ID="{DA993A4C-90AE-463F-A4B8-F0C2F64D4EF8}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="815250102"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_05" ID="{DA993A4C-90AE-463F-A4B8-F0C2F64D4EF8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitFail_06" ID="{9B197E65-5DB4-46A5-91D8-3CFA465D3C3A}" ShortID="507059644">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitFail_06" ID="{9A022156-0769-4F9A-A0FB-CA73861E2861}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitFail_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="142239864"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitFail_06" ID="{9A022156-0769-4F9A-A0FB-CA73861E2861}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FX_Powerclaw_Hit_Success" ID="{44D68AEF-E316-4BE2-8512-569741A57AFC}" ShortID="797500941">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{722A2C13-0202-4924-A403-D6F08C9AC1F7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="POWERCLAW_HitSuccess_01" ID="{EFB9095E-ED4A-4318-A723-FA04FFA43B8C}" ShortID="1006397924">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_01" ID="{D5FAEABD-6513-4B4D-B0A9-DBF863C9B97B}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1019310611"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_01" ID="{D5FAEABD-6513-4B4D-B0A9-DBF863C9B97B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitSuccess_02" ID="{C6010972-47C7-4109-86CD-A9446E7A748A}" ShortID="784951697">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_02" ID="{5AA354D1-88CB-4475-ACC6-F1D27E166E1E}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="496630311"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_02" ID="{5AA354D1-88CB-4475-ACC6-F1D27E166E1E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitSuccess_03" ID="{DAD4ECF5-2938-47AD-92B7-E5AAB2CD6DA7}" ShortID="619531465">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_03" ID="{E7A58E46-76E8-4AD6-97A8-24EA1EFB7652}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1041010801"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_03" ID="{E7A58E46-76E8-4AD6-97A8-24EA1EFB7652}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitSuccess_04" ID="{2CE461D5-6D64-46F2-937E-43275790AE98}" ShortID="1044553850">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_04" ID="{C1180477-93B6-4ECC-87BA-06F5EFAFA9F4}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="590012328"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_04" ID="{C1180477-93B6-4ECC-87BA-06F5EFAFA9F4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitSuccess_05" ID="{E50C616F-1563-4126-AD40-2956343E7E77}" ShortID="674570470">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_05" ID="{4B9081B7-B064-4649-B320-6B6A98667D9E}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1048140003"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_05" ID="{4B9081B7-B064-4649-B320-6B6A98667D9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="POWERCLAW_HitSuccess_06" ID="{F2CAA8AF-9696-4831-AEB4-DAE14025FEFF}" ShortID="326697463">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="POWERCLAW_HitSuccess_06" ID="{6F21F809-7691-4B41-9F6A-322FBD2E8D96}">
+															<Language>SFX</Language>
+															<AudioFile>POWERCLAW_HitSuccess_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="44406965"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="POWERCLAW_HitSuccess_06" ID="{6F21F809-7691-4B41-9F6A-322FBD2E8D96}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{DB3C238D-5318-41BD-A33E-26892822CF0B}" ShortID="233856999">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Hit_Type" ID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}" WorkUnitID="{7594C175-FD40-4AF0-815A-E79B9808299B}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FX_Powerclaw_Hit_Nothing" ID="{F569C006-CF45-4E62-BA9F-53E577987F02}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>0.9</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FX_Powerclaw_Hit_Fail" ID="{2A698C43-6091-473D-BC2D-7E1DC3BD5A5A}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0.9</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>1.9</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FX_Powerclaw_Hit_Success" ID="{44D68AEF-E316-4BE2-8512-569741A57AFC}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1.9</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="FX_Powerclaw_Retracting" ID="{48253868-0071-4D29-B278-EE78C39709B2}" ShortID="57485058">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{07D8827C-3C33-4EF2-8CF1-73228D71DA09}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-500"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="POWERCLAW_Retracting_06" ID="{3E2BE5AC-52FE-459D-95DA-EAAEBFCA311F}" ShortID="1070723684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_06" ID="{8FB2A00D-BB96-4273-8066-979437994907}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="800482599"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_06" ID="{8FB2A00D-BB96-4273-8066-979437994907}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Retracting_02" ID="{9B5E5A33-2616-43F1-8C77-94B64BFA9E69}" ShortID="561806812">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_02" ID="{B3590C34-51AE-4A05-82FD-F31DA3781595}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="464318529"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_02" ID="{B3590C34-51AE-4A05-82FD-F31DA3781595}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Retracting_01" ID="{4C4D3244-75EB-4091-A7B7-649B86F4EC86}" ShortID="811541728">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_01" ID="{F1277E93-0B36-41A6-9892-C7D882FE84EE}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1009486592"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_01" ID="{F1277E93-0B36-41A6-9892-C7D882FE84EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Retracting_03" ID="{F6431CDD-5716-47BD-89B0-041A1E322C9E}" ShortID="12483547">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_03" ID="{9458529E-8D6D-4421-98FC-94198E5A4729}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910913181"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_03" ID="{9458529E-8D6D-4421-98FC-94198E5A4729}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Retracting_04" ID="{95E2D510-260B-4CE5-B035-F82CD05398E2}" ShortID="132176098">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_04" ID="{D0CA9D8D-8B5A-4C48-9668-56D34145B7B1}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="577789"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_04" ID="{D0CA9D8D-8B5A-4C48-9668-56D34145B7B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POWERCLAW_Retracting_05" ID="{51B13F28-83A8-4083-9A1F-A300CE5F0E28}" ShortID="909579972">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POWERCLAW_Retracting_05" ID="{3EEB0A83-C0DF-4AF6-88E7-6C34098768BD}">
+													<Language>SFX</Language>
+													<AudioFile>POWERCLAW_Retracting_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22100767"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POWERCLAW_Retracting_05" ID="{3EEB0A83-C0DF-4AF6-88E7-6C34098768BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<RandomSequenceContainer Name="FX_BREAKABLEWALL_PowerClaw" ID="{B5FDEE41-BA39-410A-9CCC-70E6F84145DD}" ShortID="745597038">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B56F0CF0-009C-4743-B4DF-1AD9A8698CD1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{58D84ED5-49D5-4830-9141-BA8F2BD2690D}" ShortID="343451018">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{2CBE271F-DE48-4DAD-8EB4-511DE43A0721}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BREAKABLEWALL_PowerClaw_01" ID="{7EE3AA58-FED0-4219-973D-931D8FA24666}" ShortID="2023614">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BREAKABLEWALL_PowerClaw_01" ID="{742A95A8-F504-4DF2-AF5E-5DBC3214F220}">
+											<Language>SFX</Language>
+											<AudioFile>BREAKABLEWALL_PowerClaw_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709333462"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BREAKABLEWALL_PowerClaw_01" ID="{742A95A8-F504-4DF2-AF5E-5DBC3214F220}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
