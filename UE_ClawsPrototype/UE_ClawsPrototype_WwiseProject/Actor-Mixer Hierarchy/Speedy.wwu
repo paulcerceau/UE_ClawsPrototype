@@ -1,6 +1,518 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}" SchemaVersion="119" RootDocumentID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" ParentDocumentID="{905A051A-B6AE-48B5-A468-C02A85CD8543}">
 	<AudioObjects>
-		<WorkUnit Name="Speedy" ID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}" OwnerID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" PersistMode="Nested"/>
+		<WorkUnit Name="Speedy" ID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}" OwnerID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Speedy_Mix" ID="{4742B5F4-A758-44B3-B3C2-7BEB1EA6A77F}" ShortID="826507933">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{0ED68BBE-D604-4D0E-8B0A-12798B8E4AA9}" ShortID="984556527">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="10000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{256D63DC-FFF3-495F-942B-DA244E2F0E74}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>10000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="SPEEDY_Grab" ID="{99187177-4E9E-4055-8B7D-E257DE4DB3FA}" ShortID="762764675">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPEEDY_Grab_04" ID="{C5F4C005-2BBB-44F5-A869-0B4C29C9E721}" ShortID="653451718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_04" ID="{668A5D5A-3AB3-40B4-80A7-8A2266E262CF}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="820438305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_04" ID="{668A5D5A-3AB3-40B4-80A7-8A2266E262CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Grab_01" ID="{A0989EC5-EE09-43A8-A1D5-B1DE91FEE0D0}" ShortID="1030828514">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_01" ID="{AC953BA5-3A0A-4E49-9AEA-5DBB02C85828}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404099507"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_01" ID="{AC953BA5-3A0A-4E49-9AEA-5DBB02C85828}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Grab_05" ID="{DB9F75AA-008E-4B64-8E10-3A516F745B84}" ShortID="995392231">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_05" ID="{8B7AA7AB-0A7C-4D3B-BACB-FDB0697AF133}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710021424"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_05" ID="{8B7AA7AB-0A7C-4D3B-BACB-FDB0697AF133}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Grab_02" ID="{0B5277E2-9B77-4E11-A00B-1242CE7C36C2}" ShortID="232317968">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_02" ID="{9B15525C-DC19-42DE-BC4D-E7C8EC6C8DA4}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="283508980"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_02" ID="{9B15525C-DC19-42DE-BC4D-E7C8EC6C8DA4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Grab_03" ID="{BA51F967-9CD4-4841-AC61-C0CEF7DD4045}" ShortID="950890137">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_03" ID="{D0E1F998-A2F3-4E8A-9BA7-DAAF0CF099D1}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1006334305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_03" ID="{D0E1F998-A2F3-4E8A-9BA7-DAAF0CF099D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Grab_06" ID="{1DCB8880-787B-4B4D-B4C0-A365A5AB415D}" ShortID="920763013">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Grab_06" ID="{3262E2DA-43B7-4B85-82F0-10398376307D}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Grab_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="164496278"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Grab_06" ID="{3262E2DA-43B7-4B85-82F0-10398376307D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPEEDY_Throw" ID="{5B817A05-55C7-4625-BC7B-E7608FA6671E}" ShortID="459303230">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPEEDY_Throw_01" ID="{EA10F647-AD9C-4E96-8E4F-9BEC0AD3468C}" ShortID="463572333">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Throw_01" ID="{BC456DE1-A6C5-4102-8C88-032FC4938BBC}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Throw_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="988111518"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Throw_01" ID="{BC456DE1-A6C5-4102-8C88-032FC4938BBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Throw_02" ID="{B4487ABB-71F9-4FD9-BA74-B15D0ED30069}" ShortID="890579977">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Throw_02" ID="{42A13B52-8D50-4616-970A-3D649E906975}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Throw_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="196612665"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Throw_02" ID="{42A13B52-8D50-4616-970A-3D649E906975}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Throw_03" ID="{3E9E0F10-6721-49B1-90C5-416FC00FE0B5}" ShortID="58483340">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Throw_03" ID="{A79CECC2-F069-4AD9-BFB9-E9E49B7B336B}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Throw_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1032817100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Throw_03" ID="{A79CECC2-F069-4AD9-BFB9-E9E49B7B336B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPEEDY_WaterClaw" ID="{75C82F4C-98F0-4BFC-98DE-1AA36A059481}" ShortID="843870862">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPEEDY_WaterClaw_01" ID="{555527B4-14CF-4E88-8187-E5B8ACA53FBA}" ShortID="603806315">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_WaterClaw_01" ID="{1FD83F7D-5B17-45D3-BCA8-541127FBC4F5}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_WaterClaw_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="411420749"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_WaterClaw_01" ID="{1FD83F7D-5B17-45D3-BCA8-541127FBC4F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_WaterClaw_02" ID="{43516D25-CEC0-4241-AEBF-16E560F86414}" ShortID="992839892">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_WaterClaw_02" ID="{326E1591-C20F-47DD-BA4B-A3293AAB417F}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_WaterClaw_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="424756746"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_WaterClaw_02" ID="{326E1591-C20F-47DD-BA4B-A3293AAB417F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_WaterClaw_03" ID="{45E6F42B-E5E0-456C-8326-F5F5AD25A21D}" ShortID="957831918">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_WaterClaw_03" ID="{F547E582-65A7-4450-A5B6-D91883371D4B}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_WaterClaw_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916144317"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_WaterClaw_03" ID="{F547E582-65A7-4450-A5B6-D91883371D4B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SPEEDY_Idle_Dry_LP" ID="{88F846E7-9352-430B-9858-EC0268364C89}" ShortID="231029385">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SPEEDY_Idle_Dry_LP" ID="{1AB18C26-D94B-4391-A67D-FBDB0815E052}">
+									<Language>SFX</Language>
+									<AudioFile>SPEEDY_Idle_Dry_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="399753110"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SPEEDY_Idle_Dry_LP" ID="{1AB18C26-D94B-4391-A67D-FBDB0815E052}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SPEEDY_Idle_Wet_LP" ID="{1CFAD8E0-60DF-44F1-811A-3450B0C72F92}" ShortID="327535693">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SPEEDY_Idle_Wet_LP" ID="{EBCF120E-B82C-4A61-8791-B21298A408F3}">
+									<Language>SFX</Language>
+									<AudioFile>SPEEDY_Idle_Wet_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="638742320"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SPEEDY_Idle_Wet_LP" ID="{EBCF120E-B82C-4A61-8791-B21298A408F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SPEEDY_Transition_Wet-Dry" ID="{F1C013ED-BEFA-473D-8835-5FD61A475E3C}" ShortID="616260897">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SPEEDY_Transition_Wet-Dry" ID="{D2794C38-D763-407C-B0D1-9EC105663170}">
+									<Language>SFX</Language>
+									<AudioFile>SPEEDY_Transition_Wet-Dry.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="135214654"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SPEEDY_Transition_Wet-Dry" ID="{D2794C38-D763-407C-B0D1-9EC105663170}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SPEEDY_Walk_LP" ID="{61C9BBD1-5437-420D-833B-06246154507F}" ShortID="1033742308">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SPEEDY_Walk_LP" ID="{BA62BB56-8D7D-4D08-A2B9-189A275FFD35}">
+									<Language>SFX</Language>
+									<AudioFile>SPEEDY_Walk_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="583472645"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SPEEDY_Walk_LP" ID="{BA62BB56-8D7D-4D08-A2B9-189A275FFD35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

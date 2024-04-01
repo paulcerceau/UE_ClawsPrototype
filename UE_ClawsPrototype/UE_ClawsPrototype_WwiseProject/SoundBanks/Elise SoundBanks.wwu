@@ -6,8 +6,49 @@
 				<SoundBank Name="Powerclaw" ID="{CB4F4904-31FE-415E-A997-DA35425A86FA}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Powerclaw_Retracting" ID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Powerclaw_Hit" ID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Powerclaw_Hit_Fail" ID="{5616EC86-743D-4A7F-B4B5-BE93A6071B8E}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Powerclaw_Hit_Nothing" ID="{EE97405F-8F2D-4DE3-B11E-2DE348AEA83B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Powerclaw_Hit_Success" ID="{3A56087E-A6EA-4E9A-8630-8356D4FA214A}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="BreakableWall" ID="{E7368008-1240-4626-8B7B-D6A1C88A13DF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_BREAKABLEWALL_PowerClaw" ID="{075BB087-F9FE-4E59-B346-0AE775269933}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Spiky" ID="{61B7A1FF-60BF-4CF5-83B5-099CE768F3F4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_SPIKY_Unhides" ID="{C95DDA7D-66EB-4A93-ABA2-F7F3EE7959B5}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPIKY_Hides" ID="{ACBF325D-E242-4F27-8956-1309ABFED3D4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Speedy" ID="{CD73A57B-2D5F-4753-84C9-7D5CCF389747}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_SPEEDY_Idle_Dry_LP" ID="{AB6C1309-5DC2-4032-BE26-0E22D4D58626}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Walk_LP" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Throw" ID="{8337C9CA-E98A-4237-9DCE-EF757575F09B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Idle_Dry_LP" ID="{97DAA04A-65BA-46EC-B35D-32E1BE9143F4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SPEEDY_Idle_Wet_LP" ID="{A6815D6A-9A89-4A88-B096-65ACB04C6E29}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Grab" ID="{7F9B2C55-0E41-4B9D-8078-98A23BAA5584}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_WaterClaw" ID="{69DF372F-B474-4DFF-8586-678EEA22F5E7}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SPEEDY_Walk_LP" ID="{8B826ACA-D06F-4E9F-969B-8AAA3BBFEA0F}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Idle_Wet_LP" ID="{844F1DE4-216A-4EFF-A0BC-215E3377FF9C}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="DEBUG" ID="{8A68AEE4-5C4E-47A0-B280-9C4EED6D20D8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_DEBUG_SOUND_LP" ID="{A4A9D88D-CC1D-43F2-8F44-2F69C6859852}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DEBUG_SOUND_OS" ID="{34BA237D-3D96-46B9-A373-1E9CC2583648}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
