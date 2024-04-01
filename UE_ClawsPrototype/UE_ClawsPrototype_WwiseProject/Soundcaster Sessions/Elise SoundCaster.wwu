@@ -14,6 +14,30 @@
 							<ObjectRef Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Set_Switch_Speedy_Walk" ID="{7EFB3AA2-C5CB-4B25-834D-47AE7D2A1618}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SPEEDY_Movement" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Switch_Speedy_Rush" ID="{AB003464-60EC-42E7-B65E-8DE700D5C04A}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SPEEDY_Transition_Wet-Dry" ID="{F1C013ED-BEFA-473D-8835-5FD61A475E3C}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -28,6 +52,7 @@
 						<CurrentSwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
 						<CurrentSwitchRef Name="Movements" ID="{60CB6209-D13F-4EB1-B212-7304820CC020}"/>
 						<CurrentSwitchRef Name="Movements" ID="{C00E5C72-AE4D-4213-BCC7-4FE679347035}"/>
+						<CurrentSwitchRef Name="Speedy_Idle_Wet" ID="{5A5A3D08-18F5-406F-8947-917F6389EF11}"/>
 						<CurrentSwitchRef Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

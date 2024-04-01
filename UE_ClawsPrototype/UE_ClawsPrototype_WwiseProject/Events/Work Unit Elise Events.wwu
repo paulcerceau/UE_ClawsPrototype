@@ -64,17 +64,6 @@
 				</Folder>
 				<Folder Name="Speedy" ID="{4C7EEC5D-871A-4711-B182-B146878DCC85}" ShortID="696296789">
 					<ChildrenList>
-						<Event Name="Play_SPEEDY_Idle_Wet_LP" ID="{844F1DE4-216A-4EFF-A0BC-215E3377FF9C}">
-							<ChildrenList>
-								<Action Name="" ID="{3975E7BE-AC7E-47ED-A52E-4F0B8C7D7523}" ShortID="145751155">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Idle_Wet_LP" ID="{1CFAD8E0-60DF-44F1-811A-3450B0C72F92}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}">
 							<ChildrenList>
 								<Action Name="" ID="{9CD92EF1-5898-4F52-A5E8-CEF9FA62BAEB}" ShortID="500431857">
@@ -119,65 +108,68 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SPEEDY_Idle_Dry_LP" ID="{97DAA04A-65BA-46EC-B35D-32E1BE9143F4}">
-							<ChildrenList>
-								<Action Name="" ID="{DD575CA7-8D0C-4D8E-B714-574624D60877}" ShortID="780506762">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Idle_Dry_LP" ID="{88F846E7-9352-430B-9858-EC0268364C89}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SPEEDY_Walk_LP" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}">
+						<Event Name="Play_SPEEDY_Movement" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}">
 							<ChildrenList>
 								<Action Name="" ID="{7719DD15-A54B-405B-BA18-DD83B006D1C5}" ShortID="874401382">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Walk_LP" ID="{61C9BBD1-5437-420D-833B-06246154507F}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+											<ObjectRef Name="SPEEDY_Movement" ID="{A4174FAB-C031-4C4C-8222-34ED25144279}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_SPEEDY_Idle_Dry_LP" ID="{AB6C1309-5DC2-4032-BE26-0E22D4D58626}">
+						<Event Name="Set_Switch_Speedy_Walk" ID="{7EFB3AA2-C5CB-4B25-834D-47AE7D2A1618}">
 							<ChildrenList>
-								<Action Name="" ID="{A92FAA35-1A73-438E-974E-0EA25108870D}" ShortID="242377999">
+								<Action Name="" ID="{A4417B9B-E274-4866-88BC-2E1C45328F05}" ShortID="541204635">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="23"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Idle_Dry_LP" ID="{88F846E7-9352-430B-9858-EC0268364C89}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+											<ObjectRef Name="Speedy_Walk" ID="{620AA2B2-A02F-43B1-A72F-0BE043C3A5ED}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_SPEEDY_Idle_Wet_LP" ID="{A6815D6A-9A89-4A88-B096-65ACB04C6E29}">
+						<Event Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}">
 							<ChildrenList>
-								<Action Name="" ID="{61950BFD-9C07-4B7B-9BB5-A322FAE9189A}" ShortID="1026701818">
+								<Action Name="" ID="{43AA8CD4-63CF-41ED-BC04-683C191E0574}" ShortID="915984046">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="23"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Idle_Wet_LP" ID="{1CFAD8E0-60DF-44F1-811A-3450B0C72F92}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+											<ObjectRef Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_SPEEDY_Walk_LP" ID="{8B826ACA-D06F-4E9F-969B-8AAA3BBFEA0F}">
+						<Event Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}">
 							<ChildrenList>
-								<Action Name="" ID="{11F18362-DE10-45C5-9F40-4E1083CD28F3}" ShortID="169392032">
+								<Action Name="" ID="{348F28A0-9B41-4289-A1C6-7AD5E7AA5F75}" ShortID="824884831">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="23"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SPEEDY_Walk_LP" ID="{61C9BBD1-5437-420D-833B-06246154507F}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+											<ObjectRef Name="Speedy_Idle_Wet" ID="{5A5A3D08-18F5-406F-8947-917F6389EF11}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_Speedy_Rush" ID="{AB003464-60EC-42E7-B65E-8DE700D5C04A}">
+							<ChildrenList>
+								<Action Name="" ID="{CEAA915A-A688-4D6C-8C77-48AB87DCD6DD}" ShortID="194708717">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speedy_Rush" ID="{50E717C5-76F9-4DEE-947D-5226DD361820}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

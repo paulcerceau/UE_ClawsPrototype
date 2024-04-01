@@ -30,16 +30,15 @@
 				</SoundBank>
 				<SoundBank Name="Speedy" ID="{CD73A57B-2D5F-4753-84C9-7D5CCF389747}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_SPEEDY_Idle_Dry_LP" ID="{AB6C1309-5DC2-4032-BE26-0E22D4D58626}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SPEEDY_Walk_LP" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Movement" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Throw" ID="{8337C9CA-E98A-4237-9DCE-EF757575F09B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Switch_Speedy_Rush" ID="{AB003464-60EC-42E7-B65E-8DE700D5C04A}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SPEEDY_Idle_Dry_LP" ID="{97DAA04A-65BA-46EC-B35D-32E1BE9143F4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_SPEEDY_Idle_Wet_LP" ID="{A6815D6A-9A89-4A88-B096-65ACB04C6E29}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Switch_Speedy_Walk" ID="{7EFB3AA2-C5CB-4B25-834D-47AE7D2A1618}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Grab" ID="{7F9B2C55-0E41-4B9D-8078-98A23BAA5584}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_WaterClaw" ID="{69DF372F-B474-4DFF-8586-678EEA22F5E7}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_SPEEDY_Walk_LP" ID="{8B826ACA-D06F-4E9F-969B-8AAA3BBFEA0F}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SPEEDY_Idle_Wet_LP" ID="{844F1DE4-216A-4EFF-A0BC-215E3377FF9C}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
