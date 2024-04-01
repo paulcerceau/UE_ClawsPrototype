@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Baptiste GP" ID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Baptiste GP" ID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Fade_GP" ID="{A282B3F4-781A-45F8-B299-E62546270E68}" ShortID="615330601">
+					<ChildrenList>
+						<Folder Name="Fade_GP_CaveGarden" ID="{FB70366D-D8E9-4CF7-A621-77B9881F23B7}" ShortID="177617092">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_CaveGarden" ID="{A8FC6FD8-7A95-4B8A-9829-EA0116820078}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fade_GP_CaveBlue" ID="{35B45689-B9CC-49EB-AB52-B994DAEB9698}" ShortID="411558270">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_CaveBlue" ID="{743CC903-3094-46AC-B06C-2379BA4E2856}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fade_GP_CavePink" ID="{8E39216A-A6FB-4EC8-8CB7-E1209CF3C6A2}" ShortID="996108836">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_CavePink" ID="{C4500483-934E-42D5-9677-81EA4F581F13}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fade_GP_CavePurple" ID="{73943B10-0D76-41E5-B799-7D35B44FF5A2}" ShortID="235762020">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_CavePurple" ID="{70F3008A-E6A2-47D9-967E-F9603C286408}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fade_GP_CaveForest" ID="{823B8453-6D6C-4711-AA6B-7A116788EA2C}" ShortID="275037966">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_CaveForest" ID="{AC40B43D-E14C-4B7D-A38F-63E150D2900D}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
