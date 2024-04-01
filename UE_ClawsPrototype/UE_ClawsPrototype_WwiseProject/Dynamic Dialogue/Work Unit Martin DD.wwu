@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EEE4C446-4111-4A7C-A2DA-2BA87A7B1B2C}" SchemaVersion="119">
 	<DynamicDialogue>
-		<WorkUnit Name="Work Unit Martin DD" ID="{EEE4C446-4111-4A7C-A2DA-2BA87A7B1B2C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Work Unit Martin DD" ID="{EEE4C446-4111-4A7C-A2DA-2BA87A7B1B2C}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
 	</DynamicDialogue>
 </WwiseDocument>

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C93D1088-CF17-4A38-B90E-011144A4C945}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Martin Switchs" ID="{C93D1088-CF17-4A38-B90E-011144A4C945}" PersistMode="Standalone"/>
+		<WorkUnit Name="Martin Switchs" ID="{C93D1088-CF17-4A38-B90E-011144A4C945}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}">
+					<ChildrenList>
+						<Switch Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+						<Switch Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
