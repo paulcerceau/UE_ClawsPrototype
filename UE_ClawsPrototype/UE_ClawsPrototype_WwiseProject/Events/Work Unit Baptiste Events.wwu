@@ -176,6 +176,60 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="WaterFall" ID="{FF9CD4B5-1AAA-49E6-B6B7-F56F95B4BAB3}" ShortID="375811303">
+							<ChildrenList>
+								<Event Name="Play_WaterFall" ID="{C6DD1A19-6581-414C-BB68-FAF078485B42}">
+									<ChildrenList>
+										<Action Name="" ID="{A21123F6-DB3B-4618-B5CD-CECF628E3264}" ShortID="122067931">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_WaterFall_Small" ID="{C1119367-C760-41B4-A162-3DB48D33AF62}">
+									<ChildrenList>
+										<Action Name="" ID="{91591BE4-2C1C-4E0A-AC24-E73E43A2199C}" ShortID="968402637">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_WaterFall" ID="{FD59E4C7-4B16-4BDB-ACF5-3355EB52AFE4}">
+									<ChildrenList>
+										<Action Name="" ID="{334D30F5-52C3-4465-8AC7-30C0CF0C8EAC}" ShortID="544012311">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_WaterFall_Small" ID="{F6B1918C-51AA-48C4-81BE-891C8FCA7F79}">
+									<ChildrenList>
+										<Action Name="" ID="{23909BCF-3B01-4FB5-85FD-766D8F5A94BD}" ShortID="454970787">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MainChar" ID="{C32DC088-815A-402A-A59B-0E3DD3DAB328}" ShortID="943527087">
@@ -195,10 +249,10 @@
 								</Event>
 								<Event Name="Play_Foley_Remi_Jump_Movement" ID="{96509D24-B63B-43C8-9CCC-19AD25855168}">
 									<ChildrenList>
-										<Action Name="" ID="{F4044F98-0727-4325-8981-C824AA73AD31}" ShortID="35201956">
+										<Action Name="" ID="{7097637C-5A0C-4CE7-B5FB-24BCEA1B0CD4}" ShortID="465411047">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="REMI_Jump_HardS" ID="{12874147-94B7-4699-9B16-DDEBD5950DBB}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+													<ObjectRef Name="REMI_Jump_HardS_01" ID="{2428CC43-8F33-4E37-B536-4A926A1C5230}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

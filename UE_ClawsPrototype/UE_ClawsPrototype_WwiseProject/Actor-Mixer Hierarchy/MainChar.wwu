@@ -590,12 +590,83 @@
 												<ActiveSource Name="REMI_Jump_HardS" ID="{047024DE-5F39-454A-97D5-0343AE8615A1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="REMI_Jump_HardS_01" ID="{2428CC43-8F33-4E37-B536-4A926A1C5230}" ShortID="376312561">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{22265E78-2777-4A49-AF56-4B10EF24169F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="11"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{74AE3F6F-E28E-4E04-857D-DF1B5CFE88F4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4921D36E-6B9F-4698-A04D-7049E9357755}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="151"/>
+																	<Property Name="Min" Type="Real64" Value="-152"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="REMI_Jump_HardS_01" ID="{E63D5162-F22E-4B21-9EE6-6C59C9EE9197}">
+													<Language>SFX</Language>
+													<AudioFile>REMI_Jump_HardS_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019624006"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="REMI_Jump_HardS_01" ID="{E63D5162-F22E-4B21-9EE6-6C59C9EE9197}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Foley_Remi_Land" ID="{6C99C094-62A8-430C-8798-A19012A5794C}" ShortID="599214342">
 									<PropertyList>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
