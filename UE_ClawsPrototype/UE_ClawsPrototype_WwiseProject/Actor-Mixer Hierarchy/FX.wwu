@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="FX" ID="{0C6D8F2E-5EF1-4EF0-9812-6C87E891AC21}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="FX_PowerClaw" ID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}" PersistMode="Reference"/>
+				<WorkUnit Name="FX_WaterClaw" ID="{A0A79823-8C00-47AC-B1B5-5E403A07A81F}" PersistMode="Reference"/>
+				<WorkUnit Name="FX_GoldenHat" ID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}" PersistMode="Reference"/>
+				<WorkUnit Name="FX_DoubleJump" ID="{7B1882FA-9408-4888-BF83-3218B72DB56F}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
