@@ -293,7 +293,7 @@
 										<Action Name="" ID="{54A79BCA-B9B3-4884-8D5F-271507FF7ACA}" ShortID="316569503">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="CLAWS_Switch_02" ID="{705A7C0D-CB81-41B2-BC39-3BF8EC772F08}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+													<ObjectRef Name="CLAWS_Switch_PowerClaw" ID="{705A7C0D-CB81-41B2-BC39-3BF8EC772F08}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -304,7 +304,7 @@
 										<Action Name="" ID="{139C95CC-93EC-4485-BF71-D97D5CF1A51F}" ShortID="715692117">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="CLAWS_Switch_01" ID="{A3A53EA9-39FD-431F-B493-54187F86A2F4}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+													<ObjectRef Name="CLAWS_Switch_WaterClaw" ID="{A3A53EA9-39FD-431F-B493-54187F86A2F4}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -316,6 +316,39 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Claws_ChangeDirections" ID="{12C5E210-3789-440B-851A-3D351508E167}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_GoldenHat" ID="{9B712281-D378-45B2-B09F-2AE1D2AC18CF}">
+									<ChildrenList>
+										<Action Name="" ID="{3708DB08-4FD1-4FF8-B3A4-155C2396AB40}" ShortID="977853508">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_GoldenHat" ID="{AB513BE8-533D-4D3F-BDD6-9EF4099893DE}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_doubleJump" ID="{0729A8E4-F7C4-4064-9A32-08BD22E8B4B0}">
+									<ChildrenList>
+										<Action Name="" ID="{AFC714A3-9071-48EA-A13C-C0458BBEF236}" ShortID="641892465">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_DoubleJump" ID="{8370D526-95CA-4A55-B3AB-A451CB0ED941}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_GoldenBoots" ID="{255A5848-97A1-46E0-AB10-716B1E43338C}">
+									<ChildrenList>
+										<Action Name="" ID="{1DFDB49E-8944-4EE2-A016-EA4F6BA69A86}" ShortID="247176636">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_GoldenBoots" ID="{7123B35E-DA33-4531-ACD5-12E39657F56C}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -342,6 +375,59 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Foley_Remi_Walk_Movements" ID="{D1C94989-DC78-4200-8D0B-47CCA6F67161}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="GoldenBoots" ID="{73403536-C8C8-4E96-8ECC-ADB62EC0DC0F}" ShortID="376164990">
+							<ChildrenList>
+								<Event Name="Play_GoldenBoots_Start" ID="{0533EEB0-899C-4B1C-AF23-52B5A63A78AD}">
+									<ChildrenList>
+										<Action Name="" ID="{1248778F-4975-4B62-9A8C-DB15923795E1}" ShortID="208565739">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_GoldenBoots_Start" ID="{BF445284-466D-49EF-BD8A-409195430779}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GoldenBoots_End" ID="{3335B360-39BD-4D5C-9B16-AF52B36C3535}">
+									<ChildrenList>
+										<Action Name="" ID="{3056053A-C459-4991-8CE8-B26C977098AC}" ShortID="388802296">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_GoldenBoots_End" ID="{D0F65D02-7E3C-4638-874B-37F0ADE18618}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GoldenBoots_Loop" ID="{2CC509DC-776F-4326-B21F-02BF4C315287}">
+									<ChildrenList>
+										<Action Name="" ID="{445AF7C5-2B8C-4A2A-8E94-373158C08A61}" ShortID="464368911">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENBOOTS_Loop_01" ID="{8EBCE682-6FF9-4116-9A7D-0375B7331444}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_GoldenBoots_Loop" ID="{A42B1660-AB09-4EB6-BC06-FCEBDB3FE5B0}">
+									<ChildrenList>
+										<Action Name="" ID="{A05DD6D8-68D2-4F0C-B0DE-C9D7E3F3EEF3}" ShortID="561949507">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENBOOTS_Loop_01" ID="{8EBCE682-6FF9-4116-9A7D-0375B7331444}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
