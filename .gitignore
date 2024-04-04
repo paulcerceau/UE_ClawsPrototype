@@ -76,6 +76,7 @@ UE_ClawsPrototype/Config/HoloLens
 
 # Remove Wwise plugin from source control
 UE_ClawsPrototype/Plugins/Wwise
+UE_ClawsPrototype/Plugins/WwiseNiagara
 
 # Wwise
 .backup*
