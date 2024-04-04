@@ -291,7 +291,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="POWERCLAW_HitSuccess_01" ID="{DF37C702-C3A0-4051-93C7-D8C6937E8A68}" ShortID="610057744">
+										<Sound Name="POWERCLAW_HitSuccess_01" ID="{B114A80B-B522-4D25-9A14-F040BDDE0BF8}" ShortID="559668416">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -301,7 +301,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_01" ID="{2131AB82-787C-407D-9A80-0A8996A18677}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_01" ID="{B3D3A9FE-4212-457D-B235-49C27DAEDE0D}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_01.wav</AudioFile>
 													<MediaIDList>
@@ -310,10 +310,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_01" ID="{2131AB82-787C-407D-9A80-0A8996A18677}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_01" ID="{B3D3A9FE-4212-457D-B235-49C27DAEDE0D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="POWERCLAW_HitSuccess_02" ID="{067FED26-6406-4E7F-B442-3282179447D9}" ShortID="969410555">
+										<Sound Name="POWERCLAW_HitSuccess_02" ID="{2DBA0577-4D33-45E1-9D61-47DFE85D5176}" ShortID="287413479">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -323,7 +323,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_02" ID="{6557C743-A403-4582-A720-A76E528A9913}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_02" ID="{1B3713BE-16F2-41A5-B351-1BA49179BABC}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_02.wav</AudioFile>
 													<MediaIDList>
@@ -332,10 +332,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_02" ID="{6557C743-A403-4582-A720-A76E528A9913}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_02" ID="{1B3713BE-16F2-41A5-B351-1BA49179BABC}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="POWERCLAW_HitSuccess_03" ID="{FBA5D031-8B43-4DA4-AEF2-42709622102B}" ShortID="271629844">
+										<Sound Name="POWERCLAW_HitSuccess_03" ID="{14E2449F-698D-421E-B1B3-199EFC919665}" ShortID="275643833">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -345,7 +345,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_03" ID="{1ED1FC8E-9D88-4356-88A3-FFBB9EDC130D}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_03" ID="{82C2ABA7-4C02-4BE5-A092-AB5DEE24CAE8}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_03.wav</AudioFile>
 													<MediaIDList>
@@ -354,10 +354,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_03" ID="{1ED1FC8E-9D88-4356-88A3-FFBB9EDC130D}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_03" ID="{82C2ABA7-4C02-4BE5-A092-AB5DEE24CAE8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="POWERCLAW_HitSuccess_04" ID="{C60E3AA7-BD73-4605-91BC-0FA3C6E4854E}" ShortID="345230364">
+										<Sound Name="POWERCLAW_HitSuccess_04" ID="{3C5C8043-D25F-48C7-98E4-CA4025767C00}" ShortID="310379860">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -367,7 +367,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_04" ID="{26D8464B-0B37-433E-91DE-66A282DECA9F}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_04" ID="{FE06C469-3E9E-47B6-A43E-B987D8F28CEC}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_04.wav</AudioFile>
 													<MediaIDList>
@@ -376,10 +376,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_04" ID="{26D8464B-0B37-433E-91DE-66A282DECA9F}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_04" ID="{FE06C469-3E9E-47B6-A43E-B987D8F28CEC}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="POWERCLAW_HitSuccess_05" ID="{7AF73B6E-3182-49F8-8B89-677884CC7988}" ShortID="86415618">
+										<Sound Name="POWERCLAW_HitSuccess_05" ID="{7FBC6CB1-943E-4CE7-A7DD-A89D1C8BF72D}" ShortID="257719007">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -389,7 +389,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_05" ID="{BEE55D78-6E15-474A-8098-BB0F46185855}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_05" ID="{91D62BA6-1BF6-4162-B984-A740AFE5BD77}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_05.wav</AudioFile>
 													<MediaIDList>
@@ -398,10 +398,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_05" ID="{BEE55D78-6E15-474A-8098-BB0F46185855}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_05" ID="{91D62BA6-1BF6-4162-B984-A740AFE5BD77}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="POWERCLAW_HitSuccess_06" ID="{3626A655-45FB-4E8B-BA93-C0F0AF34858B}" ShortID="90225015">
+										<Sound Name="POWERCLAW_HitSuccess_06" ID="{35242B4F-3CBA-4F10-AF13-FAEA6EA3F76E}" ShortID="486125002">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -411,7 +411,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="POWERCLAW_HitSuccess_06" ID="{F9DEEF96-4F00-4CEF-865B-B336200118E4}">
+												<AudioFileSource Name="POWERCLAW_HitSuccess_06" ID="{3390ADC1-EA6E-45D6-992B-C8BC6A428769}">
 													<Language>SFX</Language>
 													<AudioFile>POWERCLAW_HitSuccess_06.wav</AudioFile>
 													<MediaIDList>
@@ -420,7 +420,7 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="POWERCLAW_HitSuccess_06" ID="{F9DEEF96-4F00-4CEF-865B-B336200118E4}" Platform="Linked"/>
+												<ActiveSource Name="POWERCLAW_HitSuccess_06" ID="{3390ADC1-EA6E-45D6-992B-C8BC6A428769}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
