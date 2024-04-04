@@ -201,6 +201,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPIKY_PowerClaw_FlippedUp" ID="{D23BB6CE-3ECC-445B-B920-83825DDE1BE5}">
+							<ChildrenList>
+								<Action Name="" ID="{0CDFCFF8-E39B-4A9F-94B8-D4CA0BAA1746}" ShortID="191092851">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_PowerClaw_FlippedUp" ID="{851413C9-65D9-4AD9-9D09-825269F5C1D5}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_PowerClaw_FlippedDown" ID="{EBDD20D8-F439-4CD9-A4E9-CE12006F4093}">
+							<ChildrenList>
+								<Action Name="" ID="{98B09026-31CF-44FA-9045-2625180B43E5}" ShortID="127471931">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_PowerClawFlippedDown" ID="{AF78F540-800F-4DE0-B1BA-8FD7DE7E997F}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
