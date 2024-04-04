@@ -22,7 +22,9 @@
 				</SoundBank>
 				<SoundBank Name="Spiky" ID="{61B7A1FF-60BF-4CF5-83B5-099CE768F3F4}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_SPIKY_PowerClaw_FlippedUp" ID="{D23BB6CE-3ECC-445B-B920-83825DDE1BE5}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_Unhides" ID="{C95DDA7D-66EB-4A93-ABA2-F7F3EE7959B5}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPIKY_PowerClaw_FlippedDown" ID="{EBDD20D8-F439-4CD9-A4E9-CE12006F4093}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_Hides" ID="{ACBF325D-E242-4F27-8956-1309ABFED3D4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
