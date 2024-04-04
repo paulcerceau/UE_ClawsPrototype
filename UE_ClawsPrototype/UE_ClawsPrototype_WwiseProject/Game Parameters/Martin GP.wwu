@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CD32F75-92CD-4B5B-8C39-04F16285259A}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Martin GP" ID="{9CD32F75-92CD-4B5B-8C39-04F16285259A}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

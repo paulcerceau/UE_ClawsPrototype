@@ -33,10 +33,6 @@
 		{
 			"Name": "HoudiniEngine",
 			"Enabled": true
-		},
-		{
-			"Name": "Wwise",
-			"Enabled": false
 		}
 	]
 }

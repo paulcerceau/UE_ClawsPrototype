@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A6B446B7-B1EB-46B4-9100-33BB0D2DA8A1}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Baptiste Switchs" ID="{A6B446B7-B1EB-46B4-9100-33BB0D2DA8A1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Jump" ID="{7BB12E35-D645-4F91-985C-9DF9E61090D5}" ShortID="119772174">
+					<ChildrenList>
+						<SwitchGroup Name="Floor_Material_Jump" ID="{99D3914B-A48D-4224-855E-5476BA48E8A4}">
+							<ChildrenList>
+								<Switch Name="Vegetation" ID="{7A22AA39-8810-47A0-8985-CA6E55E2442F}"/>
+								<Switch Name="Sand" ID="{1E0C8993-59FE-4360-B5AA-784C1962A964}"/>
+								<Switch Name="Crystals" ID="{8CACA207-C1DA-471E-95F5-63999519FF78}"/>
+								<Switch Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Land" ID="{FB1C17E2-A5B0-4A05-BE5A-64C4580D6F18}" ShortID="564578418">
+					<ChildrenList>
+						<SwitchGroup Name="Floor_Material_Land" ID="{8DB64239-442B-4F85-BCA4-5A588EA6FC74}">
+							<ChildrenList>
+								<Switch Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
+								<Switch Name="Crystals" ID="{44A09355-C4E2-40CF-BBD0-9F09ECB01115}"/>
+								<Switch Name="Vegetation" ID="{33F5E517-FCDD-47F7-83AF-8F67D3C1EE37}"/>
+								<Switch Name="Sand" ID="{A148653E-1014-4F3D-ABFC-C896A8067E91}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Walk" ID="{E57C78F2-183C-4460-8B05-4CF620A44FFE}" ShortID="742600355">
+					<ChildrenList>
+						<SwitchGroup Name="Floor_Material_Walk" ID="{204E7F1E-BB13-49C9-851F-05BFD1F3AB80}">
+							<ChildrenList>
+								<Switch Name="Corals" ID="{33230FFC-78F4-4F00-AFA0-088D09C618FC}"/>
+								<Switch Name="Crystals" ID="{46C3AC2C-470E-44E9-8FBF-44A262F18491}"/>
+								<Switch Name="Sand" ID="{692CDE5B-2217-4903-95DF-9E86FC9124FA}"/>
+								<Switch Name="Vegetation" ID="{AFFE9DFC-9252-4866-A84A-2EB21A33C1DC}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
