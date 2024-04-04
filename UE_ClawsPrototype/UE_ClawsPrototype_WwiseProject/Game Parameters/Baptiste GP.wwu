@@ -72,6 +72,15 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="WaterFall" ID="{4F88C29E-CBF7-4B52-8E43-5E509777C108}" ShortID="810720186">
+					<ChildrenList>
+						<GameParameter Name="WaterFall_Distance" ID="{B1BA9373-0FBE-4A66-9A7A-75BCBE748C5D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
