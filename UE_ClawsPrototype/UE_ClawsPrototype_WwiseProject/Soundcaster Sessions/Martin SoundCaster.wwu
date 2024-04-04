@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2A584C1D-C059-44AF-9A25-D033BC7D5587}" SchemaVersion="119">
+	<SoundcasterSessions>
+		<WorkUnit Name="Martin SoundCaster" ID="{2A584C1D-C059-44AF-9A25-D033BC7D5587}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test Martin le boss" ID="{0F6953ED-38CA-40D7-AE24-A710AE1662E4}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Boxing_JumpedOn" ID="{9DEA2DC2-3EDC-4840-8313-3B871F37CF18}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Anemone_Idle" ID="{880BD0DB-A288-4CBB-A625-57955950795D}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
