@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BA6E8153-7E5E-4FED-A278-3108E6D11B58}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Baptiste SoundBanks" ID="{BA6E8153-7E5E-4FED-A278-3108E6D11B58}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambiences" ID="{DF0CF692-A8EB-4B21-95E9-1AB65915EFDC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambiences" ID="{39C57F5C-B7B8-41AF-8DD4-0CFF6A8EA9CE}" WorkUnitID="{F71B1765-44EC-435B-AACF-4CB2DB9F17F7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MainChar" ID="{A026738B-3072-4EF8-9B53-AA4798A08DAC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MainChar" ID="{C32DC088-815A-402A-A59B-0E3DD3DAB328}" WorkUnitID="{F71B1765-44EC-435B-AACF-4CB2DB9F17F7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="FX" ID="{385B3DF5-3179-4DC3-92A1-59F0172018AF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="FX" ID="{561BB657-6971-4A54-AFCB-9CE81561536D}" WorkUnitID="{F71B1765-44EC-435B-AACF-4CB2DB9F17F7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

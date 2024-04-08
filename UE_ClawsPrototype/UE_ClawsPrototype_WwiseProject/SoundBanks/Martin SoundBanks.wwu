@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D78DDD64-D0F8-4799-83EB-FB766DFB4A6B}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Martin SoundBanks" ID="{D78DDD64-D0F8-4799-83EB-FB766DFB4A6B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="Boxing" ID="{E3C4A5FA-17D3-4179-88B9-B5E65CB141C0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Boxing_Bumps" ID="{9AAEF49C-980D-44B6-84C4-6051418F1661}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Boxing_Fills" ID="{6AF3AA5A-AC58-4649-BD23-765F5FCBDDAC}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Boxing_JumpedOn" ID="{9DEA2DC2-3EDC-4840-8313-3B871F37CF18}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Anemone" ID="{5EFB3385-9126-4DA6-90DB-ECDCA6B5CE9C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ANEMONE_Idle_Wet" ID="{B1B37FDA-78E5-42D1-841C-B7718FBD4348}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ANEMONE_Empties" ID="{DC983A2E-15D4-496C-AB69-166F0E2C4A38}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Anemone_WaterClawed" ID="{9F4DD6E0-D1F9-49E2-8ED3-A884C4061DDB}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Pissou" ID="{27A53E5F-8223-4E3B-A9A7-92445FDA048E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Pissou_Fills" ID="{534EC101-7B2A-44CB-ACE2-E6ADB0EDD2C6}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Pissou_Empties" ID="{98F6100F-110A-47EE-BE06-2A372A6A58D2}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

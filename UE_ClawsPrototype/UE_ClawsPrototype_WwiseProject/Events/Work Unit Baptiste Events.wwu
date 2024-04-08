@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F71B1765-44EC-435B-AACF-4CB2DB9F17F7}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Work Unit Baptiste Events" ID="{F71B1765-44EC-435B-AACF-4CB2DB9F17F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambiences" ID="{39C57F5C-B7B8-41AF-8DD4-0CFF6A8EA9CE}" ShortID="82102539">
+					<ChildrenList>
+						<Folder Name="Cave_Blue" ID="{F94443E2-D21B-4947-874A-910435F35618}" ShortID="622986921">
+							<ChildrenList>
+								<Event Name="Play_AMB_CaveBlue" ID="{DC98EC82-93D6-4D7F-A6EF-2AAB50587494}">
+									<ChildrenList>
+										<Action Name="" ID="{EFE13074-3BD6-4B72-876A-BBDB3D080813}" ShortID="450130020">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Blue" ID="{818E518E-F107-4F27-BFAF-40C67DAD6CD7}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_AMB_CaveBlue" ID="{5B2B7E94-16DE-4AA9-AFF7-02E097ABBE25}">
+									<ChildrenList>
+										<Action Name="" ID="{8F5AAED7-3673-43BE-B206-4CDFB443BC6E}" ShortID="662936932">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Blue" ID="{818E518E-F107-4F27-BFAF-40C67DAD6CD7}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cave_Purple" ID="{94452025-F471-4EBC-8CE1-AB24472951BA}" ShortID="698142117">
+							<ChildrenList>
+								<Event Name="Play_AMB_CavePurple" ID="{20E45803-95D6-4A66-9410-6B89E98EA705}">
+									<ChildrenList>
+										<Action Name="" ID="{3651663A-9A05-4B18-A71B-F84C6516FB70}" ShortID="598830689">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Purple" ID="{D64273CD-EC89-4C7F-83C5-982DE50C47E6}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_AMB_CavePurple" ID="{329DEE9A-32F4-49BE-9FE1-D3B68486A04D}">
+									<ChildrenList>
+										<Action Name="" ID="{69244067-3743-49E4-9A64-E259D8642EBC}" ShortID="310006228">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Purple" ID="{D64273CD-EC89-4C7F-83C5-982DE50C47E6}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cave_Pink" ID="{E405070B-E583-4AD7-899D-8B0A971FE17A}" ShortID="99678536">
+							<ChildrenList>
+								<Event Name="Play_AMB_CavePink" ID="{32669155-8146-48BF-9CE3-6EBC79FAD44B}">
+									<ChildrenList>
+										<Action Name="" ID="{6C6936AE-1175-4FB7-967B-DDA12DFD5EB2}" ShortID="91719866">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Pink" ID="{4A6D54CC-B5D7-4F06-87B3-8808E9A38511}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_AMB_CavePink" ID="{8EECB368-EF70-426C-A5CC-5E8B6C8AF0FA}">
+									<ChildrenList>
+										<Action Name="" ID="{6F994BAD-1334-4681-BA92-4079871CCD00}" ShortID="634430073">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Pink" ID="{4A6D54CC-B5D7-4F06-87B3-8808E9A38511}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cave_Garden" ID="{4D483806-A510-4F0A-93E5-6E551A7C1DD3}" ShortID="452554464">
+							<ChildrenList>
+								<Event Name="Play_AMB_CaveGarden" ID="{72DE91DF-AC70-47A7-A6F4-5DF002FADEB5}">
+									<ChildrenList>
+										<Action Name="" ID="{A54F9DB4-4DD5-4E96-AFB4-5F36D62456ED}" ShortID="851848608">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Garden" ID="{9B5AD3C4-4A3B-44EE-A97F-E5137909356B}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_AMB_CaveGarden" ID="{8345A205-1013-4A70-B058-C1F351FE5FC9}">
+									<ChildrenList>
+										<Action Name="" ID="{A639884F-A54A-4FE8-93D0-AB035A867E4F}" ShortID="1068124120">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Garden" ID="{9B5AD3C4-4A3B-44EE-A97F-E5137909356B}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cave_Forest" ID="{9EADC4D6-8428-4731-9A50-7D82B254EFE3}" ShortID="907327758">
+							<ChildrenList>
+								<Event Name="Play_AMB_CaveForest" ID="{C66EE68B-BF32-4EE8-AAFD-5C6FD5EE876A}">
+									<ChildrenList>
+										<Action Name="" ID="{43938A7C-D4EB-4663-B3E5-5A7D30566527}" ShortID="835983832">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Forest" ID="{27AB75B3-03A9-4E96-8EB0-37A406F5CC56}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_AMB_CaveForest" ID="{47F726BB-80D1-460F-86BD-D83F8B6DB750}">
+									<ChildrenList>
+										<Action Name="" ID="{138756B5-B1C5-4CC2-9F93-3B918CC327FF}" ShortID="296407949">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMBIENT_Cave_Forest" ID="{27AB75B3-03A9-4E96-8EB0-37A406F5CC56}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WaterFall" ID="{FF9CD4B5-1AAA-49E6-B6B7-F56F95B4BAB3}" ShortID="375811303">
+							<ChildrenList>
+								<Event Name="Play_WaterFall" ID="{C6DD1A19-6581-414C-BB68-FAF078485B42}">
+									<ChildrenList>
+										<Action Name="" ID="{A21123F6-DB3B-4618-B5CD-CECF628E3264}" ShortID="122067931">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_WaterFall_Small" ID="{C1119367-C760-41B4-A162-3DB48D33AF62}">
+									<ChildrenList>
+										<Action Name="" ID="{91591BE4-2C1C-4E0A-AC24-E73E43A2199C}" ShortID="968402637">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_WaterFall" ID="{FD59E4C7-4B16-4BDB-ACF5-3355EB52AFE4}">
+									<ChildrenList>
+										<Action Name="" ID="{334D30F5-52C3-4465-8AC7-30C0CF0C8EAC}" ShortID="544012311">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_WaterFall_Small" ID="{F6B1918C-51AA-48C4-81BE-891C8FCA7F79}">
+									<ChildrenList>
+										<Action Name="" ID="{23909BCF-3B01-4FB5-85FD-766D8F5A94BD}" ShortID="454970787">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MainChar" ID="{C32DC088-815A-402A-A59B-0E3DD3DAB328}" ShortID="943527087">
+					<ChildrenList>
+						<Folder Name="Jump" ID="{FDF2E2B1-374E-4EEF-8941-C17E7C57437D}" ShortID="554732032">
+							<ChildrenList>
+								<Event Name="Play_Foley_Remi_Jump_Materials" ID="{78E71E4F-68D2-49DF-9174-BAD6875F2AA4}">
+									<ChildrenList>
+										<Action Name="" ID="{57C7329A-1A68-458E-A972-3614A2002FB6}" ShortID="444831798">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_Jump_Materials" ID="{E299EBBB-3953-42C1-B0E6-F9F58990735D}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Foley_Remi_Jump_Movement" ID="{96509D24-B63B-43C8-9CCC-19AD25855168}">
+									<ChildrenList>
+										<Action Name="" ID="{7097637C-5A0C-4CE7-B5FB-24BCEA1B0CD4}" ShortID="465411047">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_Jump_HardS_01" ID="{2428CC43-8F33-4E37-B536-4A926A1C5230}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Land" ID="{1375B1A1-61D5-4138-A69F-E0A0B3EDFB26}" ShortID="539449084">
+							<ChildrenList>
+								<Event Name="Play_Foley_Remi_Land_Movement" ID="{C2034D55-635D-4FC1-9DE5-E93C6956611C}">
+									<ChildrenList>
+										<Action Name="" ID="{6E9098F5-B462-465B-B49A-7CA2EA3EAEA1}" ShortID="599356025">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Remi_Land_HardS" ID="{2664A240-4FC4-475F-BE8B-A48B1D101DC9}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Foley_Remi_Land_Materials" ID="{717CA233-8161-47F8-99A0-43D73136C792}">
+									<ChildrenList>
+										<Action Name="" ID="{A96949BC-C6A2-49D4-952D-184432ABD59D}" ShortID="267925314">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_Land_Materials" ID="{DA2AE91B-8ADE-4E6E-8F6E-9F4EFB7FBCA2}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Weapon" ID="{8132654F-DF11-4970-988D-C6B110BC1BB8}" ShortID="81289748">
+							<ChildrenList>
+								<Event Name="Play_Switch_PowerClaw" ID="{1391CA20-F516-4C4F-B07F-75000212EDEC}">
+									<ChildrenList>
+										<Action Name="" ID="{54A79BCA-B9B3-4884-8D5F-271507FF7ACA}" ShortID="316569503">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_PowerClaw" ID="{705A7C0D-CB81-41B2-BC39-3BF8EC772F08}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_WaterClaw" ID="{EB66BA8B-A5FF-468B-AA2F-71E7AC5CBDA5}">
+									<ChildrenList>
+										<Action Name="" ID="{139C95CC-93EC-4485-BF71-D97D5CF1A51F}" ShortID="715692117">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_WaterClaw" ID="{A3A53EA9-39FD-431F-B493-54187F86A2F4}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Rotation_Weapon" ID="{2B301F38-36E6-471D-97E9-14E18CEAD801}">
+									<ChildrenList>
+										<Action Name="" ID="{05167A39-82A6-4F63-8C0C-D30F88A743E8}" ShortID="584598825">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Claws_ChangeDirections" ID="{12C5E210-3789-440B-851A-3D351508E167}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_GoldenHat" ID="{9B712281-D378-45B2-B09F-2AE1D2AC18CF}">
+									<ChildrenList>
+										<Action Name="" ID="{3708DB08-4FD1-4FF8-B3A4-155C2396AB40}" ShortID="977853508">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_GoldenHat" ID="{AB513BE8-533D-4D3F-BDD6-9EF4099893DE}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_doubleJump" ID="{0729A8E4-F7C4-4064-9A32-08BD22E8B4B0}">
+									<ChildrenList>
+										<Action Name="" ID="{AFC714A3-9071-48EA-A13C-C0458BBEF236}" ShortID="641892465">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_DoubleJump" ID="{8370D526-95CA-4A55-B3AB-A451CB0ED941}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Switch_GoldenBoots" ID="{255A5848-97A1-46E0-AB10-716B1E43338C}">
+									<ChildrenList>
+										<Action Name="" ID="{1DFDB49E-8944-4EE2-A016-EA4F6BA69A86}" ShortID="247176636">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CLAWS_Switch_GoldenBoots" ID="{7123B35E-DA33-4531-ACD5-12E39657F56C}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Walk" ID="{C5D0DEB1-354C-477E-8AF8-1D908025C75E}" ShortID="837937519">
+							<ChildrenList>
+								<Event Name="Play_Foley_Remi_Walk_Materials" ID="{5C68329D-EA08-4DEF-B1CC-8C5C81A72E49}">
+									<ChildrenList>
+										<Action Name="" ID="{6318183F-465E-43CF-969F-829A1BBC249D}" ShortID="610211643">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_Walk_Materials" ID="{44402FC3-0C87-4A2A-B1FE-9BE18CA04365}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Foley_Remi_Walk_Movements" ID="{6DB569D1-8F24-4590-8849-CFCF1C36581D}">
+									<ChildrenList>
+										<Action Name="" ID="{919764FD-8CAE-4D4D-BD99-12357EA9CE88}" ShortID="372034953">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_Walk_Movements" ID="{D1C94989-DC78-4200-8D0B-47CCA6F67161}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="GoldenBoots" ID="{73403536-C8C8-4E96-8ECC-ADB62EC0DC0F}" ShortID="376164990">
+							<ChildrenList>
+								<Event Name="Play_GoldenBoots_Start" ID="{0533EEB0-899C-4B1C-AF23-52B5A63A78AD}">
+									<ChildrenList>
+										<Action Name="" ID="{1248778F-4975-4B62-9A8C-DB15923795E1}" ShortID="208565739">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_GoldenBoots_Start" ID="{BF445284-466D-49EF-BD8A-409195430779}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GoldenBoots_End" ID="{3335B360-39BD-4D5C-9B16-AF52B36C3535}">
+									<ChildrenList>
+										<Action Name="" ID="{3056053A-C459-4991-8CE8-B26C977098AC}" ShortID="388802296">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Foley_Remi_GoldenBoots_End" ID="{D0F65D02-7E3C-4638-874B-37F0ADE18618}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GoldenBoots_Loop" ID="{2CC509DC-776F-4326-B21F-02BF4C315287}">
+									<ChildrenList>
+										<Action Name="" ID="{445AF7C5-2B8C-4A2A-8E94-373158C08A61}" ShortID="464368911">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENBOOTS_Loop_01" ID="{8EBCE682-6FF9-4116-9A7D-0375B7331444}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_GoldenBoots_Loop" ID="{A42B1660-AB09-4EB6-BC06-FCEBDB3FE5B0}">
+									<ChildrenList>
+										<Action Name="" ID="{A05DD6D8-68D2-4F0C-B0DE-C9D7E3F3EEF3}" ShortID="561949507">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENBOOTS_Loop_01" ID="{8EBCE682-6FF9-4116-9A7D-0375B7331444}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FX" ID="{561BB657-6971-4A54-AFCB-9CE81561536D}" ShortID="696143982">
+					<ChildrenList>
+						<Folder Name="GoldenHat" ID="{609FFCE5-9C6F-4592-9309-7009FC888486}" ShortID="453137514">
+							<ChildrenList>
+								<Event Name="Play_Gliding_GoldenHat" ID="{C4B6AA5F-1693-42A3-9277-70DA52A95BC4}">
+									<ChildrenList>
+										<Action Name="" ID="{17A9A70E-E3CD-41CF-8677-0552B68F2C24}" ShortID="630605104">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENHAT_Gliding" ID="{B3B22E85-4598-4449-BED5-0A5B3A8B9A6F}" WorkUnitID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Retracting_GoldenHat" ID="{83CE5E6E-4AFD-4C36-ADB3-14DF4B1BFDB4}">
+									<ChildrenList>
+										<Action Name="" ID="{F0C4203D-CAD5-4412-9D5B-1301BC929C27}" ShortID="163405928">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENHAT_Retracting" ID="{530565B0-9332-496B-86F7-F92B4043B35E}" WorkUnitID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Deploying_GoldenHat" ID="{34A49F21-3A00-444A-AD98-336254D34104}">
+									<ChildrenList>
+										<Action Name="" ID="{74E59D6A-ED38-4FD7-8C5E-0DB5F75F7D63}" ShortID="287291507">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENHAT_Deploying" ID="{A805E87F-56FA-4369-8ED5-118F67AC2D7B}" WorkUnitID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Gliding_GoldenHat" ID="{A012E865-05DF-468A-B972-89FFA5EEC6FA}">
+									<ChildrenList>
+										<Action Name="" ID="{A59FA506-E7C5-400A-9D64-EFB9952A580A}" ShortID="343884796">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENHAT_Gliding" ID="{B3B22E85-4598-4449-BED5-0A5B3A8B9A6F}" WorkUnitID="{61AF5FF4-9D5C-491F-9185-CC10585F0F8B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="DoubleJump" ID="{12C9DF28-43FD-40C5-8199-D56891CB9D2B}" ShortID="579376777">
+							<ChildrenList>
+								<Event Name="Play_DoubleJump" ID="{CEB7D37D-D61B-4536-BFF4-6CD95AB63429}">
+									<ChildrenList>
+										<Action Name="" ID="{7E93B27B-5C26-419A-89E7-A845E66174F1}" ShortID="410966710">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="REMI_GOLDENMUSTACHE_DoubleJump" ID="{8B1CFAD2-6534-425E-A382-FF31F6EA62A1}" WorkUnitID="{7B1882FA-9408-4888-BF83-3218B72DB56F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

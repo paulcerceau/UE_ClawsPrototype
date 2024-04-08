@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Work Unit Elise Events" ID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_BREAKABLEWALL_PowerClaw" ID="{075BB087-F9FE-4E59-B346-0AE775269933}">
+					<ChildrenList>
+						<Action Name="" ID="{EC515A1E-E5E4-4C6F-A6EF-557A4F643AA3}" ShortID="1072655851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FX_BREAKABLEWALL_PowerClaw" ID="{B5FDEE41-BA39-410A-9CCC-70E6F84145DD}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Powerclaw" ID="{F55E2A60-7F09-4BE8-910B-5FBA6A8F5FD1}" ShortID="346074348">
+					<ChildrenList>
+						<Event Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}">
+							<ChildrenList>
+								<Action Name="" ID="{3771E23D-832C-4F22-9545-AED78927BC5E}" ShortID="24931322">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FX_Powerclaw_Deploying" ID="{35B2C58F-11A4-42C6-841D-5ABBF2FCA556}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Powerclaw_Hit_Nothing" ID="{EE97405F-8F2D-4DE3-B11E-2DE348AEA83B}">
+							<ChildrenList>
+								<Action Name="" ID="{AE148F6A-BD9E-492E-882B-1BAA93264AD4}" ShortID="753712717">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FX_Powerclaw_Hit_Nothing" ID="{5EDDB97E-0F55-4200-BE84-2611967956BE}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Powerclaw_Hit_Fail" ID="{5616EC86-743D-4A7F-B4B5-BE93A6071B8E}">
+							<ChildrenList>
+								<Action Name="" ID="{6459D1A8-790A-4545-BAF5-9D4A2A62B0B1}" ShortID="800126765">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FX_Powerclaw_Hit_Fail" ID="{30C100DB-478D-4208-8954-82BA9B866BFF}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Powerclaw_Hit_Success" ID="{3A56087E-A6EA-4E9A-8630-8356D4FA214A}">
+							<ChildrenList>
+								<Action Name="" ID="{FA298CE4-3E38-4E7D-AAE2-8849A3412A9C}" ShortID="831676926">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FX_Powerclaw_Hit_Success" ID="{E82BD553-8591-4CD2-925D-FD29086194DC}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Speedy" ID="{4C7EEC5D-871A-4711-B182-B146878DCC85}" ShortID="696296789">
+					<ChildrenList>
+						<Event Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}">
+							<ChildrenList>
+								<Action Name="" ID="{9CD92EF1-5898-4F52-A5E8-CEF9FA62BAEB}" ShortID="500431857">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Transition_Wet-Dry" ID="{F1C013ED-BEFA-473D-8835-5FD61A475E3C}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPEEDY_Grab" ID="{7F9B2C55-0E41-4B9D-8078-98A23BAA5584}">
+							<ChildrenList>
+								<Action Name="" ID="{D9414725-F039-49D1-8A16-848177675092}" ShortID="192450342">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Grab" ID="{99187177-4E9E-4055-8B7D-E257DE4DB3FA}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPEEDY_Throw" ID="{8337C9CA-E98A-4237-9DCE-EF757575F09B}">
+							<ChildrenList>
+								<Action Name="" ID="{E8EA8C35-AE29-459E-B877-10DF8DDFC75E}" ShortID="559180170">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Throw" ID="{5B817A05-55C7-4625-BC7B-E7608FA6671E}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPEEDY_WaterClaw" ID="{69DF372F-B474-4DFF-8586-678EEA22F5E7}">
+							<ChildrenList>
+								<Action Name="" ID="{E3ED4B38-38DE-40BD-BB89-5584CC23272C}" ShortID="1012615061">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_WaterClaw" ID="{75C82F4C-98F0-4BFC-98DE-1AA36A059481}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPEEDY_Movement" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}">
+							<ChildrenList>
+								<Action Name="" ID="{7719DD15-A54B-405B-BA18-DD83B006D1C5}" ShortID="874401382">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Movement" ID="{A4174FAB-C031-4C4C-8222-34ED25144279}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_Speedy_Walk" ID="{7EFB3AA2-C5CB-4B25-834D-47AE7D2A1618}">
+							<ChildrenList>
+								<Action Name="" ID="{A4417B9B-E274-4866-88BC-2E1C45328F05}" ShortID="541204635">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speedy_Walk" ID="{620AA2B2-A02F-43B1-A72F-0BE043C3A5ED}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}">
+							<ChildrenList>
+								<Action Name="" ID="{43AA8CD4-63CF-41ED-BC04-683C191E0574}" ShortID="915984046">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}">
+							<ChildrenList>
+								<Action Name="" ID="{348F28A0-9B41-4289-A1C6-7AD5E7AA5F75}" ShortID="824884831">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speedy_Idle_Wet" ID="{5A5A3D08-18F5-406F-8947-917F6389EF11}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_Speedy_Rush" ID="{AB003464-60EC-42E7-B65E-8DE700D5C04A}">
+							<ChildrenList>
+								<Action Name="" ID="{CEAA915A-A688-4D6C-8C77-48AB87DCD6DD}" ShortID="194708717">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speedy_Rush" ID="{50E717C5-76F9-4DEE-947D-5226DD361820}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Spiky" ID="{0AE88515-B910-48F9-8E5F-921A10885AC6}" ShortID="348880988">
+					<ChildrenList>
+						<Event Name="Play_SPIKY_Hides" ID="{ACBF325D-E242-4F27-8956-1309ABFED3D4}">
+							<ChildrenList>
+								<Action Name="" ID="{1678C1CA-4068-48B3-9BB9-D44356DF7869}" ShortID="39119683">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_Hides" ID="{BF1D56E0-D1E2-4147-8DA8-9BE5BD492433}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_Unhides" ID="{C95DDA7D-66EB-4A93-ABA2-F7F3EE7959B5}">
+							<ChildrenList>
+								<Action Name="" ID="{2CBC81EC-2949-4844-99D2-216914031CD4}" ShortID="1043340661">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_Unhides" ID="{0976F36C-EC67-4656-BB0E-58E41AF08BC6}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_PowerClaw_FlippedUp" ID="{D23BB6CE-3ECC-445B-B920-83825DDE1BE5}">
+							<ChildrenList>
+								<Action Name="" ID="{0CDFCFF8-E39B-4A9F-94B8-D4CA0BAA1746}" ShortID="191092851">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_PowerClaw_FlippedUp" ID="{851413C9-65D9-4AD9-9D09-825269F5C1D5}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_PowerClaw_FlippedDown" ID="{EBDD20D8-F439-4CD9-A4E9-CE12006F4093}">
+							<ChildrenList>
+								<Action Name="" ID="{98B09026-31CF-44FA-9045-2625180B43E5}" ShortID="127471931">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_PowerClawFlippedDown" ID="{AF78F540-800F-4DE0-B1BA-8FD7DE7E997F}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
+					<ChildrenList>
+						<Action Name="" ID="{7734A450-87B7-413D-B9EE-6FBB0E744689}" ShortID="693662949">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEBUG_SOUND_LP" ID="{EDE43E57-882C-4A4D-87AF-D8121CB6C9BB}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DEBUG_SOUND_OS" ID="{34BA237D-3D96-46B9-A373-1E9CC2583648}">
+					<ChildrenList>
+						<Action Name="" ID="{16749EDF-5C73-4E1A-940E-CF7D85A77509}" ShortID="484852159">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEBUG_SOUND_OS" ID="{851F5400-637A-4606-A763-214F41ECCBE4}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_DEBUG_SOUND_LP" ID="{A4A9D88D-CC1D-43F2-8F44-2F69C6859852}">
+					<ChildrenList>
+						<Action Name="" ID="{18EA5F3C-82C1-437D-BCC1-39194B2C0DC7}" ShortID="55629518">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEBUG_SOUND_LP" ID="{EDE43E57-882C-4A4D-87AF-D8121CB6C9BB}" WorkUnitID="{EB0FD7F7-2743-4F0A-AE7B-73121B5CF381}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
