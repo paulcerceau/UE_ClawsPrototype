@@ -42,6 +42,15 @@
 										<Property Name="RTPCRamping" Type="int16" Value="2"/>
 									</PropertyList>
 								</GameParameter>
+								<GameParameter Name="Fade_GP_Music_CavePink" ID="{D2C6F3A3-8BB2-466A-8A66-C0CCE8D9FF18}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fade_GP_CavePurple" ID="{73943B10-0D76-41E5-B799-7D35B44FF5A2}" ShortID="235762020">
@@ -55,11 +64,29 @@
 										<Property Name="RTPCRamping" Type="int16" Value="2"/>
 									</PropertyList>
 								</GameParameter>
+								<GameParameter Name="Fade_GP_Music_CavePurple" ID="{82333C3C-748A-40BC-88CF-CEBE19CCA9A9}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fade_GP_CaveForest" ID="{823B8453-6D6C-4711-AA6B-7A116788EA2C}" ShortID="275037966">
 							<ChildrenList>
 								<GameParameter Name="Fade_GP_CaveForest" ID="{AC40B43D-E14C-4B7D-A38F-63E150D2900D}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+								<GameParameter Name="Fade_GP_Music_CaveForest" ID="{5E168F56-C664-47D0-AC2C-C1A36000E301}">
 									<PropertyList>
 										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
 										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
