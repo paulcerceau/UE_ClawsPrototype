@@ -90,6 +90,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Anemone_WaterClawed" ID="{9F4DD6E0-D1F9-49E2-8ED3-A884C4061DDB}">
+							<ChildrenList>
+								<Action Name="" ID="{A3D6F8AE-6795-4C9E-9C3F-BB7AB6113FE1}" ShortID="388106441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" WorkUnitID="{85724744-6C99-46AB-AF29-CEDAF11B7347}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Pissou" ID="{54783791-23C5-4CB1-A31B-F5B5A689EEA8}" ShortID="803168195">
