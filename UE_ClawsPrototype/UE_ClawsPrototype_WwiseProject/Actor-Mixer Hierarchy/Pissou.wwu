@@ -57,6 +57,242 @@
 								<ActiveSource Name="PISSOU_Fills" ID="{0E8E1304-9659-4A6F-A031-7E87AECC7E39}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Pissou_JumpedOn" ID="{B878D8B2-4732-42F7-8096-6F42107CC014}" ShortID="1062257999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PISSOU_JumpedOn_Dry_01" ID="{D9EE1038-AFA4-4F83-9CCA-F82EF46BF4E5}" ShortID="315140291">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_JumpedOn_Dry_01" ID="{C6A449BB-AC58-4CEE-805F-596A9A622EA4}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_JumpedOn_Dry_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="63482817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_JumpedOn_Dry_01" ID="{C6A449BB-AC58-4CEE-805F-596A9A622EA4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_JumpedOn_Dry_02" ID="{57BDD4C6-99E3-4F0A-BC0B-699C5B0A5DF8}" ShortID="47924300">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_JumpedOn_Dry_02" ID="{121F7CF3-828C-41D9-A2C8-147BE5F008E1}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_JumpedOn_Dry_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="231591786"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_JumpedOn_Dry_02" ID="{121F7CF3-828C-41D9-A2C8-147BE5F008E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_JumpedOn_Dry_03" ID="{F72FC8B7-05A9-45C7-A933-15D92437AB66}" ShortID="803940849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_JumpedOn_Dry_03" ID="{0D19F935-7EAF-4F62-8477-AAB3DF205AE6}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_JumpedOn_Dry_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="197201505"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_JumpedOn_Dry_03" ID="{0D19F935-7EAF-4F62-8477-AAB3DF205AE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_JumpedOn_Dry_04" ID="{447F79EF-E5D2-403A-9B75-6862AB038FCA}" ShortID="770127950">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_JumpedOn_Dry_04" ID="{9F0F93BA-9A81-40FB-9C83-A5FE6F04CDF7}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_JumpedOn_Dry_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="761777777"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_JumpedOn_Dry_04" ID="{9F0F93BA-9A81-40FB-9C83-A5FE6F04CDF7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Pissou_WalkedOn" ID="{A76251C8-4C75-419E-A93D-B11493C0ACB0}" ShortID="403953914">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PISSOU_WalkedOn_Dry_01" ID="{26462C7D-2B10-49DA-91B5-DA7DE7E7ED91}" ShortID="1020114808">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_WalkedOn_Dry_01" ID="{F4754C9D-5266-4C1D-A968-4AE80DB168A2}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_WalkedOn_Dry_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="925129038"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_WalkedOn_Dry_01" ID="{F4754C9D-5266-4C1D-A968-4AE80DB168A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_WalkedOn_Dry_02" ID="{FF469185-CAAD-47AF-B5DA-0AB5D173ED30}" ShortID="26251447">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_WalkedOn_Dry_02" ID="{C24C0880-FE80-42A7-8C72-61856C6ACFF7}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_WalkedOn_Dry_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="85846503"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_WalkedOn_Dry_02" ID="{C24C0880-FE80-42A7-8C72-61856C6ACFF7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_WalkedOn_Dry_03" ID="{315F447A-2B57-44FF-A9EF-2C8CC87C3061}" ShortID="52432208">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_WalkedOn_Dry_03" ID="{DF056E34-720F-4309-951C-38A3AC2D796B}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_WalkedOn_Dry_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="346506643"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_WalkedOn_Dry_03" ID="{DF056E34-720F-4309-951C-38A3AC2D796B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PISSOU_WalkedOn_Dry_04" ID="{F88187A7-7786-475A-AE85-859412AC1D8A}" ShortID="945028379">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PISSOU_WalkedOn_Dry_04" ID="{3B4173D4-923C-436E-9E53-C053F467DF67}">
+											<Language>SFX</Language>
+											<AudioFile>PISSOU_WalkedOn_Dry_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="37664839"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PISSOU_WalkedOn_Dry_04" ID="{3B4173D4-923C-436E-9E53-C053F467DF67}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="PISSOU_WaterClaw_Wet" ID="{B59BE660-1C9B-4EA6-9E68-3AF30A414751}" ShortID="140025209">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PISSOU_WaterClaw_Wet" ID="{9D162266-7A09-4FC3-A676-35A13B1E228A}">
+									<Language>SFX</Language>
+									<AudioFile>PISSOU_WaterClaw_Wet.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="876987984"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PISSOU_WaterClaw_Wet" ID="{9D162266-7A09-4FC3-A676-35A13B1E228A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
