@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="PissouMixer" ID="{0AFDA186-6400-4F2F-823F-F3C3C869B077}" ShortID="366253393">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -18,6 +19,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>
@@ -102,6 +104,15 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Pissou_JumpedOn" ID="{B878D8B2-4732-42F7-8096-6F42107CC014}" ShortID="1062257999">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9585E77C-2FAB-40BA-9662-DAF1046BB9A9}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>

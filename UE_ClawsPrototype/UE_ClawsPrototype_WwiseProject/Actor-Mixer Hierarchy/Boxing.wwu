@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="BoxingMixer" ID="{D26E26DC-8EB7-47E6-920C-B6122D5DB8E0}" ShortID="356101616">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -18,6 +19,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>
@@ -42,7 +44,7 @@
 									<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Boxing_DryWet" ID="{B8384818-36C0-49F8-A995-BB47A1961153}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Boxing_DryWet" ID="{72D146F7-6D8D-4C19-A697-2D723C84F710}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -126,13 +128,13 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Boxing_Wet" ID="{039454C3-EBA1-4DC4-9470-7F6109240CB6}"/>
+										<SwitchRef Name="Boxing_Wet" ID="{307E7363-5ECB-4498-86D0-BD7EF108876D}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_JumpedOn_Wet" ID="{3FB1ABC2-ABF3-4DF7-A5F0-D37050DD39D5}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Boxing_Dry" ID="{A52164FF-C5FA-47FF-B42D-96D8299E1898}"/>
+										<SwitchRef Name="Boxing_Dry" ID="{7ADB3B7D-36AE-4D19-8CB3-5B47117DC15D}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_JumpedOn_Dry" ID="{E3F80772-7F9A-44B9-B603-0DB89F1E904C}"/>
 										</ItemList>
@@ -169,6 +171,7 @@
 						</Sound>
 						<Sound Name="BOXING_Fills" ID="{F5F4C6D5-31E5-4122-9BE7-5C74220E4AA8}" ShortID="685694928">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -176,6 +179,7 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -212,7 +216,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Boxing_DryWet" ID="{B8384818-36C0-49F8-A995-BB47A1961153}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Boxing_DryWet" ID="{72D146F7-6D8D-4C19-A697-2D723C84F710}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -428,13 +432,13 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Boxing_Wet" ID="{039454C3-EBA1-4DC4-9470-7F6109240CB6}"/>
+										<SwitchRef Name="Boxing_Wet" ID="{307E7363-5ECB-4498-86D0-BD7EF108876D}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_Powerclaw_Wet" ID="{DB61FA54-EA78-43C8-8EB4-A5502CA45250}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Boxing_Dry" ID="{A52164FF-C5FA-47FF-B42D-96D8299E1898}"/>
+										<SwitchRef Name="Boxing_Dry" ID="{7ADB3B7D-36AE-4D19-8CB3-5B47117DC15D}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_Powerclaw_Dry" ID="{5C1871D5-6E9A-4BA3-A3C7-EBB0F554BB86}"/>
 										</ItemList>
@@ -443,6 +447,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Boxing_Walk" ID="{AA73B3FD-569F-45DA-8DE3-AB15EEBE1D25}" ShortID="859436511">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -451,7 +462,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Boxing_Walk_DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Boxing_Walk_DryWet" ID="{19A2D517-E735-408B-9FF5-BC4E63696416}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1019,21 +1030,28 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Boxing_Walk_Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<SwitchRef Name="Boxing_Walk_Wet" ID="{3F00ABA6-C369-4583-BC27-A748D4689840}"/>
 										<ItemList>
-											<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
+											<ItemRef Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Boxing_Walk_Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<SwitchRef Name="Boxing_Walk_Dry" ID="{ACBD37CF-2A4C-461F-86A2-C715FA69B6FE}"/>
 										<ItemList>
-											<ItemRef Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}"/>
+											<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" ShortID="987908580">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -1042,7 +1060,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Boxing_Rush_DryWet" ID="{C671F43F-8494-4A0D-B37F-C9B2F7F0D9B5}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Boxing_Rush_DryWet" ID="{F9D774A3-63E3-4E68-A9E1-2F467CD616FB}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1522,13 +1540,13 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Boxing_Rush_Wet" ID="{286DF77E-703F-4B9C-BE17-C6FB5ECDAFD7}"/>
+										<SwitchRef Name="Boxing_Rush_Wet" ID="{ADA57183-DE10-473F-9863-022B6267D896}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Boxing_Rush_Dry" ID="{26C83F94-92AE-43CC-9A7A-421B9E281EA6}"/>
+										<SwitchRef Name="Boxing_Rush_Dry" ID="{461E8196-1DB8-4BFF-BC75-F8BD45972F2B}"/>
 										<ItemList>
 											<ItemRef Name="BOXING_Rush_Dry" ID="{7C32A777-72DC-444B-B313-0748F4440C90}"/>
 										</ItemList>

@@ -7,50 +7,50 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Folder Name="Boxing" ID="{1E9BC499-D08F-43F9-A3B0-A45F93139C51}" ShortID="366600739">
+				<Folder Name="Anemone" ID="{0AAEC854-20DE-44CC-A056-177B1E3979AE}" ShortID="59983707">
 					<ChildrenList>
-						<Folder Name="BoxingFootsteps" ID="{76FE0D16-BC9D-4F83-AFF6-20E1F3ADC91D}" ShortID="127074969">
+						<SwitchGroup Name="Anemone_DryWet" ID="{04240855-C4EE-4E69-9281-7A0AE8DCFBA1}">
 							<ChildrenList>
-								<SwitchGroup Name="Boxing_Walk_DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}">
+								<Switch Name="Anemone_Dry" ID="{A75CBCDA-8850-4423-8AFE-20EDBBC83FE9}"/>
+								<Switch Name="Anemone_Wet" ID="{55EDAB82-8676-4E13-9833-7BBA73344F2D}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Pissou" ID="{0A252403-FBB4-44A5-8006-C95519B066C7}" ShortID="996174349">
+					<ChildrenList>
+						<SwitchGroup Name="Pissou_DryWet" ID="{5D3D72C5-9D92-4B26-9FDA-7084B5C2F1D7}">
+							<ChildrenList>
+								<Switch Name="Pissou_Dry" ID="{C737E2E9-654A-4C9B-988F-70056D3344C0}"/>
+								<Switch Name="Pissou_Wet" ID="{8BD380CD-4CB0-4BF4-AE48-E447C9452C70}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Boxing" ID="{E8A90083-B58D-4638-AEDE-B9FE1D553D90}" ShortID="1014457671">
+					<ChildrenList>
+						<SwitchGroup Name="Boxing_DryWet" ID="{72D146F7-6D8D-4C19-A697-2D723C84F710}">
+							<ChildrenList>
+								<Switch Name="Boxing_Dry" ID="{7ADB3B7D-36AE-4D19-8CB3-5B47117DC15D}"/>
+								<Switch Name="Boxing_Wet" ID="{307E7363-5ECB-4498-86D0-BD7EF108876D}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<Folder Name="Boxing_Footsteps" ID="{E7CD46FC-A306-4629-B0D0-A016D5B85FBA}" ShortID="1069328078">
+							<ChildrenList>
+								<SwitchGroup Name="Boxing_Rush_DryWet" ID="{F9D774A3-63E3-4E68-A9E1-2F467CD616FB}">
 									<ChildrenList>
-										<Switch Name="Boxing_Walk_Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
-										<Switch Name="Boxing_Walk_Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<Switch Name="Boxing_Rush_Dry" ID="{461E8196-1DB8-4BFF-BC75-F8BD45972F2B}"/>
+										<Switch Name="Boxing_Rush_Wet" ID="{ADA57183-DE10-473F-9863-022B6267D896}"/>
 									</ChildrenList>
 								</SwitchGroup>
-								<SwitchGroup Name="Boxing_Rush_DryWet" ID="{C671F43F-8494-4A0D-B37F-C9B2F7F0D9B5}">
+								<SwitchGroup Name="Boxing_Walk_DryWet" ID="{19A2D517-E735-408B-9FF5-BC4E63696416}">
 									<ChildrenList>
-										<Switch Name="Boxing_Rush_Dry" ID="{26C83F94-92AE-43CC-9A7A-421B9E281EA6}"/>
-										<Switch Name="Boxing_Rush_Wet" ID="{286DF77E-703F-4B9C-BE17-C6FB5ECDAFD7}"/>
+										<Switch Name="Boxing_Walk_Dry" ID="{ACBD37CF-2A4C-461F-86A2-C715FA69B6FE}"/>
+										<Switch Name="Boxing_Walk_Wet" ID="{3F00ABA6-C369-4583-BC27-A748D4689840}"/>
 									</ChildrenList>
 								</SwitchGroup>
 							</ChildrenList>
 						</Folder>
-						<SwitchGroup Name="Boxing_DryWet" ID="{B8384818-36C0-49F8-A995-BB47A1961153}">
-							<ChildrenList>
-								<Switch Name="Boxing_Dry" ID="{A52164FF-C5FA-47FF-B42D-96D8299E1898}"/>
-								<Switch Name="Boxing_Wet" ID="{039454C3-EBA1-4DC4-9470-7F6109240CB6}"/>
-							</ChildrenList>
-						</SwitchGroup>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Anemone" ID="{EDBFC0DC-0FF6-4D0A-9ACC-00B7A7E095FA}" ShortID="577870532">
-					<ChildrenList>
-						<SwitchGroup Name="Anemone_DryWet" ID="{58076830-D283-400D-BED1-E5391F15D2B9}">
-							<ChildrenList>
-								<Switch Name="Anemone_Dry" ID="{EEF5D56D-3CEB-4710-B486-3B991D233E1A}"/>
-								<Switch Name="Anemone_Wet" ID="{CF44B0ED-8209-408F-8E1E-6F0D5069FC2D}"/>
-							</ChildrenList>
-						</SwitchGroup>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Pissou" ID="{B7279319-08FD-4A53-A2EB-0A69E0A711DB}" ShortID="428933002">
-					<ChildrenList>
-						<SwitchGroup Name="Pissou_DryWet" ID="{5964160A-9522-4FD9-A586-67FB3C343FA0}">
-							<ChildrenList>
-								<Switch Name="Pissou_Dry" ID="{141CB472-5835-491B-BA78-015BE72A6FF5}"/>
-								<Switch Name="Pissou_Wet" ID="{CDC48640-CCAF-4C7C-9A86-CB25C5CCE25C}"/>
-							</ChildrenList>
-						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
