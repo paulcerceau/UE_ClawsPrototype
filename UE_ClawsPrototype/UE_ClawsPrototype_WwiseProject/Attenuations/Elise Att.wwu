@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Att_Speedy" ID="{F96B1767-8CFC-4C04-BA0E-46F9907D44B1}" ShortID="340143194">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="5000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,7 +22,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -50,7 +50,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>41</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -72,7 +72,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>30</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -94,7 +94,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -145,7 +145,7 @@
 				</Attenuation>
 				<Attenuation Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" ShortID="320787698">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="5000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -162,7 +162,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -190,7 +190,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>41</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -212,7 +212,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>30</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -234,7 +234,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10000</XPos>
+											<XPos>5000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

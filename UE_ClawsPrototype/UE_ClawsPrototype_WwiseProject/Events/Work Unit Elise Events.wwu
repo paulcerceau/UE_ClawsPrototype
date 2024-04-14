@@ -223,6 +223,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPIKY_WaterClaw" ID="{473A7218-10DD-4B5D-A008-13E9F74B137A}">
+							<ChildrenList>
+								<Action Name="" ID="{CCC0BB28-685E-48BD-A698-2529C1CBFD4A}" ShortID="432257444">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw" ID="{201A6BB0-01D0-469B-9A23-A4395113FFC6}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Flee_LP" ID="{8C1BDA52-4212-4299-BE92-4520EF34415E}">
+							<ChildrenList>
+								<Action Name="" ID="{CF0EB3B6-6879-4CDB-9225-D25E17144A84}" ShortID="616703107">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Flee_LP" ID="{7DF93960-2497-4D03-8717-03DBD5E77A4B}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Shakes" ID="{9B450B9D-6608-4CAD-95DC-7419FFEBF8C7}">
+							<ChildrenList>
+								<Action Name="" ID="{A99E2097-E9DF-4344-8812-5811F1282D5A}" ShortID="623874507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Shakes" ID="{7AD0C0F3-2BC1-4B54-99E1-967189943ADE}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_Walk" ID="{7315295C-6742-48D4-B942-F66307081B58}">
+							<ChildrenList>
+								<Action Name="" ID="{84522510-06B9-496E-A545-330AB56F5C96}" ShortID="751751533">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_Walk" ID="{6B1F39E6-AC05-4E78-8925-6658D8B601B1}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
