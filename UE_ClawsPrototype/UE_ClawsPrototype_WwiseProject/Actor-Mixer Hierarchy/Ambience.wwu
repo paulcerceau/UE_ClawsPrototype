@@ -19,6 +19,8 @@
 					<ChildrenList>
 						<Sound Name="AMBIENT_Cave_Garden" ID="{9B5AD3C4-4A3B-44EE-A97F-E5137909356B}" ShortID="776791063">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -26,11 +28,13 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -98,6 +102,7 @@
 								<Sound Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" ShortID="180254355">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -106,11 +111,13 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -144,6 +151,7 @@
 								<Sound Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" ShortID="822393853">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -152,11 +160,13 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -211,6 +221,7 @@
 									<ChildrenList>
 										<Sound Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" ShortID="327108470">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -218,11 +229,13 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-14</Value>
@@ -316,6 +329,7 @@
 									<ChildrenList>
 										<Sound Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" ShortID="736383169">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -323,11 +337,13 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-15</Value>
@@ -407,8 +423,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="THEME_Cave_PurpleVariation" ID="{D91552EA-B505-4117-AA65-033706284256}" ShortID="540325791">
+										<Sound Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" ShortID="108747965">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -416,14 +433,16 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-15</Value>
+														<Value>-11</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -436,37 +455,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="THEME_Cave_PurpleVariation" ID="{E6335F8C-F53A-4FA2-9953-32266C93F2A0}">
+												<AudioFileSource Name="THEME_Cave_PurpleVariation_V4" ID="{371A70F9-5EAF-4C08-A415-E51A061368A9}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="74.6631018625305"/>
-														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="LoopBegin" Type="Real64" Value="31.2010490578477"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>THEME_Cave_PurpleVariation.wav</AudioFile>
+													<AudioFile>THEME_Cave_PurpleVariation_V4.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="63877829"/>
+														<MediaID ID="459141105"/>
 													</MediaIDList>
-													<ObjectLists>
-														<ObjectList Name="Markers">
-															<Reference>
-																<Local>
-																	<Marker Name="" ID="{51A11F8E-3B05-491C-B134-A4F1D212489D}">
-																		<PropertyList>
-																			<Property Name="Time" Type="Real64" Value="74.6630710426346"/>
-																		</PropertyList>
-																	</Marker>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists>
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{CC3B5D07-9499-4D20-86EF-EDF380916D84}" ShortID="827630007">
+															<RTPC Name="" ID="{39F4AB0F-6BE6-43BF-94AD-219A8FE59440}" ShortID="1071273323">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -476,7 +481,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{8DA08956-B5F3-4BCB-8025-C566F4007E91}">
+																			<Curve Name="" ID="{79006860-C084-498B-90B4-22D27C5CF266}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -503,7 +508,7 @@
 												</ObjectList>
 											</ObjectLists>
 											<ActiveSourceList>
-												<ActiveSource Name="THEME_Cave_PurpleVariation" ID="{E6335F8C-F53A-4FA2-9953-32266C93F2A0}" Platform="Linked"/>
+												<ActiveSource Name="THEME_Cave_PurpleVariation_V4" ID="{371A70F9-5EAF-4C08-A415-E51A061368A9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -512,6 +517,8 @@
 						</Folder>
 						<Sound Name="AMBIENT_Cave_Blue_V2" ID="{047AD3E9-53B4-492E-86F4-15AFC3A93FC9}" ShortID="518756779">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -519,11 +526,13 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -588,6 +597,8 @@
 						</Sound>
 						<Sound Name="AMBIENT_Cave_Forest_V2" ID="{E1E5E328-B9EB-4910-BAC4-623772258896}" ShortID="648195451">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -595,11 +606,13 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -666,6 +679,7 @@
 							<ChildrenList>
 								<Sound Name="AMBIENT_Cave_Pink" ID="{4A6D54CC-B5D7-4F06-87B3-8808E9A38511}" ShortID="607629985">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -674,11 +688,13 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -743,12 +759,14 @@
 								</Sound>
 								<RandomSequenceContainer Name="Cave_Pink_Mining" ID="{8912E60B-D22D-4439-81D1-5352FB08900E}" ShortID="125746">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -771,6 +789,7 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1047,15 +1066,18 @@
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1295,8 +1317,22 @@
 								<Sound Name="AMBIENT_CavePurple_River_Lp" ID="{59A27C7D-07BA-4B85-8DA5-244300CFCE6B}" ShortID="705461180">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>7</Value>
@@ -1327,9 +1363,29 @@
 										<ActiveSource Name="AMBIENT_CavePurple_River_Lp" ID="{D29F2F81-BE1D-4E9E-A54A-AE94D38E0FBD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="AMBIENT_CavePurple_V4" ID="{FEFB6020-9F80-410E-A842-591C656D4564}" ShortID="1013930874">
+								<Sound Name="AMBIENT_Cave_Purple_V5" ID="{E0AF0919-59E4-4675-9520-DFFB8B2CE043}" ShortID="949215778">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1340,11 +1396,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="AMBIENT_CavePurple_V4" ID="{C15266B5-47F3-4031-9DE2-BDE3529DBF58}">
+										<AudioFileSource Name="AMBIENT_Cave_Purple_V5" ID="{1215BA2E-0D1E-493F-8A98-F7A392A7B6E2}">
 											<Language>SFX</Language>
-											<AudioFile>AMBIENT_CavePurple_V4.wav</AudioFile>
+											<AudioFile>AMBIENT_Cave_Purple_V5.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="632539750"/>
+												<MediaID ID="630208572"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -1352,7 +1408,7 @@
 										<ObjectList Name="RTPC">
 											<Reference>
 												<Local>
-													<RTPC Name="" ID="{3C1D6AB2-0935-43BE-87A8-1D97BF591A44}" ShortID="543168209">
+													<RTPC Name="" ID="{6947A63A-628A-4AC2-BACD-DB3D315E4DF4}" ShortID="1052603267">
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="Volume"/>
 														</PropertyList>
@@ -1362,7 +1418,7 @@
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
-																	<Curve Name="" ID="{6E48F266-DB44-4E5C-BF2D-1A6A38FF4661}">
+																	<Curve Name="" ID="{AEFB025D-F278-4255-8148-82719ACB7CA5}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -1389,7 +1445,7 @@
 										</ObjectList>
 									</ObjectLists>
 									<ActiveSourceList>
-										<ActiveSource Name="AMBIENT_CavePurple_V4" ID="{C15266B5-47F3-4031-9DE2-BDE3529DBF58}" Platform="Linked"/>
+										<ActiveSource Name="AMBIENT_Cave_Purple_V5" ID="{1215BA2E-0D1E-493F-8A98-F7A392A7B6E2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
