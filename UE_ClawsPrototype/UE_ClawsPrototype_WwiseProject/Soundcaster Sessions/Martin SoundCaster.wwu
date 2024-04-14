@@ -23,9 +23,19 @@
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{C0B1A4CF-96ED-48D9-94FC-385691C7AB64}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+						<CurrentSwitchRef Name="Boxing_Walk_Dry" ID="{ACBD37CF-2A4C-461F-86A2-C715FA69B6FE}"/>
+						<CurrentSwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+						<CurrentSwitchRef Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}"/>
+						<CurrentSwitchRef Name="Corals" ID="{33230FFC-78F4-4F00-AFA0-088D09C618FC}"/>
+						<CurrentSwitchRef Name="Pissou_Dry" ID="{C737E2E9-654A-4C9B-988F-70056D3344C0}"/>
+						<CurrentSwitchRef Name="Boxing_Dry" ID="{7ADB3B7D-36AE-4D19-8CB3-5B47117DC15D}"/>
+						<CurrentSwitchRef Name="Boxing_Rush_Dry" ID="{461E8196-1DB8-4BFF-BC75-F8BD45972F2B}"/>
+						<CurrentSwitchRef Name="Anemone_Dry" ID="{A75CBCDA-8850-4423-8AFE-20EDBBC83FE9}"/>
+						<CurrentSwitchRef Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
