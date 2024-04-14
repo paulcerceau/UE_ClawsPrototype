@@ -24,6 +24,7 @@
 				<SoundBank Name="Anemone" ID="{5EFB3385-9126-4DA6-90DB-ECDCA6B5CE9C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Anemone_WaterClawed" ID="{A4604A12-9D4F-404E-B883-06CAB560A09D}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Anemone_Idle" ID="{68E30BA2-1CCE-4461-BCB2-361280146351}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Anemone_Empties" ID="{DB760B28-232D-46E1-998D-2C9385D19791}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Anemone_WaterClawed" ID="{9F4DD6E0-D1F9-49E2-8ED3-A884C4061DDB}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Anemone_JumpedOn" ID="{DC259A80-17A2-4CB4-8832-2234B2C75272}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
