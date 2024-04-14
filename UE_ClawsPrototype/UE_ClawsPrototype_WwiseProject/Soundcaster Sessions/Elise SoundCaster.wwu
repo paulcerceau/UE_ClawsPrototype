@@ -6,8 +6,44 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{DF6519DF-EC2F-45ED-BB75-25A142455D92}">
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_Music_CavePurple" ID="{82333C3C-748A-40BC-88CF-CEBE19CCA9A9}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_CavePink" ID="{C4500483-934E-42D5-9677-81EA4F581F13}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_Music_CavePink" ID="{D2C6F3A3-8BB2-466A-8A66-C0CCE8D9FF18}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_CaveBlue" ID="{743CC903-3094-46AC-B06C-2379BA4E2856}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_Music_CaveForest" ID="{5E168F56-C664-47D0-AC2C-C1A36000E301}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_CavePurple" ID="{70F3008A-E6A2-47D9-967E-F9603C286408}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Hit_Type" ID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="WaterFall_Distance" ID="{B1BA9373-0FBE-4A66-9A7A-75BCBE748C5D}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_CaveForest" ID="{AC40B43D-E14C-4B7D-A38F-63E150D2900D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_CaveGarden" ID="{A8FC6FD8-7A95-4B8A-9829-EA0116820078}"/>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -15,6 +51,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Corals" ID="{0206F064-1B90-475D-BBCA-CA206B1A973B}"/>
+						<CurrentSwitchRef Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}"/>
 						<CurrentSwitchRef Name="Corals" ID="{33230FFC-78F4-4F00-AFA0-088D09C618FC}"/>
 						<CurrentSwitchRef Name="Corals" ID="{C531E5F7-2A36-456C-AF21-AD4A5A7BE124}"/>
 					</CurrentSwitchList>
@@ -24,14 +61,6 @@
 						<Module>
 							<ObjectRef Name="Play_Powerclaw_Deploying" ID="{899A8F47-E80F-4126-A4F5-76DE56F375B7}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
 							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Powerclaw_Hit" ID="{74F9B796-8EE6-4B78-97E2-77F92ABB4974}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Powerclaw_Retracting" ID="{6F22D5E7-7631-49AA-83E2-21FDAB15ECD3}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}"/>
-							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
