@@ -42,6 +42,64 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Boxing_Rush" ID="{E81B46B5-C9EB-464B-BF4D-AF00F044C23F}">
+							<ChildrenList>
+								<Action Name="" ID="{982D4F11-6C2A-4AA0-B2CE-554A91A8A9F9}" ShortID="961288151">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boxing_Walk" ID="{F273E395-96A2-4291-8250-D95D4744EC40}">
+							<ChildrenList>
+								<Action Name="" ID="{2F742CBA-088A-4C57-9688-2ABC670F467F}" ShortID="780948413">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boxing_Walk" ID="{AA73B3FD-569F-45DA-8DE3-AB15EEBE1D25}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boxing_PowerClawed" ID="{65D30513-605D-4D95-9C8A-65D04F337340}">
+							<ChildrenList>
+								<Action Name="" ID="{92DC1884-7574-45C1-A136-10F5E561B43D}" ShortID="641247346">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boxing_PowerClaw" ID="{070BA9D1-9177-4E2A-A0BF-6F711747A75E}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boxing_WaterClawed" ID="{C22DDA1D-207B-4C4E-A0D2-783598E2DDB6}">
+							<ChildrenList>
+								<Action Name="" ID="{B97208DE-EC6C-4BCA-92A6-38D98A05F512}" ShortID="316830542">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BOXING_WaterClaw_Wet" ID="{9CDCBE37-735D-4E82-B5E2-888F790FBD47}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Boxing_WaterClawed" ID="{24BCC7C9-817A-4A31-A127-A29CAFBB63A4}">
+							<ChildrenList>
+								<Action Name="" ID="{6BBC8CCD-999B-4158-BBD0-EF088EFFB1C7}" ShortID="576794750">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BOXING_WaterClaw_Wet" ID="{9CDCBE37-735D-4E82-B5E2-888F790FBD47}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Anemone" ID="{76C85392-35C3-4AA2-BD8F-2AB605B9686B}" ShortID="129419728">
@@ -125,6 +183,53 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="PISSOU_Fills" ID="{2CF6CDC1-05F7-47FE-B190-E29E4AB75076}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pissou_WalkedOn" ID="{F859DDCA-93A4-4DFF-A2BA-12B2BCFB55A9}">
+							<ChildrenList>
+								<Action Name="" ID="{1E3D6307-C39D-49AF-8A2D-44F05E5BF31C}" ShortID="1004446685">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pissou_WalkedOn" ID="{A76251C8-4C75-419E-A93D-B11493C0ACB0}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pissou_JumpedOn" ID="{3A7740E5-7393-41A8-B39C-824E9801F64E}">
+							<ChildrenList>
+								<Action Name="" ID="{BFE5C136-54B3-435B-AC25-42449F2D3FAB}" ShortID="1015069876">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pissou_JumpedOn" ID="{B878D8B2-4732-42F7-8096-6F42107CC014}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pissou_WaterClawed" ID="{12063D17-4573-4E4E-BFB0-21DCA25A353B}">
+							<ChildrenList>
+								<Action Name="" ID="{15CE2CE9-C4EA-4F07-8B4B-E235D3B84095}" ShortID="559677618">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PISSOU_WaterClaw_Wet" ID="{B59BE660-1C9B-4EA6-9E68-3AF30A414751}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Pissou_WaterClawed" ID="{DE997AC5-D7CA-47B5-8BBF-04515ABBFE64}">
+							<ChildrenList>
+								<Action Name="" ID="{EA95F8C6-76E9-481B-BCFB-6C534D41B9BA}" ShortID="1054844451">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PISSOU_WaterClaw_Wet" ID="{B59BE660-1C9B-4EA6-9E68-3AF30A414751}" WorkUnitID="{63A16083-7916-4E41-82E6-1A1F5F86DC3F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
