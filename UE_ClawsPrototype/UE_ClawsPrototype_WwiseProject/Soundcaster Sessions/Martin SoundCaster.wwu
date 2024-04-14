@@ -25,7 +25,11 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+						<CurrentSwitchRef Name="Anemone_Dry" ID="{EEF5D56D-3CEB-4710-B486-3B991D233E1A}"/>
+						<CurrentSwitchRef Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}"/>
+						<CurrentSwitchRef Name="Boxing_Rush_Dry" ID="{26C83F94-92AE-43CC-9A7A-421B9E281EA6}"/>
+						<CurrentSwitchRef Name="Boxing_Walk_Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+						<CurrentSwitchRef Name="Pissou_Dry" ID="{141CB472-5835-491B-BA78-015BE72A6FF5}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

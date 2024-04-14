@@ -181,7 +181,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Anemone_DryWet" ID="{58076830-D283-400D-BED1-E5391F15D2B9}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -265,20 +265,6 @@
 										<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
-										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
-										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" ShortID="109218555">
@@ -293,7 +279,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Anemone_DryWet" ID="{58076830-D283-400D-BED1-E5391F15D2B9}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -377,20 +363,6 @@
 										<ItemRef Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
-										<ItemList>
-											<ItemRef Name="ANEMONE_WaterClaw_Dry" ID="{9F01A2BD-8460-41B9-9ECC-D6B18630BC8A}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
-										<ItemList>
-											<ItemRef Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
