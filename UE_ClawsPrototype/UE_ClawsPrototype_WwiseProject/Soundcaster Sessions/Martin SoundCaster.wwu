@@ -13,6 +13,14 @@
 							<ObjectRef Name="Play_Anemone_Idle" ID="{880BD0DB-A288-4CBB-A625-57955950795D}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boxing_PowerClawed" ID="{65D30513-605D-4D95-9C8A-65D04F337340}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pissou_Empties" ID="{98F6100F-110A-47EE-BE06-2A372A6A58D2}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>

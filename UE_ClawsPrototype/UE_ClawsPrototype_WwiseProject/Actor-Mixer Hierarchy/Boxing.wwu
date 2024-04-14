@@ -4,6 +4,26 @@
 		<WorkUnit Name="Boxing" ID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}" OwnerID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="BoxingMixer" ID="{D26E26DC-8EB7-47E6-920C-B6122D5DB8E0}" ShortID="356101616">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B3849090-24D6-4DC9-9E1A-B4E7478B3C07}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -18,9 +38,6 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
-								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
@@ -30,6 +47,20 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="BOXING_JumpedOn_Dry" ID="{E3F80772-7F9A-44B9-B603-0DB89F1E904C}" ShortID="195752710">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E23BC934-7320-4FCA-A402-6EB4FECC5308}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -137,6 +168,20 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="BOXING_Fills" ID="{F5F4C6D5-31E5-4122-9BE7-5C74220E4AA8}" ShortID="685694928">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -381,6 +426,20 @@
 										<ItemRef Name="BOXING_Powerclaw_Dry" ID="{5C1871D5-6E9A-4BA3-A3C7-EBB0F554BB86}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Powerclaw_Dry" ID="{5C1871D5-6E9A-4BA3-A3C7-EBB0F554BB86}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Powerclaw_Wet" ID="{DB61FA54-EA78-43C8-8EB4-A5502CA45250}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Boxing_Walk" ID="{AA73B3FD-569F-45DA-8DE3-AB15EEBE1D25}" ShortID="859436511">
@@ -958,6 +1017,20 @@
 										<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" ShortID="987908580">
@@ -1447,6 +1520,20 @@
 										<ItemRef Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Rush_Dry" ID="{7C32A777-72DC-444B-B313-0748F4440C90}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<ItemList>
+											<ItemRef Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="BOXING_WaterClaw_Wet" ID="{9CDCBE37-735D-4E82-B5E2-888F790FBD47}" ShortID="659042685">
