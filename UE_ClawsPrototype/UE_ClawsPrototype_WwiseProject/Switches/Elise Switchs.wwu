@@ -11,6 +11,14 @@
 						<Switch Name="Speedy_Rush" ID="{50E717C5-76F9-4DEE-947D-5226DD361820}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Spiky_Walk" ID="{245AF809-D14D-448D-85F7-E6F5C248B950}">
+					<ChildrenList>
+						<Switch Name="Spiky_Walk_Corals" ID="{71FD7D3B-3BBB-45A0-A240-730811FC42A6}"/>
+						<Switch Name="Spiky_Walk_Crystals" ID="{B4EE66C7-0DFD-4AB2-B572-ACC0D5093626}"/>
+						<Switch Name="Spiky_Walk_Sand" ID="{F85EECBE-E523-4E10-BB20-69D7936788AB}"/>
+						<Switch Name="Spiky_Walk_Vegetation" ID="{BC788786-3672-4CA9-AE6D-2895DC382F87}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

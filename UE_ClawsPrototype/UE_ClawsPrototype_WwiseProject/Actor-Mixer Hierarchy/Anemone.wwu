@@ -4,6 +4,28 @@
 		<WorkUnit Name="Anemone" ID="{85724744-6C99-46AB-AF29-CEDAF11B7347}" OwnerID="{EA8FFB62-D23E-42A2-9078-8592BAB8FF20}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="AnemoneMixer" ID="{1D1F4769-26C4-4C40-B315-A5C7244020FF}" ShortID="852345328">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{337E5337-3E19-40F0-A4A6-15F699F23921}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -15,15 +37,110 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="ANEMONE_Idle_Wet" ID="{B1B37FDA-78E5-42D1-841C-B7718FBD4348}" ShortID="60625148">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{95124C58-31FC-4DCC-BA84-A429A29D81B5}" ShortID="62254186">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="20"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{5AAF3613-0AF2-4EFE-A032-37F6978ACA46}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>20</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 								</Reference>
@@ -148,7 +265,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -160,7 +277,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Anemone_DryWet" ID="{04240855-C4EE-4E69-9281-7A0AE8DCFBA1}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -246,15 +363,15 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<SwitchRef Name="Anemone_Wet" ID="{55EDAB82-8676-4E13-9833-7BBA73344F2D}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
+											<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<SwitchRef Name="Anemone_Dry" ID="{A75CBCDA-8850-4423-8AFE-20EDBBC83FE9}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
+											<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -272,7 +389,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="DryWet" ID="{40A2B983-80F6-4EB4-846F-45A79CF61A1D}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+									<ObjectRef Name="Anemone_DryWet" ID="{04240855-C4EE-4E69-9281-7A0AE8DCFBA1}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -358,15 +475,15 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Dry" ID="{CD7B1A3D-1628-4D4F-B3EA-92987B78FF4F}"/>
+										<SwitchRef Name="Anemone_Wet" ID="{55EDAB82-8676-4E13-9833-7BBA73344F2D}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_WaterClaw_Dry" ID="{9F01A2BD-8460-41B9-9ECC-D6B18630BC8A}"/>
+											<ItemRef Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Wet" ID="{39EE5B4C-995A-4AE0-9244-5DBC6D72169E}"/>
+										<SwitchRef Name="Anemone_Dry" ID="{A75CBCDA-8850-4423-8AFE-20EDBBC83FE9}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_WaterClaw_Wet" ID="{7647C7D0-8A5A-49FE-A8B5-E639B4D623D4}"/>
+											<ItemRef Name="ANEMONE_WaterClaw_Dry" ID="{9F01A2BD-8460-41B9-9ECC-D6B18630BC8A}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
