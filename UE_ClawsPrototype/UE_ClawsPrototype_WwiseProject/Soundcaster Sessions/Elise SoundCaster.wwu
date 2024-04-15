@@ -10,8 +10,16 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Fade_Lead_CaveBlue" ID="{DF8BA078-C198-41E9-8289-F51E9C03975F}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Fade_GP_CavePink" ID="{C4500483-934E-42D5-9677-81EA4F581F13}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_Percu_CaveBlue" ID="{59B86BCD-A836-465B-A629-400FB37CBEE0}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fade_GP_Music_CavePink" ID="{D2C6F3A3-8BB2-466A-8A66-C0CCE8D9FF18}"/>
@@ -30,6 +38,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Fade_Synth_CaveBlue" ID="{7230E7AB-A7CA-4918-B452-FE30298F24F6}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Hit_Type" ID="{8DF7A178-7C2C-4A2A-8D37-9ACE66C59546}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -43,6 +55,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fade_GP_CaveGarden" ID="{A8FC6FD8-7A95-4B8A-9829-EA0116820078}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_Pad_caveBlue" ID="{D0D67EB0-B31D-4BA5-B649-2C66D152DFF4}"/>
 							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
