@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}" SchemaVersion="119" RootDocumentID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" ParentDocumentID="{905A051A-B6AE-48B5-A468-C02A85CD8543}">
+	<AudioObjects>
+		<WorkUnit Name="Spiky" ID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}" OwnerID="{905A051A-B6AE-48B5-A468-C02A85CD8543}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Spiky_Mix" ID="{30349F8D-D38E-424A-888B-579158E7182E}" ShortID="84966823">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="SPIKY_Hides" ID="{BF1D56E0-D1E2-4147-8DA8-9BE5BD492433}" ShortID="984087043">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_Hides_01" ID="{6C5A300F-F51F-4DAE-A973-57B19ED54C86}" ShortID="956510296">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_Hides_01" ID="{E01BA022-E4B3-45B7-A5B0-5F77E2D45338}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_Hides_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="370432283"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_Hides_01" ID="{E01BA022-E4B3-45B7-A5B0-5F77E2D45338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPIKY_Unhides" ID="{0976F36C-EC67-4656-BB0E-58E41AF08BC6}" ShortID="13683691">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_Unhides_01" ID="{0D460C34-B3AD-43A5-8C6B-EC6F55C490AB}" ShortID="301212204">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_Unhides_01" ID="{B8BE4DA3-2EED-4CD6-8C94-86F1590F6A92}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_Unhides_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="991845926"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_Unhides_01" ID="{B8BE4DA3-2EED-4CD6-8C94-86F1590F6A92}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPIKY_PowerClaw_FlippedUp" ID="{851413C9-65D9-4AD9-9D09-825269F5C1D5}" ShortID="847177401">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9235BF3D-BE75-4F4C-A842-A3EA55CFDA88}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_PowerClaw_FlippedUp_01" ID="{B48BADC6-2217-48C2-82EC-093BC8F3FBB5}" ShortID="642061121">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClaw_FlippedUp_01" ID="{4FC203D3-7DFC-4C4A-A5A1-6D3F5698AFBA}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClaw_FlippedUp_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1073088849"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClaw_FlippedUp_01" ID="{4FC203D3-7DFC-4C4A-A5A1-6D3F5698AFBA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClaw_FlippedUp_02" ID="{08A2336B-80E9-46FF-AFB3-F30F86250509}" ShortID="873956194">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClaw_FlippedUp_02" ID="{361BE766-7A1D-499A-A020-123875502C71}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClaw_FlippedUp_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="102613042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClaw_FlippedUp_02" ID="{361BE766-7A1D-499A-A020-123875502C71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClaw_FlippedUp_03" ID="{A4F56A77-B842-42C9-983B-B4E9E57F3176}" ShortID="242667069">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClaw_FlippedUp_03" ID="{73D4F3F0-B9BD-4675-8899-DBBA7DC913EA}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClaw_FlippedUp_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="699871500"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClaw_FlippedUp_03" ID="{73D4F3F0-B9BD-4675-8899-DBBA7DC913EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClaw_FlippedUp_04" ID="{6DDF7CC8-0B05-405E-9B21-244D75C8097B}" ShortID="512307279">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClaw_FlippedUp_04" ID="{758C8404-ACAA-4BDD-9816-DCF3C137F563}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClaw_FlippedUp_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="43801253"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClaw_FlippedUp_04" ID="{758C8404-ACAA-4BDD-9816-DCF3C137F563}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClaw_FlippedUp_05" ID="{C8F3282B-384A-40DA-AFA7-C33210A87D01}" ShortID="231853109">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClaw_FlippedUp_05" ID="{3E58CE8E-CE96-45E2-ACB7-B171BDD33440}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClaw_FlippedUp_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="175714857"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClaw_FlippedUp_05" ID="{3E58CE8E-CE96-45E2-ACB7-B171BDD33440}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPIKY_PowerClawFlippedDown" ID="{AF78F540-800F-4DE0-B1BA-8FD7DE7E997F}" ShortID="368528574">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{44173408-8217-4EE7-B85C-25918147F65A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_PowerClawFlippedDown_01" ID="{0B64A02E-32BA-476F-9D7B-E9DB625AAB54}" ShortID="40927969">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClawFlippedDown_01" ID="{F15EB15E-4E75-4ADC-B4D3-966764EF3739}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClawFlippedDown_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916745433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClawFlippedDown_01" ID="{F15EB15E-4E75-4ADC-B4D3-966764EF3739}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClawFlippedDown_02" ID="{9BD53C6C-2B0E-4C59-A294-981352CFE689}" ShortID="156122173">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClawFlippedDown_02" ID="{226474FF-2A78-4C2D-87BB-0FD07B3B8D9D}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClawFlippedDown_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="291764976"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClawFlippedDown_02" ID="{226474FF-2A78-4C2D-87BB-0FD07B3B8D9D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClawFlippedDown_03" ID="{2BDEA753-E158-46B6-ACF6-299DD5D5EB53}" ShortID="852742262">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClawFlippedDown_03" ID="{43AC3C80-9E65-442E-A1B7-8A55D42A12F5}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClawFlippedDown_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300977410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClawFlippedDown_03" ID="{43AC3C80-9E65-442E-A1B7-8A55D42A12F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClawFlippedDown_04" ID="{42120BA8-E3D0-46A7-93BB-AA33B21578CB}" ShortID="197780279">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClawFlippedDown_04" ID="{510479F3-7DE9-4E72-846E-463DE5DD2D42}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClawFlippedDown_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="61301901"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClawFlippedDown_04" ID="{510479F3-7DE9-4E72-846E-463DE5DD2D42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_PowerClawFlippedDown_05" ID="{0D9A96A4-EAB3-493A-8C1A-8F7A4FA0249F}" ShortID="323894163">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_PowerClawFlippedDown_05" ID="{1DEC1968-AB7B-4DEE-908A-F3010D032E07}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_PowerClawFlippedDown_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="332959994"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_PowerClawFlippedDown_05" ID="{1DEC1968-AB7B-4DEE-908A-F3010D032E07}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SPIKY_WaterClaw" ID="{201A6BB0-01D0-469B-9A23-A4395113FFC6}" ShortID="793172052">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{27D1A7F2-3CBE-4BC6-BDA1-AFFFAF954F5A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_WaterClaw_01" ID="{501F029D-D346-48CF-ADC6-5F4486D80B1D}" ShortID="62959576">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_01" ID="{FB4FB0E0-1C36-492B-BD8E-B4936D08EB21}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="548708447"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_01" ID="{FB4FB0E0-1C36-492B-BD8E-B4936D08EB21}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_02" ID="{4496ABE9-F812-4DD7-97A5-C7537223FC04}" ShortID="382448470">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_02" ID="{3F515E2C-A9A8-437F-87AF-B2928F32BFD7}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="287132087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_02" ID="{3F515E2C-A9A8-437F-87AF-B2928F32BFD7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_03" ID="{90FC45BB-458F-4C96-AD43-925596BE8265}" ShortID="904076106">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_03" ID="{D1CC8922-5FEB-47F4-A047-101346631654}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328672436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_03" ID="{D1CC8922-5FEB-47F4-A047-101346631654}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SPIKY_WaterClaw_Flee_LP" ID="{7DF93960-2497-4D03-8717-03DBD5E77A4B}" ShortID="1024257680">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SPIKY_WaterClaw_Flee_LP" ID="{A4942812-0896-49AC-9A58-780600130E29}">
+									<Language>SFX</Language>
+									<AudioFile>SPIKY_WaterClaw_Flee_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="199596448"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SPIKY_WaterClaw_Flee_LP" ID="{A4942812-0896-49AC-9A58-780600130E29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="SPIKY_WaterClaw_Shakes" ID="{7AD0C0F3-2BC1-4B54-99E1-967189943ADE}" ShortID="350705174">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C691C523-EA1B-4325-BA58-A128C1FE6682}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_WaterClaw_Shakes_01" ID="{F476DA60-8251-4A06-8283-13814A362228}" ShortID="166532699">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_01" ID="{DC37A53B-3761-4B09-8E29-D9F9724DEA97}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="604176256"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_01" ID="{DC37A53B-3761-4B09-8E29-D9F9724DEA97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shakes_02" ID="{C3E5365F-827D-48B3-8D18-048D4CDB596F}" ShortID="276670929">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_02" ID="{ED30FC81-8811-435C-8636-D0F27B76E385}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="537722441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_02" ID="{ED30FC81-8811-435C-8636-D0F27B76E385}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shakes_03" ID="{6C80F9E1-7C1E-467C-B5E0-ED8E0DB3AC2D}" ShortID="853291153">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_03" ID="{42DC433D-96C1-42D3-903C-78B9DBA27E86}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="384890414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_03" ID="{42DC433D-96C1-42D3-903C-78B9DBA27E86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shakes_04" ID="{C4C2F265-02AC-4F73-B930-CB1E0773241E}" ShortID="737732197">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_04" ID="{D18F7392-E595-4E1C-B68B-E51A4FE07886}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="743954441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_04" ID="{D18F7392-E595-4E1C-B68B-E51A4FE07886}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shakes_05" ID="{2DEA6A33-4FBE-47F2-9C87-48FE7727FEB6}" ShortID="625853469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_05" ID="{07435B08-9775-4A64-8108-660ECC14743E}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="936453085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_05" ID="{07435B08-9775-4A64-8108-660ECC14743E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shakes_06" ID="{B5426B9E-E289-430C-831E-80C38B612117}" ShortID="296039938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shakes_06" ID="{AF0F4C02-D987-4D24-A2A9-7E786336B4B6}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shakes_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="982432109"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shakes_06" ID="{AF0F4C02-D987-4D24-A2A9-7E786336B4B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="SPIKY_Walk" ID="{6B1F39E6-AC05-4E78-8925-6658D8B601B1}" ShortID="80213636">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Spiky_Walk_Corals" ID="{71FD7D3B-3BBB-45A0-A240-730811FC42A6}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Spiky_Walk" ID="{245AF809-D14D-448D-85F7-E6F5C248B950}" WorkUnitID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="SPIKY_Walk__Sand" ID="{A508FB78-BAC8-4D42-B236-34CB15ADDEAD}" ShortID="846416830">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0C3BCA62-6B89-41E0-8135-D9E624B536B9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SPIKY_Walk_Sand_01" ID="{7FFAD3DE-88C1-42AE-8C45-C3A95B5BA716}" ShortID="877981502">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_01" ID="{4FCBF793-4930-436A-BD03-564BB41D4740}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="777564941"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_01" ID="{4FCBF793-4930-436A-BD03-564BB41D4740}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_02" ID="{4A3EA983-66FF-4CF8-BF03-0201A8C1CFDB}" ShortID="330189019">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_02" ID="{8D3CDB53-EAA5-421B-8A8C-3360124000CD}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="405957651"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_02" ID="{8D3CDB53-EAA5-421B-8A8C-3360124000CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_03" ID="{E8876516-2E26-4921-9CF4-3A03AE0A5A9F}" ShortID="606532829">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_03" ID="{D92FC9A6-5A98-4A73-9272-E29CF757D96F}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="327292251"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_03" ID="{D92FC9A6-5A98-4A73-9272-E29CF757D96F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_04" ID="{B8099774-1B90-45EE-8B45-DD9A27FBFD60}" ShortID="587928830">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_04" ID="{D02DF8C5-2E68-4BC2-AD0E-625AC41DD685}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="708998779"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_04" ID="{D02DF8C5-2E68-4BC2-AD0E-625AC41DD685}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_06" ID="{8B40D3F0-A18A-4EF0-8093-FDFC6BCA38E0}" ShortID="1009921867">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_06" ID="{52753E9A-8388-4258-9FE8-1679D053B5FC}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="945221279"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_06" ID="{52753E9A-8388-4258-9FE8-1679D053B5FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_07" ID="{474FAB3A-0C1B-4DA2-854E-73290A3EDC75}" ShortID="154983413">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_07" ID="{C560303D-2526-405C-A207-B855A1292883}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="731236146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_07" ID="{C560303D-2526-405C-A207-B855A1292883}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Sand_05" ID="{2F85DDFA-031C-4E4C-935F-04CF8275C57B}" ShortID="235186834">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Sand_05" ID="{4664C626-34BF-4FFC-A040-DDAC9FF339B2}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Sand_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22139526"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Sand_05" ID="{4664C626-34BF-4FFC-A040-DDAC9FF339B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SPIKY_Walk__Vegetation" ID="{EFB123F2-BF6D-4B89-8218-8CD535B6B485}" ShortID="884995684">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A332822F-07F2-4FA3-BA0A-5D711DA5E907}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SPIKY_Walk_Vegetation_07" ID="{D8834E0D-8318-4D59-A6E9-38D06712EDA7}" ShortID="25008666">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_07" ID="{18090C11-C9E1-4059-8F48-BC97E028FD16}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202275111"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_07" ID="{18090C11-C9E1-4059-8F48-BC97E028FD16}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_03" ID="{7515CAA0-81F3-4C65-B662-8480A98288D5}" ShortID="297233735">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_03" ID="{92B3F93E-02DD-4051-8EB3-0A68CBAD4A14}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="992896954"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_03" ID="{92B3F93E-02DD-4051-8EB3-0A68CBAD4A14}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_05" ID="{41BA2FFC-FC46-46DC-AE50-B0419B11A0BD}" ShortID="202615037">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_05" ID="{88B6EA7E-88C7-466D-8AF8-4CAB6D63AE45}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="649183953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_05" ID="{88B6EA7E-88C7-466D-8AF8-4CAB6D63AE45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_04" ID="{457A864A-3224-40E1-8B2E-47F1540EC2D8}" ShortID="306539664">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_04" ID="{1A6B5900-53E3-47D5-8160-2414BC60BDEF}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="13702426"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_04" ID="{1A6B5900-53E3-47D5-8160-2414BC60BDEF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_06" ID="{EB73060D-7FCB-4DAB-A185-189CDB1BD9C9}" ShortID="205495136">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_06" ID="{6D3F4738-E5CA-422B-AE12-A762F06143EB}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="775509588"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_06" ID="{6D3F4738-E5CA-422B-AE12-A762F06143EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_02" ID="{5AF38FD2-48A3-4E05-90CF-B7C2FB529730}" ShortID="895931027">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_02" ID="{D5F47E8C-05D5-4196-8864-F541ECD045F0}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="530627239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_02" ID="{D5F47E8C-05D5-4196-8864-F541ECD045F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Vegetation_01" ID="{4486E128-01EC-4C0F-B846-93C06E5D7603}" ShortID="513559941">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Vegetation_01" ID="{5786893D-57AF-484F-897B-58FC0AF5AB68}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Vegetation_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="458451909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Vegetation_01" ID="{5786893D-57AF-484F-897B-58FC0AF5AB68}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SPIKY_Walk_Corals" ID="{E46DEF74-4BCC-4315-9B37-C7AA8B59E731}" ShortID="875831501">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9FD3E2E3-70E9-4ED4-B7EB-6054A13267A5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SPIKY_Walk_Corals_01" ID="{71D58BD5-8BE6-4C15-BB56-A917612F66C0}" ShortID="710667410">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_01" ID="{2760E26D-C796-445F-AA1D-1CBF7E184F6A}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1036516872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_01" ID="{2760E26D-C796-445F-AA1D-1CBF7E184F6A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_02" ID="{2CD4D840-4A50-4381-88D0-A0E43AAEF3E5}" ShortID="37343196">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_02" ID="{40DD2257-9875-4E0B-B3A9-7E34263B3090}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="245981813"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_02" ID="{40DD2257-9875-4E0B-B3A9-7E34263B3090}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_03" ID="{08AD3C7C-B72E-439F-9C1A-08475E1807F1}" ShortID="730496810">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_03" ID="{9AE532DA-FEC3-4D45-96B2-D46A5B0CC0C7}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="341716077"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_03" ID="{9AE532DA-FEC3-4D45-96B2-D46A5B0CC0C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_04" ID="{E96EAB23-D30F-4BDC-9BFA-112246C8BE07}" ShortID="925367080">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_04" ID="{A30E6BD7-A89E-4629-B7E1-AAB7F3F2F112}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="251217953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_04" ID="{A30E6BD7-A89E-4629-B7E1-AAB7F3F2F112}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_05" ID="{1BB9BC19-1B59-431C-A33F-29705BA88EA3}" ShortID="734642618">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_05" ID="{8035C9B8-27AE-4AC5-905E-698A15DF217F}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="323898390"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_05" ID="{8035C9B8-27AE-4AC5-905E-698A15DF217F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_06" ID="{846C0635-B799-416E-86C9-A60C15F99C9A}" ShortID="930912730">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_06" ID="{E857A324-11F6-4E3E-BCAC-14DFCFAE3DBB}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1013451488"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_06" ID="{E857A324-11F6-4E3E-BCAC-14DFCFAE3DBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Corals_07" ID="{7D5013CC-A971-4A70-B3F9-259541695DAE}" ShortID="701720741">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Corals_07" ID="{AEC89CD9-5BD8-4A74-BDA6-BFF9DD3DBC93}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Corals_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="280269873"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Corals_07" ID="{AEC89CD9-5BD8-4A74-BDA6-BFF9DD3DBC93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SPIKY_Walk__Crystals" ID="{E1019005-A2D0-46FA-A2EF-E0027C24DD90}" ShortID="1058063258">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{84DC0B5D-0C91-4E10-8C04-B452048F572E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SPIKY_Walk_Crystals_01" ID="{40DE64FD-36D0-4A4A-8E87-869E41EC3101}" ShortID="360939027">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_01" ID="{5DA418CC-33B2-4144-82FF-89016D972E2E}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="534504542"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_01" ID="{5DA418CC-33B2-4144-82FF-89016D972E2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_02" ID="{5B285A95-7FB0-4081-8B40-50953EB26AA6}" ShortID="712914683">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_02" ID="{B703C4B5-8D18-44BF-A348-9DE031145EA3}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="720709626"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_02" ID="{B703C4B5-8D18-44BF-A348-9DE031145EA3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_03" ID="{81EDE954-0362-458B-AA8E-B880ABB7B3DC}" ShortID="778100377">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_03" ID="{EC244E37-60E5-4C45-B9BD-7F842A63E043}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="674911992"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_03" ID="{EC244E37-60E5-4C45-B9BD-7F842A63E043}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_04" ID="{97A72D37-EC81-41A8-97F8-417552EB79A1}" ShortID="619461334">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_04" ID="{47DCF1C4-DC08-42E1-B4F7-82E589E0B61E}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="140591069"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_04" ID="{47DCF1C4-DC08-42E1-B4F7-82E589E0B61E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_05" ID="{111C4FC9-8FB2-4422-AC5F-644E1328C59C}" ShortID="929789914">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_05" ID="{EAFED673-F699-470A-94CA-007D5CBD3A5A}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="26276635"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_05" ID="{EAFED673-F699-470A-94CA-007D5CBD3A5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_06" ID="{4CD5918C-A716-4AC1-9980-E4DFD085EA1E}" ShortID="799394072">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_06" ID="{30B5A694-185B-4BDA-AD9B-0D84B24DD1DE}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="608785668"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_06" ID="{30B5A694-185B-4BDA-AD9B-0D84B24DD1DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SPIKY_Walk_Crystals_07" ID="{718F7F2B-AF2E-43A4-A6A2-071C84E5A02E}" ShortID="852876062">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Spiky" ID="{1C7A50E5-2CC2-43C1-978E-715639872B48}" WorkUnitID="{AD30BD8E-7736-4784-BD6F-28E65009655A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SPIKY_Walk_Crystals_07" ID="{53B915A4-A304-4E5D-97CC-D68A4B9BC8A5}">
+													<Language>SFX</Language>
+													<AudioFile>SPIKY_Walk_Crystals_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="561523472"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SPIKY_Walk_Crystals_07" ID="{53B915A4-A304-4E5D-97CC-D68A4B9BC8A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="SPIKY_Walk__Crystals" ID="{E1019005-A2D0-46FA-A2EF-E0027C24DD90}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="SPIKY_Walk_Corals" ID="{E46DEF74-4BCC-4315-9B37-C7AA8B59E731}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="SPIKY_Walk__Sand" ID="{A508FB78-BAC8-4D42-B236-34CB15ADDEAD}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="SPIKY_Walk__Vegetation" ID="{EFB123F2-BF6D-4B89-8218-8CD535B6B485}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Spiky_Walk_Corals" ID="{71FD7D3B-3BBB-45A0-A240-730811FC42A6}"/>
+										<ItemList>
+											<ItemRef Name="SPIKY_Walk_Corals" ID="{E46DEF74-4BCC-4315-9B37-C7AA8B59E731}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Spiky_Walk_Vegetation" ID="{BC788786-3672-4CA9-AE6D-2895DC382F87}"/>
+										<ItemList>
+											<ItemRef Name="SPIKY_Walk__Vegetation" ID="{EFB123F2-BF6D-4B89-8218-8CD535B6B485}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Spiky_Walk_Sand" ID="{F85EECBE-E523-4E10-BB20-69D7936788AB}"/>
+										<ItemList>
+											<ItemRef Name="SPIKY_Walk__Sand" ID="{A508FB78-BAC8-4D42-B236-34CB15ADDEAD}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Spiky_Walk_Crystals" ID="{B4EE66C7-0DFD-4AB2-B572-ACC0D5093626}"/>
+										<ItemList>
+											<ItemRef Name="SPIKY_Walk__Crystals" ID="{E1019005-A2D0-46FA-A2EF-E0027C24DD90}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

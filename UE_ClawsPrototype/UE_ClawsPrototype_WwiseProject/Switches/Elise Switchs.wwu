@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Elise Switchs" ID="{DE24FEC4-593A-43F7-B2FD-6CC90BD248A1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Speedy_Movement" ID="{09D8FA59-19F7-4896-BBFF-9A3AE09D4156}">
+					<ChildrenList>
+						<Switch Name="Speedy_Idle_Wet" ID="{5A5A3D08-18F5-406F-8947-917F6389EF11}"/>
+						<Switch Name="Speedy_Idle_Dry" ID="{CB37F839-CE7B-4484-8C06-F22E66ED9FC0}"/>
+						<Switch Name="Speedy_Walk" ID="{620AA2B2-A02F-43B1-A72F-0BE043C3A5ED}"/>
+						<Switch Name="Speedy_Rush" ID="{50E717C5-76F9-4DEE-947D-5226DD361820}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Spiky_Walk" ID="{245AF809-D14D-448D-85F7-E6F5C248B950}">
+					<ChildrenList>
+						<Switch Name="Spiky_Walk_Corals" ID="{71FD7D3B-3BBB-45A0-A240-730811FC42A6}"/>
+						<Switch Name="Spiky_Walk_Crystals" ID="{B4EE66C7-0DFD-4AB2-B572-ACC0D5093626}"/>
+						<Switch Name="Spiky_Walk_Sand" ID="{F85EECBE-E523-4E10-BB20-69D7936788AB}"/>
+						<Switch Name="Spiky_Walk_Vegetation" ID="{BC788786-3672-4CA9-AE6D-2895DC382F87}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
