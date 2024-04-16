@@ -38,6 +38,188 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="Music" ID="{67C6006F-B03A-4DD7-8E2B-8279A7E9B910}" ShortID="657804240">
+									<ChildrenList>
+										<Event Name="Play_Music_Intro_CaveBlue" ID="{9D3C8C04-5CEB-4514-B1AD-1F3A34D0FE3B}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{633EA9A7-8DF0-41E8-A8A9-FF8DCAF6EEDE}" ShortID="522266550">
+													<PropertyList>
+														<Property Name="FadeInCurve" Type="int16" Value="6"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Lead_CaveBlue" ID="{35207A5B-5D9D-41F8-A23F-849F1217328E}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{01955649-AFDF-456A-9C48-A1442F0C8D36}" ShortID="203197921">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Percu_CaveBlue" ID="{0FA7839D-AC72-41F3-9058-169357AF550C}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{F6D1CC94-5B93-4B66-86D0-B6CFEA0E41BD}" ShortID="442486726">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Synth_CaveBlue" ID="{D2B2BB60-6135-4285-AC62-02DA4C7B8316}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{13F02DA8-707A-404C-8708-FAF8E484C494}" ShortID="300114732">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Pad_CaveBlue" ID="{06894D52-3D66-4611-8548-D64CB5FEBAC3}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{720FEB08-1A01-490B-9C9F-18C50ACD331C}" ShortID="920922512">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Music_Pad_CaveBlue" ID="{C28FC620-AC67-4400-ABAA-02A6242D9061}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{AC636271-C223-48BD-BF52-E92B66716EC5}" ShortID="17691815">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Music_Intro_CaveBlue" ID="{8F30AC51-E586-473E-81E8-9E22C606AFA3}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{4F414EAF-8A17-4AF6-BDDC-92797C432100}" ShortID="990329904">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Music_Lead_CaveBlue" ID="{FFB3CFDC-F313-46D2-BAF2-7AEFC6444CF3}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{7F20B49E-EBEF-4A41-8DAF-42CB4EAEAF13}" ShortID="416615487">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="6"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Music_Percu_CaveBlue" ID="{DF6FF42E-BD1F-4BA5-A267-D67E479FD3F5}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{752A8E08-A725-426F-B0C1-800AEE7B14C9}" ShortID="435401373">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Music_Synth_CaveBlue" ID="{183EC550-1613-4193-A87E-B216E207CA34}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Action Name="" ID="{AE2F0BBA-8F75-4F77-A58C-820400DC2046}" ShortID="320544869">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Cave_Purple" ID="{94452025-F471-4EBC-8CE1-AB24472951BA}" ShortID="698142117">
