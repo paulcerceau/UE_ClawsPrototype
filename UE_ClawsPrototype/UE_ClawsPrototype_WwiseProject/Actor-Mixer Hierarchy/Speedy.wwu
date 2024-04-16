@@ -931,6 +931,7 @@
 						</Sound>
 						<RandomSequenceContainer Name="SPEEDY_Powerclaw" ID="{57C2F9CF-56FD-4FCD-BBD0-E4D27D395014}" ShortID="647290962">
 							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
