@@ -42,17 +42,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Boxing_Rush" ID="{E81B46B5-C9EB-464B-BF4D-AF00F044C23F}">
-							<ChildrenList>
-								<Action Name="" ID="{982D4F11-6C2A-4AA0-B2CE-554A91A8A9F9}" ShortID="961288151">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Boxing_Walk" ID="{F273E395-96A2-4291-8250-D95D4744EC40}">
 							<ChildrenList>
 								<Action Name="" ID="{2F742CBA-088A-4C57-9688-2ABC670F467F}" ShortID="780948413">
