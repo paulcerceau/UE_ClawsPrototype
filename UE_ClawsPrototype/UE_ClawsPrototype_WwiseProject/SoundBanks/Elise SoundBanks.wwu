@@ -39,6 +39,7 @@
 						<ObjectRef Name="Play_SPEEDY_Movement" ID="{BF5AF0A9-CC07-4077-AE57-9A238834E48B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Throw" ID="{8337C9CA-E98A-4237-9DCE-EF757575F09B}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Rush" ID="{AB003464-60EC-42E7-B65E-8DE700D5C04A}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Powerclaw" ID="{B199425D-5AB3-4331-A137-59D0E5342445}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
@@ -54,6 +55,13 @@
 						<ObjectRef Name="Stop_DEBUG_SOUND_LP" ID="{A4A9D88D-CC1D-43F2-8F44-2F69C6859852}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DEBUG_SOUND_OS" ID="{34BA237D-3D96-46B9-A373-1E9CC2583648}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Arsene" ID="{1695D7D1-386F-4856-992A-A3891545ECCD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Arsene_Walk" ID="{180ADB96-8B6E-4C0E-83FE-252657A0E4AE}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

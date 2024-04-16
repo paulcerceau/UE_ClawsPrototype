@@ -929,6 +929,167 @@
 								<ActiveSource Name="SPEEDY_Transition_Wet-Dry" ID="{D2794C38-D763-407C-B0D1-9EC105663170}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="SPEEDY_Powerclaw" ID="{57C2F9CF-56FD-4FCD-BBD0-E4D27D395014}" ShortID="647290962">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D3FCE150-1E96-4406-92C6-BA6F40D91000}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPEEDY_Powerclaw_01" ID="{80DC9243-23F7-419B-BE1F-169A08C9426A}" ShortID="615883533">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_01" ID="{8A0F74CC-E2EC-415A-B54F-7328983E9F01}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="633398509"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_01" ID="{8A0F74CC-E2EC-415A-B54F-7328983E9F01}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Powerclaw_02" ID="{D7410042-C286-4FC2-BB7F-0826B5FBB9C9}" ShortID="1065676506">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_02" ID="{1E890833-7B59-498C-95D9-2CC0ACF131BF}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="246968489"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_02" ID="{1E890833-7B59-498C-95D9-2CC0ACF131BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Powerclaw_03" ID="{1B5437C2-92D7-4032-85FA-B3C9C968EDF2}" ShortID="394982561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_03" ID="{0E91A5D0-76C1-471E-ABFF-D221BCE82795}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1025254144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_03" ID="{0E91A5D0-76C1-471E-ABFF-D221BCE82795}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Powerclaw_04" ID="{166B8D08-407D-4A78-8990-CAB1BB8D3C5D}" ShortID="212227908">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_04" ID="{381D55DC-CC56-40B3-A6FA-426DFF4B7E6E}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="922345856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_04" ID="{381D55DC-CC56-40B3-A6FA-426DFF4B7E6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Powerclaw_05" ID="{C7AEFFE3-0549-4CDB-B41C-65658926DC54}" ShortID="285821734">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_05" ID="{2465E85B-33D8-4DE0-AC61-A56B57A56AC7}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="155664146"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_05" ID="{2465E85B-33D8-4DE0-AC61-A56B57A56AC7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPEEDY_Powerclaw_06" ID="{502EC35B-BF2F-45D3-AA1B-40AE0E9DF3E7}" ShortID="142182881">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPEEDY_Powerclaw_06" ID="{AF3D87B3-FADC-40DB-B75F-F35B2DF9D0E7}">
+											<Language>SFX</Language>
+											<AudioFile>SPEEDY_Powerclaw_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="364821664"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPEEDY_Powerclaw_06" ID="{AF3D87B3-FADC-40DB-B75F-F35B2DF9D0E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

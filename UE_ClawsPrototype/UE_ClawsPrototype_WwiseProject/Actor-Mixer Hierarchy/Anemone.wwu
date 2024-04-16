@@ -263,6 +263,17 @@
 						</Sound>
 						<SwitchContainer Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" ShortID="459712093">
 							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -281,19 +292,110 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}" ShortID="174435946">
+								<RandomSequenceContainer Name="ANEMONE_JumpedOn_Dry" ID="{ADE2BD2B-FA01-4EE3-A197-1DB8F3DAF3AB}" ShortID="644811828">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ANEMONE_JumpedOn_Dry_01" ID="{2F55FCF6-99DB-4D99-BC04-1B8454D2F3F9}" ShortID="592244131">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Dry_01" ID="{509255DD-D8EF-4C9F-9096-3D703700A2AC}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Dry_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="64352054"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Dry_01" ID="{509255DD-D8EF-4C9F-9096-3D703700A2AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Dry_02" ID="{38A3DD7C-E8B5-4D98-8202-F9EE4B1CA298}" ShortID="103691988">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Dry_02" ID="{94E36F05-24F5-44D8-B75D-85E4ABEAD04D}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Dry_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="407337008"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Dry_02" ID="{94E36F05-24F5-44D8-B75D-85E4ABEAD04D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Dry_03" ID="{29E79DAF-51BD-48E5-88C3-47AADECD4B15}" ShortID="524180464">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Dry_03" ID="{ED80CACB-9CC9-4BE5-8C08-82506DA29469}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Dry_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="799355516"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Dry_03" ID="{ED80CACB-9CC9-4BE5-8C08-82506DA29469}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Dry_04" ID="{552AACB8-4B17-4249-80FB-3FBABC3E8450}" ShortID="671773553">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Dry_04" ID="{072316C6-4CE5-4A10-9340-456EDC119C9A}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Dry_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="628446934"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Dry_04" ID="{072316C6-4CE5-4A10-9340-456EDC119C9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ANEMONE_JumpedOn_Wet" ID="{A3B513E6-A895-415D-A899-6AB7BD69D25E}" ShortID="378478099">
 									<PropertyList>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -304,74 +406,117 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANEMONE_JumpedOn_Wet" ID="{1AB28991-DB54-4B3E-80FB-A7C51C677DAB}">
-											<Language>SFX</Language>
-											<AudioFile>ANEMONE_JumpedOn_Wet.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="263367464"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="ANEMONE_JumpedOn_Wet_01" ID="{86C211F3-1BC2-43D4-9494-1CCA03097BF5}" ShortID="508651316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Wet_01" ID="{267B1C6F-BA34-4FCC-9F14-885F1CF2C6ED}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Wet_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="948978822"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Wet_01" ID="{267B1C6F-BA34-4FCC-9F14-885F1CF2C6ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Wet_02" ID="{10C9CC5A-B10E-4FCB-943D-73D5851140C0}" ShortID="805494171">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Wet_02" ID="{5FE77029-F2F4-4247-8DE5-7371E45C28C8}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Wet_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="411263322"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Wet_02" ID="{5FE77029-F2F4-4247-8DE5-7371E45C28C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Wet_03" ID="{6A972B88-BBF8-494D-9824-B246C8B75C5A}" ShortID="235881362">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Wet_03" ID="{C00287A7-08B0-4E00-AC4B-226DD5235444}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Wet_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="238583209"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Wet_03" ID="{C00287A7-08B0-4E00-AC4B-226DD5235444}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ANEMONE_JumpedOn_Wet_04" ID="{4F70843C-856C-4B77-8B86-D9DC15952B10}" ShortID="568865676">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ANEMONE_JumpedOn_Wet_04" ID="{A3967F42-CE4D-4B09-85F7-2390BD6433CF}">
+													<Language>SFX</Language>
+													<AudioFile>ANEMONE_JumpedOn_Wet_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="817513339"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ANEMONE_JumpedOn_Wet_04" ID="{A3967F42-CE4D-4B09-85F7-2390BD6433CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ANEMONE_JumpedOn_Wet" ID="{1AB28991-DB54-4B3E-80FB-A7C51C677DAB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}" ShortID="578358291">
-									<PropertyList>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_FX" ID="{184F6CBA-6765-404B-8773-A8FD4F7B26A4}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ANEMONE_JumpedOn_Dry" ID="{652A8899-7156-4CBD-95B4-AC7798F826EF}">
-											<Language>SFX</Language>
-											<AudioFile>ANEMONE_JumpedOn_Dry.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="140388533"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ANEMONE_JumpedOn_Dry" ID="{652A8899-7156-4CBD-95B4-AC7798F826EF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
+										<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{ADE2BD2B-FA01-4EE3-A197-1DB8F3DAF3AB}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
+										<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{A3B513E6-A895-415D-A899-6AB7BD69D25E}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Anemone_Wet" ID="{55EDAB82-8676-4E13-9833-7BBA73344F2D}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{E8F67972-2AAC-466E-8638-3D4C7E435DDB}"/>
+											<ItemRef Name="ANEMONE_JumpedOn_Wet" ID="{A3B513E6-A895-415D-A899-6AB7BD69D25E}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Anemone_Dry" ID="{A75CBCDA-8850-4423-8AFE-20EDBBC83FE9}"/>
 										<ItemList>
-											<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{FC32B9B3-A764-450B-969B-5979B4D5EEB2}"/>
+											<ItemRef Name="ANEMONE_JumpedOn_Dry" ID="{ADE2BD2B-FA01-4EE3-A197-1DB8F3DAF3AB}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
