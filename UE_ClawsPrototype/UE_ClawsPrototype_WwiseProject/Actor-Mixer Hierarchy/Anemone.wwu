@@ -22,7 +22,7 @@
 						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

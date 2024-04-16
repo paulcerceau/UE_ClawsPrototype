@@ -6,11 +6,6 @@
 				<ActorMixer Name="Speedy_Mix" ID="{4742B5F4-A758-44B3-B3C2-7BEB1EA6A77F}" ShortID="826507933">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
