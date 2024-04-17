@@ -36,7 +36,7 @@
 								<Action Name="" ID="{F9B08DC3-2DA0-45AA-A8A6-662428DF19D6}" ShortID="611001375">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BOXING_Bumps" ID="{BE95BE03-0AAD-4D0B-B763-FF848BD43122}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+											<ObjectRef Name="Boxing_Bumps" ID="{FC83FB6B-E5B2-4757-B95A-37662B892310}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
