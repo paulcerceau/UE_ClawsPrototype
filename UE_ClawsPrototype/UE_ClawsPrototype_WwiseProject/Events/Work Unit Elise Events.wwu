@@ -340,6 +340,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Arsene_Cut_Rope" ID="{430391CD-C7C4-44E3-BB21-51C3698A7CB4}">
+							<ChildrenList>
+								<Action Name="" ID="{2A9F3E45-5510-4985-A551-A0AF71DB6D1B}" ShortID="1025356542">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ARSENE_Cut_Rope" ID="{A9EE9E75-D3AE-4BC4-B68B-0E8646D93467}" WorkUnitID="{905A051A-B6AE-48B5-A468-C02A85CD8543}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

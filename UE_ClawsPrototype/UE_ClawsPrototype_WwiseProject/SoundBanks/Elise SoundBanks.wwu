@@ -62,6 +62,7 @@
 				</SoundBank>
 				<SoundBank Name="Arsene" ID="{1695D7D1-386F-4856-992A-A3891545ECCD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Arsene_Cut_Rope" ID="{430391CD-C7C4-44E3-BB21-51C3698A7CB4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Arsene_Walk" ID="{180ADB96-8B6E-4C0E-83FE-252657A0E4AE}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
