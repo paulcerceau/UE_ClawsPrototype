@@ -186,6 +186,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPEEDY_Powerclaw_Land" ID="{F4C01E25-B784-48D6-A72E-84C4323AAEDE}">
+							<ChildrenList>
+								<Action Name="" ID="{5CEAF5A3-EFEE-496D-94EF-E400CA357558}" ShortID="121251906">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Powerclaw_Land" ID="{E1BB6B06-11B1-4375-87BA-B285CC2F4996}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Spiky" ID="{0AE88515-B910-48F9-8E5F-921A10885AC6}" ShortID="348880988">
