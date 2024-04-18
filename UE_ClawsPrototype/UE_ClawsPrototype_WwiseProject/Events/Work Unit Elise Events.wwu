@@ -314,6 +314,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Flee_End" ID="{F9AE707C-E217-47AD-812D-131FD66C6021}">
+							<ChildrenList>
+								<Action Name="" ID="{4C26E4EA-5324-41C3-9662-2DC0EFDC91ED}" ShortID="916693759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Flee_End" ID="{6790BEF6-67AD-4810-92A4-990EEE246394}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
