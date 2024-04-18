@@ -22,7 +22,9 @@
 				</SoundBank>
 				<SoundBank Name="Spiky" ID="{61B7A1FF-60BF-4CF5-83B5-099CE768F3F4}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_SPIKY_WaterClaw_Flee_LP" ID="{21E3723A-6661-40D4-B30C-0EB5B09106DC}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_WaterClaw_Flee_LP" ID="{8C1BDA52-4212-4299-BE92-4520EF34415E}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPIKY_WaterClaw_Shell" ID="{D0492AD2-F2A3-4411-BB6B-2AE93B88826E}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_PowerClaw_FlippedUp" ID="{D23BB6CE-3ECC-445B-B920-83825DDE1BE5}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_Walk" ID="{7315295C-6742-48D4-B942-F66307081B58}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPIKY_Unhides" ID="{C95DDA7D-66EB-4A93-ABA2-F7F3EE7959B5}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>

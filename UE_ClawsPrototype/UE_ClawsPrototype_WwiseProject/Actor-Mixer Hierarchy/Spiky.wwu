@@ -487,7 +487,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="SPIKY_WaterClaw_Flee_LP" ID="{A4942812-0896-49AC-9A58-780600130E29}">
+								<AudioFileSource Name="SPIKY_WaterClaw_Flee_LP" ID="{F4FD0D82-892B-4DDE-9524-C5B0FF69ED0B}">
 									<Language>SFX</Language>
 									<AudioFile>SPIKY_WaterClaw_Flee_LP.wav</AudioFile>
 									<MediaIDList>
@@ -496,7 +496,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SPIKY_WaterClaw_Flee_LP" ID="{A4942812-0896-49AC-9A58-780600130E29}" Platform="Linked"/>
+								<ActiveSource Name="SPIKY_WaterClaw_Flee_LP" ID="{F4FD0D82-892B-4DDE-9524-C5B0FF69ED0B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="SPIKY_WaterClaw_Shakes" ID="{7AD0C0F3-2BC1-4B54-99E1-967189943ADE}" ShortID="350705174">
@@ -1607,6 +1607,179 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="SPIKY_WaterClaw_Shell" ID="{744C16A9-94A6-4CB4-A7FD-AC7B232FAD8B}" ShortID="660919537">
+							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8160479C-DCF0-4646-8299-263A620CA32E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SPIKY_WaterClaw_Shell_01" ID="{6CC148B9-B98F-4FEC-AE2D-46CAABE0488F}" ShortID="622876552">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_01" ID="{A6AA6FEC-DA21-4F40-8415-432D3583E019}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="129347291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_01" ID="{A6AA6FEC-DA21-4F40-8415-432D3583E019}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shell_02" ID="{239B98B9-6EE0-490F-8483-CC2D9E5584E1}" ShortID="351769110">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_02" ID="{8CED703B-64FA-4AC9-B07F-9AF372742574}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643982344"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_02" ID="{8CED703B-64FA-4AC9-B07F-9AF372742574}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shell_03" ID="{1007A0C6-FAA5-4D65-B46A-561969C09151}" ShortID="734964561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_03" ID="{FF073BD0-F731-4440-8201-326D9CE40FBD}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1033051800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_03" ID="{FF073BD0-F731-4440-8201-326D9CE40FBD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shell_04" ID="{DB21831A-FBBB-4493-B451-A358C880BFE6}" ShortID="443166592">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_04" ID="{5F693C37-F032-4012-BAEE-1E7469E63B46}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="731380868"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_04" ID="{5F693C37-F032-4012-BAEE-1E7469E63B46}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shell_05" ID="{1F933840-E50F-43EF-BF10-437F727A660D}" ShortID="361254500">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_05" ID="{0922CB11-131F-4FF5-85D2-9454525F543C}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="462900480"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_05" ID="{0922CB11-131F-4FF5-85D2-9454525F543C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SPIKY_WaterClaw_Shell_06" ID="{CA643EF6-E82E-46BD-A337-6748AF80D14A}" ShortID="970753955">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SPIKY_WaterClaw_Shell_06" ID="{35BEF191-AC05-40F4-917E-1C6BBD234E86}">
+											<Language>SFX</Language>
+											<AudioFile>SPIKY_WaterClaw_Shell_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="901912893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SPIKY_WaterClaw_Shell_06" ID="{35BEF191-AC05-40F4-917E-1C6BBD234E86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

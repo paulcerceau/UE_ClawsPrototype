@@ -303,6 +303,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Shell" ID="{D0492AD2-F2A3-4411-BB6B-2AE93B88826E}">
+							<ChildrenList>
+								<Action Name="" ID="{2773F27D-76CC-4189-96B4-84A8E9DDFC48}" ShortID="127119913">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Shell" ID="{744C16A9-94A6-4CB4-A7FD-AC7B232FAD8B}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
