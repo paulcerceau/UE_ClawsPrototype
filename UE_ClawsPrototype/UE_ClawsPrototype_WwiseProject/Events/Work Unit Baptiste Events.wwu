@@ -713,6 +713,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_SFX_PickUpObjets" ID="{0AB92527-FC3B-47FF-B763-FD2BB2865BB3}">
+									<ChildrenList>
+										<Action Name="" ID="{00C58BA2-E38F-4FD1-A1B9-42CAE3FD8B58}" ShortID="446687969">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Claws_SFX_PickUpObjects" ID="{47C9B5C6-06CA-4A81-95C8-5E2AF8F55D5E}" WorkUnitID="{23A9E730-6B37-4477-8E70-47FEB11C358E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Walk" ID="{C5D0DEB1-354C-477E-8AF8-1D908025C75E}" ShortID="837937519">

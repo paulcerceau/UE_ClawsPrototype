@@ -175,6 +175,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SPEEDY_Powerclaw" ID="{B199425D-5AB3-4331-A137-59D0E5342445}">
+							<ChildrenList>
+								<Action Name="" ID="{D2E1ED3D-58F5-4218-B5AA-AE1813507AF7}" ShortID="337176771">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Powerclaw" ID="{57C2F9CF-56FD-4FCD-BBD0-E4D27D395014}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPEEDY_Powerclaw_Land" ID="{F4C01E25-B784-48D6-A72E-84C4323AAEDE}">
+							<ChildrenList>
+								<Action Name="" ID="{5CEAF5A3-EFEE-496D-94EF-E400CA357558}" ShortID="121251906">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPEEDY_Powerclaw_Land" ID="{E1BB6B06-11B1-4375-87BA-B285CC2F4996}" WorkUnitID="{C6B56B48-1F51-4DF4-81E1-EA73B7EB9E4E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Spiky" ID="{0AE88515-B910-48F9-8E5F-921A10885AC6}" ShortID="348880988">
@@ -267,6 +289,42 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_SPIKY_WaterClaw_Flee_LP" ID="{21E3723A-6661-40D4-B30C-0EB5B09106DC}">
+							<ChildrenList>
+								<Action Name="" ID="{87E5AA43-CA3C-4868-B26A-74EEEAA30BC2}" ShortID="663598386">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Flee_LP" ID="{7DF93960-2497-4D03-8717-03DBD5E77A4B}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Shell" ID="{D0492AD2-F2A3-4411-BB6B-2AE93B88826E}">
+							<ChildrenList>
+								<Action Name="" ID="{2773F27D-76CC-4189-96B4-84A8E9DDFC48}" ShortID="127119913">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Shell" ID="{744C16A9-94A6-4CB4-A7FD-AC7B232FAD8B}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SPIKY_WaterClaw_Flee_End" ID="{F9AE707C-E217-47AD-812D-131FD66C6021}">
+							<ChildrenList>
+								<Action Name="" ID="{4C26E4EA-5324-41C3-9662-2DC0EFDC91ED}" ShortID="916693759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SPIKY_WaterClaw_Flee_End" ID="{6790BEF6-67AD-4810-92A4-990EEE246394}" WorkUnitID="{E5ACBF30-89DC-45E0-9321-9D5744D5B892}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_DEBUG_SOUND_LP" ID="{696F638C-EE20-4E47-A3C8-8BBAE051FCC8}">
@@ -305,6 +363,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Arsene" ID="{4793D4AE-2C84-4088-BB60-EC1E5C27B838}" ShortID="311280317">
+					<ChildrenList>
+						<Event Name="Play_Arsene_Walk" ID="{180ADB96-8B6E-4C0E-83FE-252657A0E4AE}">
+							<ChildrenList>
+								<Action Name="" ID="{32B7D650-59E1-43E1-8889-882C8CC71B0D}" ShortID="430199126">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ARSENE_Walk" ID="{BDB11627-913A-4662-B89C-99F29E2F156A}" WorkUnitID="{905A051A-B6AE-48B5-A468-C02A85CD8543}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Arsene_Cut_Rope" ID="{430391CD-C7C4-44E3-BB21-51C3698A7CB4}">
+							<ChildrenList>
+								<Action Name="" ID="{2A9F3E45-5510-4985-A551-A0AF71DB6D1B}" ShortID="1025356542">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ARSENE_Cut_Rope" ID="{A9EE9E75-D3AE-4BC4-B68B-0E8646D93467}" WorkUnitID="{905A051A-B6AE-48B5-A468-C02A85CD8543}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
