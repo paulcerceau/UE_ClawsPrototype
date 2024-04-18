@@ -142,33 +142,6 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<Sound Name="BOXING_Bumps" ID="{BE95BE03-0AAD-4D0B-B763-FF848BD43122}" ShortID="543684677">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="BOXING_Bumps_Dry" ID="{5D022099-637D-4AF3-82DB-38A16A3E425C}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0328661954365079"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.106290674603175"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>BOXING_Bumps_Dry.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="557253420"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="BOXING_Bumps_Dry" ID="{5D022099-637D-4AF3-82DB-38A16A3E425C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="BOXING_Fills" ID="{F5F4C6D5-31E5-4122-9BE7-5C74220E4AA8}" ShortID="685694928">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -448,13 +421,18 @@
 						</SwitchContainer>
 						<SwitchContainer Name="Boxing_Walk" ID="{AA73B3FD-569F-45DA-8DE3-AB15EEBE1D25}" ShortID="859436511">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="WallRush_Att" ID="{13A7960E-9EE3-49D6-B702-EDD7FFD2A3BB}" WorkUnitID="{701E2B79-4C46-4B70-87D7-17937F635789}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 								</Reference>
@@ -466,7 +444,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}" ShortID="613431164">
+								<SwitchContainer Name="Boxing_Walk_Dry" ID="{2BBF6B50-12D1-4F33-B258-CF7BA6245252}" ShortID="638169919">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -474,9 +452,12 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Boxing_Walk_Materials" ID="{2A4D7418-7F1D-48AA-B3DE-781356CC253B}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BOXING_Walk_Dry_01" ID="{1D30A778-5E03-48E9-9E1A-07C332D5F2E0}" ShortID="970954482">
+										<RandomSequenceContainer Name="Boxing_Walk_Dry_Corals" ID="{67EFD65D-FC9A-4A1A-A766-57BF625FA171}" ShortID="212559159">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -486,19 +467,141 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_01" ID="{C6F17052-2796-4301-8F4A-678F9B5D6685}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="556125506"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Corals_Dry_01" ID="{560FC316-DB07-45AC-AB08-77C7ECDFFC39}" ShortID="199466469">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_01" ID="{831F4FA6-0C69-422A-847A-EDA9183BB8E1}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="333031210"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_01" ID="{831F4FA6-0C69-422A-847A-EDA9183BB8E1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Dry_02" ID="{33B95D42-4A94-4791-9997-ADEBBB3B1002}" ShortID="372268901">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_02" ID="{EB9EA581-FCF0-48BB-841A-A6D18797141C}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="633165261"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_02" ID="{EB9EA581-FCF0-48BB-841A-A6D18797141C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Dry_03" ID="{06D9046F-B691-44EB-8543-3F758D723225}" ShortID="229315580">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_03" ID="{915F1407-2289-452A-A175-01361BB3BE4E}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1034143528"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_03" ID="{915F1407-2289-452A-A175-01361BB3BE4E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Dry_04" ID="{04E29104-EDD7-4960-8560-490DCA35A511}" ShortID="539133173">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_04" ID="{AA17CC13-F262-44F9-9373-7A4BA669ACDF}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="125221162"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_04" ID="{AA17CC13-F262-44F9-9373-7A4BA669ACDF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Dry_05" ID="{F4F64AE1-247F-44A0-B0D2-1D5BFA168EE4}" ShortID="180232050">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_05" ID="{12A21060-EC11-4BFC-ABC0-89802B07E7AF}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13332762"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_05" ID="{12A21060-EC11-4BFC-ABC0-89802B07E7AF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Dry_06" ID="{969E47D3-E936-465F-BA68-693E5DB4EDD8}" ShortID="985815859">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Dry_06" ID="{464BD3A1-2998-4F1C-BBEB-D6E7CBC0B4FD}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Dry_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="866864446"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Dry_06" ID="{464BD3A1-2998-4F1C-BBEB-D6E7CBC0B4FD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_01" ID="{C6F17052-2796-4301-8F4A-678F9B5D6685}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_02" ID="{A5B76A35-0A88-486E-8091-732A536E6428}" ShortID="362838912">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Boxing_Walk_Dry_Crystals" ID="{F692C67C-8871-45A7-9F67-A517DCB05880}" ShortID="437855737">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -508,19 +611,141 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_02" ID="{F8957C13-62EE-48CE-97B5-8359171F8191}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="763225326"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Crystals_Dry_01" ID="{BD29D537-4EF0-4023-BC80-6FD712FAFD34}" ShortID="1060294660">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_01" ID="{4E47E66B-5432-4BB8-AF87-BB532508D1CD}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="605597700"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_01" ID="{4E47E66B-5432-4BB8-AF87-BB532508D1CD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Dry_02" ID="{FB39B2E0-BD79-4115-8D96-BF1C18374CCA}" ShortID="959570636">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_02" ID="{F76D037E-0165-4CC6-8040-278F6C1D34A1}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="5999892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_02" ID="{F76D037E-0165-4CC6-8040-278F6C1D34A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Dry_03" ID="{2874D1CA-0BD1-4167-8D21-F90F3A9939A7}" ShortID="522048344">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_03" ID="{DCC93C5C-CE46-4A7F-B44F-0DFEA397685C}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="448183249"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_03" ID="{DCC93C5C-CE46-4A7F-B44F-0DFEA397685C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Dry_04" ID="{4A44DB59-4265-4DF4-BC64-6F6F49AC3922}" ShortID="1021354738">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_04" ID="{59B0B7A6-7603-4955-A515-8D13BF53DE64}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="631901549"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_04" ID="{59B0B7A6-7603-4955-A515-8D13BF53DE64}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Dry_05" ID="{28BE48FE-A639-447F-90BD-5AC7CC5BACA6}" ShortID="749410637">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_05" ID="{8A5427F9-99DD-4877-B403-B0693DD63E2D}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="462972579"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_05" ID="{8A5427F9-99DD-4877-B403-B0693DD63E2D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Dry_06" ID="{EDCE5503-0A4C-432E-9690-5DA1F35F561F}" ShortID="794002288">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Dry_06" ID="{BFAB01A9-F606-4FE7-81C6-BE2793119151}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Dry_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="411847581"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Dry_06" ID="{BFAB01A9-F606-4FE7-81C6-BE2793119151}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_02" ID="{F8957C13-62EE-48CE-97B5-8359171F8191}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_03" ID="{6DF16266-B2AB-4867-8125-AC9B8C666FD3}" ShortID="68056351">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Boxing_Walk_Dry_Sand" ID="{28FCF805-42D9-4125-9CF4-378600A714ED}" ShortID="378926966">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -530,219 +755,176 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_03" ID="{AFBF3566-9625-4F1F-9E30-CA38CD98CEF0}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="305264104"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Sand_Dry_01" ID="{221C23F2-3F64-4E16-9868-13BBF45C4A33}" ShortID="939351064">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_01" ID="{C07140A2-E908-4445-811A-5B66F8DA897A}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1006259034"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_01" ID="{C07140A2-E908-4445-811A-5B66F8DA897A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Dry_02" ID="{15DE2E51-0B95-4D23-ADA1-7BB572A41DAC}" ShortID="595099089">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_02" ID="{C1F8CE3E-6CE5-49BB-9F5D-FA171A18F2B0}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="245054490"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_02" ID="{C1F8CE3E-6CE5-49BB-9F5D-FA171A18F2B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Dry_03" ID="{2D937A79-195A-420E-A4E8-8F81D84DDB24}" ShortID="488610990">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_03" ID="{90AF67A7-DB9E-479A-9020-165442DB95CF}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="909391165"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_03" ID="{90AF67A7-DB9E-479A-9020-165442DB95CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Dry_04" ID="{6097E2A6-5F87-4454-B8E1-E7B037E39C91}" ShortID="612522843">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_04" ID="{7A947E92-2EAF-48B6-B1D4-281799465E1A}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="264126627"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_04" ID="{7A947E92-2EAF-48B6-B1D4-281799465E1A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Dry_05" ID="{4EE9835F-AF28-4F4C-A072-BAF1E0943443}" ShortID="752248732">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_05" ID="{93FA3B75-6850-40BC-ACD5-D50656BF8967}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="843030745"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_05" ID="{93FA3B75-6850-40BC-ACD5-D50656BF8967}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Dry_06" ID="{2064A759-DB78-47BE-85D0-B177516536C2}" ShortID="130506369">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Dry_06" ID="{DDF593E5-F683-4813-AD16-BF79D04DCE16}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Dry_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="993233846"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Dry_06" ID="{DDF593E5-F683-4813-AD16-BF79D04DCE16}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_03" ID="{AFBF3566-9625-4F1F-9E30-CA38CD98CEF0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_04" ID="{CE6B84D8-91D0-4D6A-94C0-6E4C533EF3C2}" ShortID="940420242">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_04" ID="{F32637A5-0304-4C0F-AF4C-B8618FD662BA}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="888505598"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_04" ID="{F32637A5-0304-4C0F-AF4C-B8618FD662BA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_05" ID="{3C663CEB-44BF-4122-8B66-8796117099EC}" ShortID="253577812">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_05" ID="{480C1F56-FE5C-42F4-A7E6-B9151985A0F7}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="10133959"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_05" ID="{480C1F56-FE5C-42F4-A7E6-B9151985A0F7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_06" ID="{86F41421-2CB1-44E4-B47C-12E6FB8F99E0}" ShortID="860490521">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_06" ID="{EE7AD0A9-19B6-4A7E-BBE3-2F7457CD8458}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="576058088"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_06" ID="{EE7AD0A9-19B6-4A7E-BBE3-2F7457CD8458}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_07" ID="{2A7EC702-EB1F-4742-B381-B9CD7FBF9789}" ShortID="387149150">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_07" ID="{0347A737-5D9F-42EE-80B9-91A01AD70907}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="310757566"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_07" ID="{0347A737-5D9F-42EE-80B9-91A01AD70907}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_08" ID="{6C80C9EF-4D33-4BCC-8757-EC8334410824}" ShortID="486537926">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_08" ID="{6C5C5123-B1DC-40C3-AF45-06C2CC29A1B4}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="818779823"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_08" ID="{6C5C5123-B1DC-40C3-AF45-06C2CC29A1B4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_09" ID="{5A187160-2B2F-4016-A204-413E20997C7F}" ShortID="183125096">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_09" ID="{EE5A6CF5-EB8C-48B0-A777-CE666073F3A3}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_09.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="218499702"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_09" ID="{EE5A6CF5-EB8C-48B0-A777-CE666073F3A3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_10" ID="{228D8D20-D734-4341-8826-1FC7DBA7583D}" ShortID="374527408">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_10" ID="{ACEEBB0A-1996-488F-9049-7A926A19E37B}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="448402480"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_10" ID="{ACEEBB0A-1996-488F-9049-7A926A19E37B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_11" ID="{1AA11E72-EF22-4CCD-BA09-4B3F4297F45A}" ShortID="777863592">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_11" ID="{3614F094-83F1-4236-AED8-26BDDA0F0A9B}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_11.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="484041520"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_11" ID="{3614F094-83F1-4236-AED8-26BDDA0F0A9B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Dry_12" ID="{375CED34-BC07-496D-B404-FC1872187639}" ShortID="110132787">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Dry_12" ID="{11BBFCA6-FD6E-4814-832A-02AAFCD3B19C}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Dry_12.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="575719758"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Dry_12" ID="{11BBFCA6-FD6E-4814-832A-02AAFCD3B19C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}" ShortID="981886083">
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Dry_Sand" ID="{28FCF805-42D9-4125-9CF4-378600A714ED}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Dry_Corals" ID="{67EFD65D-FC9A-4A1A-A766-57BF625FA171}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Dry_Crystals" ID="{F692C67C-8871-45A7-9F67-A517DCB05880}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Crystals_Boxing" ID="{41129445-3FA0-4E4B-990E-0862C29C16F4}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Dry_Crystals" ID="{F692C67C-8871-45A7-9F67-A517DCB05880}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Corals_Boxing" ID="{657C0B99-5FC8-40E0-897E-6C9DF49CE974}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Dry_Corals" ID="{67EFD65D-FC9A-4A1A-A766-57BF625FA171}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sand_Boxing" ID="{F1C4E4DF-D41C-4A5D-B8A2-58C0A572D6CF}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Dry_Sand" ID="{28FCF805-42D9-4125-9CF4-378600A714ED}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Boxing_Walk_Wet" ID="{93F39F62-CFE6-47B4-A9F7-D358DDDB138F}" ShortID="598616159">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -750,9 +932,12 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Boxing_Walk_Materials" ID="{2A4D7418-7F1D-48AA-B3DE-781356CC253B}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BOXING_Walk_Wet_01" ID="{83DE526D-52BE-4A88-9F4C-F9A0D5EDB8B2}" ShortID="11605340">
+										<RandomSequenceContainer Name="Boxing_Walk_Wet_Corals" ID="{0EDB506E-C3B0-4AAA-8467-1CF3D64686E8}" ShortID="924373010">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -762,19 +947,141 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_01" ID="{E0B25090-9956-4F46-8B40-476384AC2645}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="371414245"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Corals_Wet_01" ID="{EDAD7A22-4F3A-4C20-898D-D5C40BE543B5}" ShortID="851211419">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_01" ID="{6C903EB2-0A56-4519-B47F-337CD446E4EC}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="418694405"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_01" ID="{6C903EB2-0A56-4519-B47F-337CD446E4EC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Wet_02" ID="{785399BC-2359-49DE-8F7F-44A01C4C75F7}" ShortID="763890744">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_02" ID="{C74C852F-F632-4E04-A283-F506BA7FC369}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="124079055"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_02" ID="{C74C852F-F632-4E04-A283-F506BA7FC369}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Wet_03" ID="{25D6E407-29A7-4D96-9FF0-24B33C2CD019}" ShortID="275379008">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_03" ID="{9A12CA59-0C73-4FCD-9B12-78D08B7340B5}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="379863340"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_03" ID="{9A12CA59-0C73-4FCD-9B12-78D08B7340B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Wet_04" ID="{37F91CF7-E386-4F46-BD33-7353DC8826B8}" ShortID="157785993">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_04" ID="{992E71B8-C530-49AD-9207-CC041A84AB22}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446707154"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_04" ID="{992E71B8-C530-49AD-9207-CC041A84AB22}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Wet_05" ID="{23025ABE-6226-42B0-A8E5-0B016DB8AC2F}" ShortID="340894007">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_05" ID="{EB125EB2-0FD1-4C72-BAA2-8EA9C4736F02}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="73553942"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_05" ID="{EB125EB2-0FD1-4C72-BAA2-8EA9C4736F02}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Corals_Wet_06" ID="{B9A08691-D307-4F0F-97D8-6A78DBE3E925}" ShortID="331226263">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Corals_Wet_06" ID="{929627A8-9BEC-43CD-9039-1A0D3BC98D8F}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Corals_Wet_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="717672874"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Corals_Wet_06" ID="{929627A8-9BEC-43CD-9039-1A0D3BC98D8F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_01" ID="{E0B25090-9956-4F46-8B40-476384AC2645}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_02" ID="{4025A477-46CE-4C3D-8F62-AADD958BC52C}" ShortID="527085262">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Boxing_Walk_Wet_Crystals" ID="{8A2EACE6-E99A-431B-96E6-72401D5F3732}" ShortID="365885236">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -784,19 +1091,141 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_02" ID="{ECDD5BA5-DE31-40E7-B5D0-81BD1A1586B3}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="295146767"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Crystals_Wet_01" ID="{E97453D9-0B71-40CF-95BF-1D1DF40D6D20}" ShortID="154528770">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_01" ID="{D3B955E5-2B37-4DA9-8859-1CA5743CE02C}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="590030775"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_01" ID="{D3B955E5-2B37-4DA9-8859-1CA5743CE02C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Wet_02" ID="{A6D30B40-8772-40E9-9DA8-6340D714D03E}" ShortID="318226720">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_02" ID="{0D571A8B-CDBC-440F-AE0A-D0DC1B4E4E21}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="251982670"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_02" ID="{0D571A8B-CDBC-440F-AE0A-D0DC1B4E4E21}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Wet_03" ID="{B4339C98-AD41-4801-A306-D3CDCA544C84}" ShortID="605852939">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_03" ID="{61408C19-58C8-4091-8CB9-22591820BFB1}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="764990603"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_03" ID="{61408C19-58C8-4091-8CB9-22591820BFB1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Wet_04" ID="{C5FF968D-7840-4352-86BF-288FE5F15CB8}" ShortID="44349474">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_04" ID="{D65C9A61-8AC3-4B6C-97CB-E658FAD1A69A}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="461229777"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_04" ID="{D65C9A61-8AC3-4B6C-97CB-E658FAD1A69A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Wet_05" ID="{3C7A232B-E893-4C42-9278-E9884E33B216}" ShortID="677941312">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_05" ID="{8F5BA84F-103B-4140-B95D-52EBE26FFDE1}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="249468148"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_05" ID="{8F5BA84F-103B-4140-B95D-52EBE26FFDE1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Crystals_Wet_06" ID="{E865E639-0A84-4628-AAED-C12514F9EFFA}" ShortID="151401703">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Crystals_Wet_06" ID="{BD4C06A6-19A9-4F30-9623-73E3D39CD29D}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Crystals_Wet_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="635042754"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Crystals_Wet_06" ID="{BD4C06A6-19A9-4F30-9623-73E3D39CD29D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_02" ID="{ECDD5BA5-DE31-40E7-B5D0-81BD1A1586B3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_03" ID="{8007579C-5793-4505-A023-78B478B74F61}" ShortID="571722353">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Boxing_Walk_Wet_Sand" ID="{EB954CD0-14FB-4184-99A7-7516D3770897}" ShortID="979708549">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -806,749 +1235,196 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_03" ID="{702DBBD0-E606-4F81-AD98-86EBEC660260}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="372655716"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="BOXING_Walk_Sand_Wet_01" ID="{5F522C1A-223B-4D02-BA54-970F88048D45}" ShortID="649946407">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_01" ID="{2E5D08F7-5817-486D-A64F-CA1FD74BBB4D}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="886403854"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_01" ID="{2E5D08F7-5817-486D-A64F-CA1FD74BBB4D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Wet_02" ID="{3DC4279A-3972-49F1-856D-748987206779}" ShortID="987735376">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_02" ID="{32F47813-2E22-416A-8565-E0B8822620BA}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="140534396"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_02" ID="{32F47813-2E22-416A-8565-E0B8822620BA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Wet_03" ID="{BAD0BC4B-8ACF-41CB-89B2-23B0874A1D53}" ShortID="302282322">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_03" ID="{2A8AD82A-8EC9-43F2-9765-273EB6258069}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1010596122"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_03" ID="{2A8AD82A-8EC9-43F2-9765-273EB6258069}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Wet_04" ID="{77954FE0-845C-4876-A368-6FDFECF111B9}" ShortID="848187775">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_04" ID="{1D982BD0-CE51-416D-A765-8E4AD921196F}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="493118468"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_04" ID="{1D982BD0-CE51-416D-A765-8E4AD921196F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Wet_05" ID="{A27333B5-7F33-4A17-9D11-77FA249B71F4}" ShortID="868892678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_05" ID="{A1D06E3E-C225-42EE-91C3-5317AD2D2815}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="607529875"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_05" ID="{A1D06E3E-C225-42EE-91C3-5317AD2D2815}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BOXING_Walk_Sand_Wet_06" ID="{C21B0AF4-77CB-44E1-A152-61415A5E7CDF}" ShortID="40493485">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BOXING_Walk_Sand_Wet_06" ID="{78A4BA43-37B1-4C07-8605-CFE565DDC2F3}">
+															<Language>SFX</Language>
+															<AudioFile>BOXING_Walk_Sand_Wet_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="347396888"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BOXING_Walk_Sand_Wet_06" ID="{78A4BA43-37B1-4C07-8605-CFE565DDC2F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_03" ID="{702DBBD0-E606-4F81-AD98-86EBEC660260}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_04" ID="{EC2D480F-3EEE-4354-AC99-941ACC70FBAA}" ShortID="12051695">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_04" ID="{9426C36F-D7B3-4810-B3D8-F73834BC866C}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="736463618"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_04" ID="{9426C36F-D7B3-4810-B3D8-F73834BC866C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_05" ID="{9F4477F5-E48C-409C-9E09-5EDC9B1FC30D}" ShortID="465566075">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_05" ID="{2D7AF7A0-784F-4E22-A389-36655D21910D}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="961002382"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_05" ID="{2D7AF7A0-784F-4E22-A389-36655D21910D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_06" ID="{F9877CD0-E126-4992-A713-7C391FFE0C9F}" ShortID="323590762">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_06" ID="{83B3FA41-2A08-4C57-BCC0-96D094F3491C}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="742029761"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_06" ID="{83B3FA41-2A08-4C57-BCC0-96D094F3491C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_07" ID="{AA8861D4-C8EA-4923-878D-ABAF2FB10676}" ShortID="529044852">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_07" ID="{FE303ED1-058B-4B03-BCD2-4AE2E39D6A68}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="63866529"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_07" ID="{FE303ED1-058B-4B03-BCD2-4AE2E39D6A68}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_08" ID="{2FFE049B-2B7D-4CE2-AAED-CA3BFFD8151B}" ShortID="884036600">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_08" ID="{DA3674FC-CCF3-46D1-9106-B494818455A9}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="612561729"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_08" ID="{DA3674FC-CCF3-46D1-9106-B494818455A9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_09" ID="{DFF8DC60-68B5-4A73-94FC-876B9FA03619}" ShortID="967398767">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_09" ID="{469E004B-5819-47BE-BB5A-217683E72FA3}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_09.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="280741832"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_09" ID="{469E004B-5819-47BE-BB5A-217683E72FA3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_10" ID="{B5C4FC1F-0466-4395-9718-E61E09648A38}" ShortID="55160068">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_10" ID="{2716C9F8-4357-45EE-B6DA-CA7CB807460B}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="282616076"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_10" ID="{2716C9F8-4357-45EE-B6DA-CA7CB807460B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_11" ID="{6D827F11-7414-4885-9612-20DEE7503ADF}" ShortID="315411521">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_11" ID="{4DF30D74-271F-47F0-BA53-FE39A7BE051B}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_11.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="304991100"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_11" ID="{4DF30D74-271F-47F0-BA53-FE39A7BE051B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Walk_Wet_12" ID="{CDC390AF-71E8-4433-B4C1-A21AACAACFDE}" ShortID="209061719">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Walk_Wet_12" ID="{AD7C2664-684C-408A-9851-6F155952BD3A}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Walk_Wet_12.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="379003751"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Walk_Wet_12" ID="{AD7C2664-684C-408A-9851-6F155952BD3A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Wet_Corals" ID="{0EDB506E-C3B0-4AAA-8467-1CF3D64686E8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Wet_Sand" ID="{EB954CD0-14FB-4184-99A7-7516D3770897}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Boxing_Walk_Wet_Crystals" ID="{8A2EACE6-E99A-431B-96E6-72401D5F3732}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Crystals_Boxing" ID="{41129445-3FA0-4E4B-990E-0862C29C16F4}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Wet_Crystals" ID="{8A2EACE6-E99A-431B-96E6-72401D5F3732}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Corals_Boxing" ID="{657C0B99-5FC8-40E0-897E-6C9DF49CE974}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Wet_Corals" ID="{0EDB506E-C3B0-4AAA-8467-1CF3D64686E8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sand_Boxing" ID="{F1C4E4DF-D41C-4A5D-B8A2-58C0A572D6CF}"/>
+												<ItemList>
+													<ItemRef Name="Boxing_Walk_Wet_Sand" ID="{EB954CD0-14FB-4184-99A7-7516D3770897}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}"/>
+										<ItemRef Name="Boxing_Walk_Dry" ID="{2BBF6B50-12D1-4F33-B258-CF7BA6245252}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
+										<ItemRef Name="Boxing_Walk_Wet" ID="{93F39F62-CFE6-47B4-A9F7-D358DDDB138F}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Boxing_Walk_Wet" ID="{3F00ABA6-C369-4583-BC27-A748D4689840}"/>
 										<ItemList>
-											<ItemRef Name="BOXING_Walk_Wet" ID="{F4D1BB39-4E7A-4752-A10F-09EBCEBDD3F4}"/>
+											<ItemRef Name="Boxing_Walk_Wet" ID="{93F39F62-CFE6-47B4-A9F7-D358DDDB138F}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Boxing_Walk_Dry" ID="{ACBD37CF-2A4C-461F-86A2-C715FA69B6FE}"/>
 										<ItemList>
-											<ItemRef Name="BOXING_Walk_Dry" ID="{55098EA1-A62E-4095-9859-ED3A8ACF04B4}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-						<SwitchContainer Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" ShortID="987908580">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Boxing_Rush_DryWet" ID="{F9D774A3-63E3-4E68-A9E1-2F467CD616FB}" WorkUnitID="{C93D1088-CF17-4A38-B90E-011144A4C945}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="BOXING_Rush_Dry" ID="{7C32A777-72DC-444B-B313-0748F4440C90}" ShortID="299906003">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="BOXING_Rush_Dry_01" ID="{03E6C44D-8BCC-4CF3-8321-7AE7807886A7}" ShortID="170999882">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_01" ID="{7D9C129C-6160-4DDD-AE71-E3B52554FF17}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="624432905"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_01" ID="{7D9C129C-6160-4DDD-AE71-E3B52554FF17}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_02" ID="{32AFEA1A-CBE0-489A-8228-C47D08DCC785}" ShortID="1023902654">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_02" ID="{38D5CAFD-99B3-4019-8D84-EC09837EA34D}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="157233863"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_02" ID="{38D5CAFD-99B3-4019-8D84-EC09837EA34D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_03" ID="{381C403D-BB7E-4DAD-9DA9-B03830BCBF00}" ShortID="373071614">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_03" ID="{0C730401-1FE1-492F-A7B3-F57857D280BF}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1057769084"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_03" ID="{0C730401-1FE1-492F-A7B3-F57857D280BF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_04" ID="{325D2D06-E705-4BE1-84E1-A42003ACD9AC}" ShortID="917630411">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_04" ID="{97C28EF2-880C-48C3-A14F-6D2872ECD89E}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="741755518"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_04" ID="{97C28EF2-880C-48C3-A14F-6D2872ECD89E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_05" ID="{C0278842-0D66-4285-A977-E8F78152EF36}" ShortID="656412735">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_05" ID="{77A3F1AB-956A-495A-9802-08BABAE390D1}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="682855736"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_05" ID="{77A3F1AB-956A-495A-9802-08BABAE390D1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_06" ID="{D0276EB9-E59B-4954-A735-9C13A0C4B02C}" ShortID="875586293">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_06" ID="{61C1D2CA-77E2-42EF-8D19-76A5F095CDAD}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="699283557"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_06" ID="{61C1D2CA-77E2-42EF-8D19-76A5F095CDAD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_07" ID="{28E771AF-AF3D-4F9A-835F-FD7864702C98}" ShortID="71907454">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_07" ID="{EE585AEE-8EB7-4745-A02C-C819AD57C572}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="189012120"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_07" ID="{EE585AEE-8EB7-4745-A02C-C819AD57C572}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_08" ID="{0BAC93EF-E120-4A1A-A47A-B46DBECC3203}" ShortID="626222217">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_08" ID="{854AA916-8854-4997-84CA-9242DF3D3F29}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="724473449"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_08" ID="{854AA916-8854-4997-84CA-9242DF3D3F29}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_09" ID="{150A9DF9-4FB8-4ABE-841C-2692AFFB4DD6}" ShortID="463270265">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_09" ID="{614E2B8A-E351-4B04-9280-150AD252C29D}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_09.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1014186882"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_09" ID="{614E2B8A-E351-4B04-9280-150AD252C29D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Dry_10" ID="{11B0CB08-D5D5-4A26-BD36-455A329EFFEC}" ShortID="981485172">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Dry_10" ID="{84C75438-B41B-4458-80B2-972E17876319}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Dry_10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="982010665"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Dry_10" ID="{84C75438-B41B-4458-80B2-972E17876319}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}" ShortID="321937833">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="BOXING_Rush_Wet_01" ID="{7B952197-0217-4106-8586-7EF3B03D0A2B}" ShortID="889453065">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_01" ID="{8E2934EA-4B43-480D-ACB8-67EFBC1811C0}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="918467508"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_01" ID="{8E2934EA-4B43-480D-ACB8-67EFBC1811C0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_02" ID="{A2F040E4-EAA1-41AD-9330-1858ADF01D13}" ShortID="327318643">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_02" ID="{89C0F6CD-E25C-4371-ABB7-DD640D18DA43}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="689502993"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_02" ID="{89C0F6CD-E25C-4371-ABB7-DD640D18DA43}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_03" ID="{1342ADAA-7F53-4867-A509-6CAF73282EB5}" ShortID="656001258">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_03" ID="{65214000-A1CF-43B3-BF64-D0E14D906EF2}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1023112409"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_03" ID="{65214000-A1CF-43B3-BF64-D0E14D906EF2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_04" ID="{CD7D953B-10E1-48E5-8205-B4ED8D046A8D}" ShortID="117870696">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_04" ID="{9D1C1442-856A-4534-971B-4B4BA9B14EEE}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="452485895"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_04" ID="{9D1C1442-856A-4534-971B-4B4BA9B14EEE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_05" ID="{797F0D83-7E73-4AAD-9726-BAFEDEC97C1E}" ShortID="533271709">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_05" ID="{8B3F644F-B40E-4F5E-A07A-E9C7F6107A28}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="219987178"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_05" ID="{8B3F644F-B40E-4F5E-A07A-E9C7F6107A28}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_06" ID="{226154B2-A3A2-4F4E-9A88-A7DB3FA8387D}" ShortID="385279729">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_06" ID="{2CD4F861-5154-4C45-A410-7AC6EDF1C283}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="937439329"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_06" ID="{2CD4F861-5154-4C45-A410-7AC6EDF1C283}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_07" ID="{1CECF548-F0DE-4CDC-B934-ADDFB81C5415}" ShortID="104562961">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_07" ID="{0E6C5139-5C02-4ACE-8A13-306133C93274}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="151252938"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_07" ID="{0E6C5139-5C02-4ACE-8A13-306133C93274}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_08" ID="{EE6AAF8A-5481-48C0-BE48-2E095C55CE97}" ShortID="706429406">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_08" ID="{E284A8D2-4408-4378-94C8-DD069ABF240D}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="194642057"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_08" ID="{E284A8D2-4408-4378-94C8-DD069ABF240D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_09" ID="{F8A62A93-B4F2-4273-A2FE-E2EFFBB2E9B7}" ShortID="103886868">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_09" ID="{4876A78F-4A7E-49B9-BE1D-5B0AAA309EB9}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_09.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="590673254"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_09" ID="{4876A78F-4A7E-49B9-BE1D-5B0AAA309EB9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BOXING_Rush_Wet_10" ID="{03D48EE0-1201-421B-85B2-C97DB0A9CF7F}" ShortID="434747809">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BOXING_Rush_Wet_10" ID="{35689FEC-CABB-4ABE-AB2B-65D43E56C79D}">
-													<Language>SFX</Language>
-													<AudioFile>BOXING_Rush_Wet_10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="515597713"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BOXING_Rush_Wet_10" ID="{35689FEC-CABB-4ABE-AB2B-65D43E56C79D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="BOXING_Rush_Dry" ID="{7C32A777-72DC-444B-B313-0748F4440C90}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Boxing_Rush_Wet" ID="{ADA57183-DE10-473F-9863-022B6267D896}"/>
-										<ItemList>
-											<ItemRef Name="BOXING_Rush_Wet" ID="{6D5C5BA3-C678-4E95-8420-7E6F99E63AA1}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Boxing_Rush_Dry" ID="{461E8196-1DB8-4BFF-BC75-F8BD45972F2B}"/>
-										<ItemList>
-											<ItemRef Name="BOXING_Rush_Dry" ID="{7C32A777-72DC-444B-B313-0748F4440C90}"/>
+											<ItemRef Name="Boxing_Walk_Dry" ID="{2BBF6B50-12D1-4F33-B258-CF7BA6245252}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -1592,6 +1468,119 @@
 								<ActiveSource Name="BOXING_WaterClaw_Wet" ID="{F0BDE54B-ED5C-4666-97BE-28797CCCCA1D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Boxing_Bumps" ID="{FC83FB6B-E5B2-4757-B95A-37662B892310}" ShortID="322138080">
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BOXING_Bumps_01" ID="{A570DF36-61FA-42B9-93E8-7E6BDCAC19D7}" ShortID="48125854">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BOXING_Bumps_01" ID="{0E513E60-A648-4BA7-B1B4-4997B6E6D9A6}">
+											<Language>SFX</Language>
+											<AudioFile>BOXING_Bumps_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="692265350"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BOXING_Bumps_01" ID="{0E513E60-A648-4BA7-B1B4-4997B6E6D9A6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BOXING_Bumps_02" ID="{21BCB52C-C696-4F38-AF89-9B63FA1B8586}" ShortID="139684496">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BOXING_Bumps_02" ID="{32A77E90-47B2-4749-8444-1C1616098582}">
+											<Language>SFX</Language>
+											<AudioFile>BOXING_Bumps_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1021764689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BOXING_Bumps_02" ID="{32A77E90-47B2-4749-8444-1C1616098582}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BOXING_Bumps_03" ID="{EDE6994A-528D-47DF-88C9-DC44456247C3}" ShortID="863147156">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BOXING_Bumps_03" ID="{A4F42281-34C8-4A9E-823B-00A29EA5B487}">
+											<Language>SFX</Language>
+											<AudioFile>BOXING_Bumps_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="697918224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BOXING_Bumps_03" ID="{A4F42281-34C8-4A9E-823B-00A29EA5B487}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BOXING_Bumps_04" ID="{24788247-AF13-46C4-8BEF-7AA475D8DC25}" ShortID="705551383">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BOXING_Bumps_04" ID="{E276AC20-EB73-41A5-BE19-4548E7716282}">
+											<Language>SFX</Language>
+											<AudioFile>BOXING_Bumps_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="651277627"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BOXING_Bumps_04" ID="{E276AC20-EB73-41A5-BE19-4548E7716282}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

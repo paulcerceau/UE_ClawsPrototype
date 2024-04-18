@@ -49,6 +49,13 @@
 										<Switch Name="Boxing_Walk_Wet" ID="{3F00ABA6-C369-4583-BC27-A748D4689840}"/>
 									</ChildrenList>
 								</SwitchGroup>
+								<SwitchGroup Name="Boxing_Walk_Materials" ID="{2A4D7418-7F1D-48AA-B3DE-781356CC253B}">
+									<ChildrenList>
+										<Switch Name="Corals_Boxing" ID="{657C0B99-5FC8-40E0-897E-6C9DF49CE974}"/>
+										<Switch Name="Crystals_Boxing" ID="{41129445-3FA0-4E4B-990E-0862C29C16F4}"/>
+										<Switch Name="Sand_Boxing" ID="{F1C4E4DF-D41C-4A5D-B8A2-58C0A572D6CF}"/>
+									</ChildrenList>
+								</SwitchGroup>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

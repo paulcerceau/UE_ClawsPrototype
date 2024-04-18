@@ -36,18 +36,7 @@
 								<Action Name="" ID="{F9B08DC3-2DA0-45AA-A8A6-662428DF19D6}" ShortID="611001375">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BOXING_Bumps" ID="{BE95BE03-0AAD-4D0B-B763-FF848BD43122}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Boxing_Rush" ID="{E81B46B5-C9EB-464B-BF4D-AF00F044C23F}">
-							<ChildrenList>
-								<Action Name="" ID="{982D4F11-6C2A-4AA0-B2CE-554A91A8A9F9}" ShortID="961288151">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Boxing_Rush" ID="{7FAAC954-7AA0-4B99-8E02-B1FF8B9F31B8}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
+											<ObjectRef Name="Boxing_Bumps" ID="{FC83FB6B-E5B2-4757-B95A-37662B892310}" WorkUnitID="{00F5E51E-2999-4B32-B2BA-C949436EC4FD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
