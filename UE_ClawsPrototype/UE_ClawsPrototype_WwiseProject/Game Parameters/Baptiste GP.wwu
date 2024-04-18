@@ -29,6 +29,43 @@
 										<Property Name="RTPCRamping" Type="int16" Value="2"/>
 									</PropertyList>
 								</GameParameter>
+								<Folder Name="Music_Fade" ID="{BFB86017-30AA-436D-A77B-4D8555BD4AF9}" ShortID="417591671">
+									<ChildrenList>
+										<GameParameter Name="Fade_Lead_CaveBlue" ID="{DF8BA078-C198-41E9-8289-F51E9C03975F}">
+											<PropertyList>
+												<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+												<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+												<Property Name="InitialValue" Type="Real64" Value="0"/>
+												<Property Name="Max" Type="Real64" Value="1"/>
+												<Property Name="RTPCRamping" Type="int16" Value="2"/>
+											</PropertyList>
+										</GameParameter>
+										<GameParameter Name="Fade_Synth_CaveBlue" ID="{7230E7AB-A7CA-4918-B452-FE30298F24F6}">
+											<PropertyList>
+												<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+												<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+												<Property Name="InitialValue" Type="Real64" Value="0"/>
+												<Property Name="Max" Type="Real64" Value="1"/>
+												<Property Name="RTPCRamping" Type="int16" Value="2"/>
+											</PropertyList>
+										</GameParameter>
+										<GameParameter Name="Fade_Percu_CaveBlue" ID="{59B86BCD-A836-465B-A629-400FB37CBEE0}">
+											<PropertyList>
+												<Property Name="InitialValue" Type="Real64" Value="0"/>
+												<Property Name="Max" Type="Real64" Value="1"/>
+											</PropertyList>
+										</GameParameter>
+										<GameParameter Name="Fade_Pad_caveBlue" ID="{D0D67EB0-B31D-4BA5-B649-2C66D152DFF4}">
+											<PropertyList>
+												<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+												<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+												<Property Name="InitialValue" Type="Real64" Value="0"/>
+												<Property Name="Max" Type="Real64" Value="1"/>
+												<Property Name="RTPCRamping" Type="int16" Value="2"/>
+											</PropertyList>
+										</GameParameter>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fade_GP_CavePink" ID="{8E39216A-A6FB-4EC8-8CB7-E1209CF3C6A2}" ShortID="996108836">

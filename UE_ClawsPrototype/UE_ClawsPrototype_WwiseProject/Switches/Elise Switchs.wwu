@@ -19,6 +19,14 @@
 						<Switch Name="Spiky_Walk_Vegetation" ID="{BC788786-3672-4CA9-AE6D-2895DC382F87}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Arsene_Walk" ID="{1FB53314-9654-45F9-9187-36A4515E9E33}">
+					<ChildrenList>
+						<Switch Name="Arsene_Walk_Corals" ID="{AFE69A49-BBF1-4C34-B553-B9E6F419C582}"/>
+						<Switch Name="Arsene_Walk_Crystals" ID="{4977D4CC-3396-443C-A630-3F84163AB386}"/>
+						<Switch Name="Arsene_Walk_Sand" ID="{AE8FFDBE-9CD7-4A3D-A061-AD3531C44672}"/>
+						<Switch Name="Arsene_Walk_Vegetation" ID="{ACC8E6F0-1967-413A-BA5F-57D583FDA10C}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -12,7 +12,6 @@
 						<ObjectRef Name="Play_Boxing_Walk" ID="{F273E395-96A2-4291-8250-D95D4744EC40}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Boxing_Bumps" ID="{9AAEF49C-980D-44B6-84C4-6051418F1661}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Boxing_Fills" ID="{6AF3AA5A-AC58-4649-BD23-765F5FCBDDAC}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Boxing_Rush" ID="{E81B46B5-C9EB-464B-BF4D-AF00F044C23F}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Boxing_JumpedOn" ID="{9DEA2DC2-3EDC-4840-8313-3B871F37CF18}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Boxing_WaterClawed" ID="{24BCC7C9-817A-4A31-A127-A29CAFBB63A4}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Boxing_WaterClawed" ID="{C22DDA1D-207B-4C4E-A0D2-783598E2DDB6}" WorkUnitID="{88D2C5E7-14BA-44B8-A287-CD06D65B835C}" Origin="Manual" Filter="7"/>
