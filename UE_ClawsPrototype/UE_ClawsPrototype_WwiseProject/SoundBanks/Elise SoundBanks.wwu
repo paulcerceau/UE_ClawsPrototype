@@ -42,6 +42,7 @@
 						<ObjectRef Name="Play_SPEEDY_Powerclaw" ID="{B199425D-5AB3-4331-A137-59D0E5342445}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Transition_Wet_Dry" ID="{2986F8DE-7AF6-4457-B8D7-DF686B85BDA8}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Idle_Wet" ID="{A8FDCACB-7A75-453F-A88B-DFF560081035}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SPEEDY_Powerclaw_Land" ID="{F4C01E25-B784-48D6-A72E-84C4323AAEDE}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Idle_Dry" ID="{5160BB01-5492-4B18-98F3-7F923E486AC4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_Switch_Speedy_Walk" ID="{7EFB3AA2-C5CB-4B25-834D-47AE7D2A1618}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SPEEDY_Grab" ID="{7F9B2C55-0E41-4B9D-8078-98A23BAA5584}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
@@ -61,6 +62,7 @@
 				</SoundBank>
 				<SoundBank Name="Arsene" ID="{1695D7D1-386F-4856-992A-A3891545ECCD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Arsene_Cut_Rope" ID="{430391CD-C7C4-44E3-BB21-51C3698A7CB4}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Arsene_Walk" ID="{180ADB96-8B6E-4C0E-83FE-252657A0E4AE}" WorkUnitID="{AB02D5E3-7615-442E-B6A2-5A9E67F2F995}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
