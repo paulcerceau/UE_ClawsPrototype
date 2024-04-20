@@ -170,6 +170,11 @@
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="General" ID="{F3B1091F-89FA-483F-95C6-2159D1E649E8}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
