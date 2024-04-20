@@ -124,7 +124,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -290,7 +290,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -453,6 +453,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -613,6 +618,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -762,6 +772,7 @@
 						<RandomSequenceContainer Name="FX_BREAKABLEWALL_PowerClaw" ID="{B5FDEE41-BA39-410A-9CCC-70E6F84145DD}" ShortID="745597038">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -774,6 +785,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1001,6 +1017,30 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{2033F4DD-67C6-4B59-B96B-8AECADBCC1A7}" ShortID="69244986">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Parametric EQ (Custom)" ID="{CB48C7DB-416E-417F-A01F-BA255F759FC0}" ShortID="806160816" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+																	<Property Name="FrequencyBand1" Type="Real32" Value="56"/>
+																	<Property Name="FrequencyBand3" Type="Real32" Value="10252"/>
+																	<Property Name="GainBand1" Type="Real32" Value="1"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<Sound Name="DEBUG_SOUND_LP" ID="{EDE43E57-882C-4A4D-87AF-D8121CB6C9BB}" ShortID="418329627">
 							<PropertyList>

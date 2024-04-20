@@ -20,11 +20,6 @@
 							</ModifierList>
 						</Property>
 						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -36,6 +31,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="Boxing_JumpedOn" ID="{1561F1A0-A699-440F-BEBD-FD5A99E990EC}" ShortID="685819878">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -158,6 +160,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -181,6 +188,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="Boxing_PowerClaw" ID="{070BA9D1-9177-4E2A-A0BF-6F711747A75E}" ShortID="674434843">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -1446,6 +1460,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1479,6 +1498,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

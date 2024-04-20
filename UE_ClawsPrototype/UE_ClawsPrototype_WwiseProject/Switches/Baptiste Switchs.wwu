@@ -35,6 +35,7 @@
 								<Switch Name="Crystals" ID="{46C3AC2C-470E-44E9-8FBF-44A262F18491}"/>
 								<Switch Name="Sand" ID="{692CDE5B-2217-4903-95DF-9E86FC9124FA}"/>
 								<Switch Name="Vegetation" ID="{AFFE9DFC-9252-4866-A84A-2EB21A33C1DC}"/>
+								<Switch Name="Concrete" ID="{21F61D76-87B9-41CF-ABE3-39DF16F2C642}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>
