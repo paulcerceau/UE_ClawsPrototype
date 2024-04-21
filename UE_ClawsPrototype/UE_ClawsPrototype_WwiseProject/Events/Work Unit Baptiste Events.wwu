@@ -629,8 +629,45 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_DropWater" ID="{98D46415-569B-43AD-8821-0935461A24B6}">
+									<ChildrenList>
+										<Action Name="" ID="{27A2593E-766E-4801-B0FB-5CE48D63D42B}" ShortID="495273075">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_DropWater" ID="{655E806E-353C-482D-94BC-5DF7D42D4AA9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Music_MainMenu" ID="{C0A6B9A9-3592-40E8-B4D1-DA1420718DB3}">
+							<ChildrenList>
+								<Action Name="" ID="{179A8A62-0B07-434C-9024-B68862CCB073}" ShortID="842471039">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_MainMenu" ID="{9946686E-B83D-471C-8C5C-722EF7CE1D18}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Music_MainMenu" ID="{8FAF9395-B58C-43A8-B45C-D4F46B05A2B8}">
+							<ChildrenList>
+								<Action Name="" ID="{8C4C4183-9012-4433-84E1-93591563D5E4}" ShortID="99620578">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_MainMenu" ID="{9946686E-B83D-471C-8C5C-722EF7CE1D18}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MainChar" ID="{C32DC088-815A-402A-A59B-0E3DD3DAB328}" ShortID="943527087">
@@ -976,6 +1013,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Debug_3D" ID="{CC98CBA4-BB2A-4CBB-8093-EED2E875B1BF}">
+							<ChildrenList>
+								<Action Name="" ID="{D4CDA832-7F46-4DC1-A788-42D79558B619}" ShortID="889640285">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alessandrini_Baptiste_UI_07" ID="{C6BA5347-BF08-4975-869E-648863D74BBB}" WorkUnitID="{37AC886E-9882-4E70-9A6B-E1F543CE6DCB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{C24AB463-F901-4234-81C0-EE3CE608FCE8}" ShortID="467151960">
@@ -1002,12 +1050,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_CloseMenu" ID="{573BE3FB-6236-4645-9671-378D19D7DEDC}">
+						<Event Name="Play_UI_CloseMenu" ID="{573BE3FB-6236-4645-9671-378D19D7DEDC}">
 							<ChildrenList>
 								<Action Name="" ID="{59B5A08C-B898-466F-9C66-CBBF6C856085}" ShortID="498406226">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="UI_CloseMenu" ID="{D78CC9BB-1333-4279-9E84-4BB571EA0304}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Confirm" ID="{532651EC-B4D2-446F-9D74-8CED26242B95}">
+							<ChildrenList>
+								<Action Name="" ID="{6CB05797-2D9F-4565-B64D-19642AA96DD5}" ShortID="1033454458">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_confirm" ID="{399ADA66-BBD9-4C64-A08A-7E280EE26053}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Hover" ID="{A07B39BC-E927-4A3A-957A-E2F157E6C2C2}">
+							<ChildrenList>
+								<Action Name="" ID="{9541E830-9EE0-441C-9167-A4FB1EA29E56}" ShortID="729765194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Hover" ID="{8AF002F0-A0B9-4435-98F4-AB8E08F405C6}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

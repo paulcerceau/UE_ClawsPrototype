@@ -270,7 +270,7 @@
 						</Sound>
 						<SwitchContainer Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" ShortID="459712093">
 							<PropertyList>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
