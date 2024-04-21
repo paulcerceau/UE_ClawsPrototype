@@ -47,7 +47,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Waterfall" ID="{AEA0EF14-E58C-47F5-BDBD-E7A38C6925A6}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fade_Synth_CaveBlue" ID="{7230E7AB-A7CA-4918-B452-FE30298F24F6}"/>
@@ -76,7 +76,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{C0B1A4CF-96ED-48D9-94FC-385691C7AB64}"/>
-						<CurrentStateRef Name="Off" ID="{6B84CEC0-077E-462E-A90C-8C65BC574720}"/>
+						<CurrentStateRef Name="None" ID="{79614022-911D-42F7-840E-61EBEECB8890}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Boxing_Walk_Dry" ID="{ACBD37CF-2A4C-461F-86A2-C715FA69B6FE}"/>
