@@ -52,7 +52,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -67,7 +67,7 @@
 												<Action Name="" ID="{01955649-AFDF-456A-9C48-A1442F0C8D36}" ShortID="203197921">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -82,7 +82,7 @@
 												<Action Name="" ID="{F6D1CC94-5B93-4B66-86D0-B6CFEA0E41BD}" ShortID="442486726">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -97,7 +97,7 @@
 												<Action Name="" ID="{13F02DA8-707A-404C-8708-FAF8E484C494}" ShortID="300114732">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -112,7 +112,7 @@
 												<Action Name="" ID="{720FEB08-1A01-490B-9C9F-18C50ACD331C}" ShortID="920922512">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -132,7 +132,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -152,7 +152,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -172,7 +172,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -192,7 +192,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -212,7 +212,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -309,7 +309,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -326,7 +326,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -404,7 +404,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -420,7 +420,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -509,7 +509,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -525,7 +525,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+															<ObjectRef Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -540,6 +540,10 @@
 								<Event Name="Play_WaterFall" ID="{C6DD1A19-6581-414C-BB68-FAF078485B42}">
 									<ChildrenList>
 										<Action Name="" ID="{A21123F6-DB3B-4618-B5CD-CECF628E3264}" ShortID="122067931">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Claws_WaterFall" ID="{A449DBC3-A86F-46AC-AB6C-77BAF18F2214}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
@@ -551,6 +555,9 @@
 								<Event Name="Play_WaterFall_Small" ID="{C1119367-C760-41B4-A162-3DB48D33AF62}">
 									<ChildrenList>
 										<Action Name="" ID="{91591BE4-2C1C-4E0A-AC24-E73E43A2199C}" ShortID="968402637">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Claws_WaterFall_Small" ID="{7D2AD701-F16C-4A28-8684-6F617BE8DC9A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
@@ -564,6 +571,8 @@
 										<Action Name="" ID="{334D30F5-52C3-4465-8AC7-30C0CF0C8EAC}" ShortID="544012311">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -578,6 +587,8 @@
 										<Action Name="" ID="{23909BCF-3B01-4FB5-85FD-766D8F5A94BD}" ShortID="454970787">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -587,8 +598,76 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Cinematic_WaterFall" ID="{7F43134C-73E6-4C71-AE19-4D88DADE6B09}">
+									<ChildrenList>
+										<Action Name="" ID="{26A28E91-10E2-4B45-8991-E02DF7A98BA9}" ShortID="840142468">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_CinematicWaterFall" ID="{4F0017EB-FB55-4E7C-91B1-5EB46F69221A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Cinematic_WaterFall" ID="{F96DA742-7877-458B-BF9E-6BCF7D395841}">
+									<ChildrenList>
+										<Action Name="" ID="{11972B0F-0BA1-4F3B-BEFC-BF398AF8034C}" ShortID="416987014">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Claws_CinematicWaterFall" ID="{4F0017EB-FB55-4E7C-91B1-5EB46F69221A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DropWater" ID="{98D46415-569B-43AD-8821-0935461A24B6}">
+									<ChildrenList>
+										<Action Name="" ID="{27A2593E-766E-4801-B0FB-5CE48D63D42B}" ShortID="495273075">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_DropWater" ID="{655E806E-353C-482D-94BC-5DF7D42D4AA9}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Music_MainMenu" ID="{C0A6B9A9-3592-40E8-B4D1-DA1420718DB3}">
+							<ChildrenList>
+								<Action Name="" ID="{179A8A62-0B07-434C-9024-B68862CCB073}" ShortID="842471039">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_MainMenu" ID="{9946686E-B83D-471C-8C5C-722EF7CE1D18}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Music_MainMenu" ID="{8FAF9395-B58C-43A8-B45C-D4F46B05A2B8}">
+							<ChildrenList>
+								<Action Name="" ID="{8C4C4183-9012-4433-84E1-93591563D5E4}" ShortID="99620578">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_MainMenu" ID="{9946686E-B83D-471C-8C5C-722EF7CE1D18}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MainChar" ID="{C32DC088-815A-402A-A59B-0E3DD3DAB328}" ShortID="943527087">
@@ -934,6 +1013,76 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Debug_3D" ID="{CC98CBA4-BB2A-4CBB-8093-EED2E875B1BF}">
+							<ChildrenList>
+								<Action Name="" ID="{D4CDA832-7F46-4DC1-A788-42D79558B619}" ShortID="889640285">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alessandrini_Baptiste_UI_07" ID="{C6BA5347-BF08-4975-869E-648863D74BBB}" WorkUnitID="{37AC886E-9882-4E70-9A6B-E1F543CE6DCB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{C24AB463-F901-4234-81C0-EE3CE608FCE8}" ShortID="467151960">
+					<ChildrenList>
+						<Event Name="Play_UI_Select" ID="{6D07A40A-B291-4839-B8D5-7F25B91B1375}">
+							<ChildrenList>
+								<Action Name="" ID="{A3CC22C2-2C65-4FAE-8620-6E4F36DB82AB}" ShortID="841643801">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Select" ID="{BE3A994B-C01F-472A-BB66-7EAE546DF714}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_OpenMenu" ID="{8D5980DB-C170-4C2E-8696-DE66C44FE232}">
+							<ChildrenList>
+								<Action Name="" ID="{70FAE3F0-4B71-41A8-8D82-F6CBF64231A5}" ShortID="874823252">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_OpenMenu" ID="{052F6E9D-1424-491A-9EAA-4DC6AD6D2590}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_CloseMenu" ID="{573BE3FB-6236-4645-9671-378D19D7DEDC}">
+							<ChildrenList>
+								<Action Name="" ID="{59B5A08C-B898-466F-9C66-CBBF6C856085}" ShortID="498406226">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_CloseMenu" ID="{D78CC9BB-1333-4279-9E84-4BB571EA0304}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Confirm" ID="{532651EC-B4D2-446F-9D74-8CED26242B95}">
+							<ChildrenList>
+								<Action Name="" ID="{6CB05797-2D9F-4565-B64D-19642AA96DD5}" ShortID="1033454458">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_confirm" ID="{399ADA66-BBD9-4C64-A08A-7E280EE26053}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Hover" ID="{A07B39BC-E927-4A3A-957A-E2F157E6C2C2}">
+							<ChildrenList>
+								<Action Name="" ID="{9541E830-9EE0-441C-9167-A4FB1EA29E56}" ShortID="729765194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Hover" ID="{8AF002F0-A0B9-4435-98F4-AB8E08F405C6}" WorkUnitID="{CA443BCB-400E-48E6-AD88-517C14BFD2F1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

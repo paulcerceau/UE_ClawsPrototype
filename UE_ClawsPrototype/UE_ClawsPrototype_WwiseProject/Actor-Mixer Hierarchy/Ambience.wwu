@@ -144,6 +144,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{4C7FF8FC-F6E6-42E2-9277-0117AC80C802}" ShortID="290828799">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Waterfall" ID="{AEA0EF14-E58C-47F5-BDBD-E7A38C6925A6}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{85DA83DD-5C7F-4D07-8018-C86E8116CFC1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="AMB_Claws_WaterFall" ID="{F451FEC3-D710-4CED-A326-A188A1A0AF8E}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -197,132 +236,35 @@
 										<ActiveSource Name="AMB_Claws_WaterFall_Small" ID="{9583E393-F2AE-4B57-9D96-D7B8E1D11F1B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Music" ID="{5792B2DD-9442-41BB-8AB9-C9F4F4E6B37E}" ShortID="630220542">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="21"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<ActorMixer Name="Music_CavePink" ID="{F7496EE8-CCC0-403A-A32A-686BA64EAF7E}" ShortID="678661891">
+								<Sound Name="AMB_Claws_CinematicWaterFall" ID="{4F0017EB-FB55-4E7C-91B1-5EB46F69221A}" ShortID="456044166">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="THEME_Cave_PinkVariation_V2" ID="{D843EB1C-B792-49BB-AB74-C8B939FBED66}" ShortID="327108470">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-14</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="THEME_Cave_PinkVariation_V2" ID="{0AD7C1FD-B4A2-4985-B866-8768D9120461}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="44.316159652303"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>THEME_Cave_PinkVariation_V2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="287829421"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{ECD380C4-D669-4551-9C13-07FB7B9E8D21}" ShortID="529527426">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_GP_Music_CavePink" ID="{D2C6F3A3-8BB2-466A-8A66-C0CCE8D9FF18}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{9B76DDC2-7035-4199-9082-300FD39EFAB9}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="THEME_Cave_PinkVariation_V2" ID="{0AD7C1FD-B4A2-4985-B866-8768D9120461}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="Music_CaveForest" ID="{8CAAF526-EAFD-4850-A8FC-BE29E637E455}" ShortID="215791622">
-									<PropertyList>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
-												<Value>1</Value>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Waterfall" ID="{B419CA97-F0B2-4934-91E0-0CD7D789350C}" WorkUnitID="{03997ACD-2BE7-406D-85DD-D7573FA16B74}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 										</Reference>
@@ -331,94 +273,78 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="THEME_Cave_ForestVariation" ID="{20779E4E-2ACB-4833-B6D3-F7AC30CFCB4C}" ShortID="736383169">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-15</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="THEME_Cave_ForestVariation" ID="{37C088B4-6707-4A93-93FA-180B2AA0B0DD}">
-													<Language>SFX</Language>
-													<AudioFile>THEME_Cave_ForestVariation.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="830491569"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{C0AFD2DF-E240-45C8-B7E1-3F3ECBD08A85}" ShortID="862892303">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_GP_Music_CaveForest" ID="{5E168F56-C664-47D0-AC2C-C1A36000E301}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{D01BCE2F-B2C5-4CD5-A8FB-A8EDCD5D75AD}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="THEME_Cave_ForestVariation" ID="{37C088B4-6707-4A93-93FA-180B2AA0B0DD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										<AudioFileSource Name="AMB_Claws_WaterFall" ID="{0C6B4027-DBCB-4E7E-B472-0E881719C1A8}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Claws_WaterFall.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="383714458"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="Music_CavePurple" ID="{8CD3EF29-BBC8-4516-AD32-E95D4DC7B978}" ShortID="306201220">
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1CD576AB-636B-42C4-B515-72EB503500F7}" ShortID="968352886">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Waterfall" ID="{AEA0EF14-E58C-47F5-BDBD-E7A38C6925A6}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{502F16BA-60A5-4185-886D-7F84CD508CF7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Claws_WaterFall" ID="{0C6B4027-DBCB-4E7E-B472-0E881719C1A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="AMB_DropWater" ID="{655E806E-353C-482D-94BC-5DF7D42D4AA9}" ShortID="509882614">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_DropWater" ID="{896F4659-CCD8-409F-B697-638360F0EFAD}" WorkUnitID="{03997ACD-2BE7-406D-85DD-D7573FA16B74}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 										</Reference>
@@ -427,26 +353,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="THEME_Cave_PurpleVariation_V4" ID="{9808468E-CF4A-490E-B4FE-CF0F8169D4B2}" ShortID="108747965">
+										<Sound Name="AMB_SFX_DropWater_01" ID="{8E22DAF6-4730-40D8-9F25-250D3DE3A055}" ShortID="360261642">
 											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-11</Value>
+														<Value>-12</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -459,439 +370,203 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="THEME_Cave_PurpleVariation_V4" ID="{371A70F9-5EAF-4C08-A415-E51A061368A9}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="31.2010490578477"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
+												<AudioFileSource Name="AMB_SFX_DropWater_01" ID="{75AD2472-0EDB-43C9-BE4B-1AEBCE6841E5}">
 													<Language>SFX</Language>
-													<AudioFile>THEME_Cave_PurpleVariation_V4.wav</AudioFile>
+													<AudioFile>AMB_SFX_DropWater_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="459141105"/>
+														<MediaID ID="236190604"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{39F4AB0F-6BE6-43BF-94AD-219A8FE59440}" ShortID="1071273323">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_GP_Music_CavePurple" ID="{82333C3C-748A-40BC-88CF-CEBE19CCA9A9}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{79006860-C084-498B-90B4-22D27C5CF266}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
 											<ActiveSourceList>
-												<ActiveSource Name="THEME_Cave_PurpleVariation_V4" ID="{371A70F9-5EAF-4C08-A415-E51A061368A9}" Platform="Linked"/>
+												<ActiveSource Name="AMB_SFX_DropWater_01" ID="{75AD2472-0EDB-43C9-BE4B-1AEBCE6841E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_02" ID="{709426B5-7764-4D10-B4DB-70421130C269}" ShortID="1028536720">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_02" ID="{9DB1108E-60D0-4199-A87D-2E775D30314E}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="925563345"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_02" ID="{9DB1108E-60D0-4199-A87D-2E775D30314E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_03" ID="{B8E63B1C-52E4-4C73-B871-CA617491D2A0}" ShortID="340605416">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_03" ID="{680833BB-0080-4EE2-A16D-86CB5D33EA9C}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619369453"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_03" ID="{680833BB-0080-4EE2-A16D-86CB5D33EA9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_04" ID="{32F2F65A-2A6A-43BF-9784-50311EF68F79}" ShortID="115861155">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_04" ID="{8A3C285B-B7DF-4713-AF2F-758C59737204}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="124990650"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_04" ID="{8A3C285B-B7DF-4713-AF2F-758C59737204}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_05" ID="{64DBB7D6-B8EA-4208-8BC1-9CB40A9561AA}" ShortID="287245792">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_05" ID="{7A20401A-3807-4341-9432-05FC504C13DD}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="431063184"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_05" ID="{7A20401A-3807-4341-9432-05FC504C13DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_06" ID="{5039E5C1-60E3-44D2-ACFA-4D805C03B379}" ShortID="244997346">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_06" ID="{E63DAB84-326D-4492-A3AA-6941E1E4D2D0}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="131365860"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_06" ID="{E63DAB84-326D-4492-A3AA-6941E1E4D2D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_SFX_DropWater_07" ID="{084071F5-753E-4597-8332-94F64C428440}" ShortID="505561549">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_SFX_DropWater_07" ID="{EBC2DBE8-EDF9-4AEA-AB3F-62390D2ADD8F}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_SFX_DropWater_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="702430371"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_SFX_DropWater_07" ID="{EBC2DBE8-EDF9-4AEA-AB3F-62390D2ADD8F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="Music_CaveBlue" ID="{F2182A69-9F57-42FF-9BB9-034651D6438C}" ShortID="679738308">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{CCF468B3-7277-4A7C-A750-8ACE8977F1C1}" ShortID="452358172">
+									<PositioningInfo>
+										<Panner Name="" ID="{E9147833-831B-4D4E-8813-80AB90F956AA}">
 											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-11</Value>
-													</ValueList>
-												</Property>
+												<Property Name="PanX" Type="Real64" Value="0.823045267489727"/>
+												<Property Name="PanY" Type="Real64" Value="3.33066907387547E-16"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{341776FF-E01E-43E2-AE21-19D3EC45CABF}">
-													<Language>SFX</Language>
-													<AudioFile>BlueZone_BED24bars+reverb_80BPM4-4.wav - stem.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="180011829"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{EBB9BB8E-257F-4828-A1C1-EE704C89F15C}" ShortID="434239621">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_Lead_CaveBlue" ID="{DF8BA078-C198-41E9-8289-F51E9C03975F}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{176ABE0D-197C-4D85-B28A-40066D359BBC}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="BlueZone_BED24bars+reverb_80BPM4-4_wav - stem" ID="{341776FF-E01E-43E2-AE21-19D3EC45CABF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{0290DAB8-6464-4CB2-A92D-3A54231E57F9}" ShortID="639918932">
-											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-11</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{09C19B83-3F16-4A82-BC91-14FFA47D211A}">
-													<Language>SFX</Language>
-													<AudioFile>BlueZone_INTRO+reverb_80BPM4-4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="341048245"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BlueZone_INTRO+reverb_80BPM4-4" ID="{09C19B83-3F16-4A82-BC91-14FFA47D211A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{F782C9A7-DD55-4112-9650-51F1EAD03769}" ShortID="928887780">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-11</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{C193EDBB-A0D2-4A88-A8AA-C4B933F90E75}">
-													<Language>SFX</Language>
-													<AudioFile>BlueZone_LAYER-ARP24bars+reverb_80BPM4-4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="390664538"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{430920CC-49D8-4523-AD77-98D2E1533816}" ShortID="56664704">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_Synth_CaveBlue" ID="{7230E7AB-A7CA-4918-B452-FE30298F24F6}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{62A09415-8E7B-44E5-A518-54477CAC2979}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="BlueZone_LAYER-ARP24bars+reverb_80BPM4-4" ID="{C193EDBB-A0D2-4A88-A8AA-C4B933F90E75}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{77070531-59CF-470E-8AB8-A69D5B089B41}" ShortID="225658054">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-11</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{6143577A-0483-4532-B6E1-6BC5A3952526}">
-													<Language>SFX</Language>
-													<AudioFile>BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="351573332"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{94EA5102-CE7B-426C-80A1-3EC192C721B8}" ShortID="526807789">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_Percu_CaveBlue" ID="{59B86BCD-A836-465B-A629-400FB37CBEE0}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{A6190C16-FB57-4C6F-9F69-8829ADC623B0}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="BlueZone_LAYER-ArtistWorkshop24bars+reverb_80BPM4-4" ID="{6143577A-0483-4532-B6E1-6BC5A3952526}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{CED87CA4-8585-4991-BE95-088364B602BE}" ShortID="30191848">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-11</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3C2C624-D0F7-4E55-A396-6C4433FB673B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{D2872408-3267-43A9-95EB-C945BBA381B0}">
-													<Language>SFX</Language>
-													<AudioFile>BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="864854465"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{D7B0FE3A-F25D-4421-9985-98F3A77FE019}" ShortID="201581103">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="Fade_Pad_caveBlue" ID="{D0D67EB0-B31D-4BA5-B649-2C66D152DFF4}" WorkUnitID="{1FF9C80C-12EC-4721-AAF1-86E2B9214ED1}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{1489DCFA-4BE5-4948-8AA2-2DBE35944C9B}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="BlueZone_LAYER-CHORDS24bars+reverb_80BPM4-4" ID="{D2872408-3267-43A9-95EB-C945BBA381B0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
+										</Panner>
+										<Position Name="" ID="{6729CB3A-4EC9-4BCB-80BA-D2E0023B62D6}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 						<Sound Name="AMBIENT_Cave_Forest_V2" ID="{E1E5E328-B9EB-4910-BAC4-623772258896}" ShortID="648195451">

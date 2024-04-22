@@ -50,7 +50,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -240,6 +240,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="ANEMONE_Empties" ID="{DC983A2E-15D4-496C-AB69-166F0E2C4A38}" ShortID="338524090">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -263,7 +270,7 @@
 						</Sound>
 						<SwitchContainer Name="ANEMONE_JumpedOn" ID="{B87036AC-9882-42E2-9C72-9AE5C20E4CAD}" ShortID="459712093">
 							<PropertyList>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
@@ -276,7 +283,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -525,6 +532,11 @@
 						<SwitchContainer Name="ANEMONE_WaterClawed" ID="{0AF47018-1D1A-4C31-B79B-78E4C42B8175}" ShortID="109218555">
 							<PropertyList>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
