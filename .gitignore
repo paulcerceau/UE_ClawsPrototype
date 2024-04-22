@@ -87,3 +87,4 @@ UE_ClawsPrototype/Plugins/WwiseNiagara
 *.wsettings
 IncrementalSoundBankData.xml
 UE_ClawsPrototype/UE_ClawsPrototype_WwiseProject/GeneratedSoundBanks
+*_BuiltData.uasset
