@@ -11,6 +11,30 @@
 						<State Name="Cave_Forest" ID="{93860E22-779E-4F03-8B07-97143A4150DC}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Menu" ID="{73B15416-026E-4E0D-A31A-3C8C2AFD11AB}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{79614022-911D-42F7-840E-61EBEECB8890}"/>
+						<State Name="On" ID="{9560B613-A740-4CD8-BD37-C56237C21809}"/>
+						<State Name="Off" ID="{6B84CEC0-077E-462E-A90C-8C65BC574720}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Off" ID="{6B84CEC0-077E-462E-A90C-8C65BC574720}"/>
+							<EndState Name="On" ID="{9560B613-A740-4CD8-BD37-C56237C21809}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="On" ID="{9560B613-A740-4CD8-BD37-C56237C21809}"/>
+							<EndState Name="Off" ID="{6B84CEC0-077E-462E-A90C-8C65BC574720}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

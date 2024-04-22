@@ -134,6 +134,19 @@
 								</GameParameter>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Fade_GP_WaterFall" ID="{7F91C549-C1D9-4514-A2E0-2967BE4F0518}" ShortID="315002758">
+							<ChildrenList>
+								<GameParameter Name="Waterfall" ID="{AEA0EF14-E58C-47F5-BDBD-E7A38C6925A6}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="15"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="WaterFall" ID="{4F88C29E-CBF7-4B52-8E43-5E509777C108}" ShortID="810720186">
@@ -141,6 +154,25 @@
 						<GameParameter Name="WaterFall_Distance" ID="{B1BA9373-0FBE-4A66-9A7A-75BCBE748C5D}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Volume Settings" ID="{DAD7D6AB-2ECF-491A-9AEF-5F3C90FA474B}" ShortID="914138897">
+					<ChildrenList>
+						<GameParameter Name="SFX" ID="{4174D63B-185A-46A2-82BA-90CA78679D5C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Music" ID="{685755E9-FCFD-45B5-95AC-645CEFD78CC4}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="General" ID="{F3B1091F-89FA-483F-95C6-2159D1E649E8}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
