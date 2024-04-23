@@ -111,13 +111,7 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1116.72473</XPos>
-											<YPos>100</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Log3</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>1116.72583</XPos>
+											<XPos>1612.01379</XPos>
 											<YPos>100</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
@@ -356,7 +350,7 @@
 										</Point>
 										<Point>
 											<XPos>2952.58621</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
