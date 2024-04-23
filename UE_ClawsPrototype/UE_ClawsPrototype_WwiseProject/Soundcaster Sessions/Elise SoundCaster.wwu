@@ -75,7 +75,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fade_GP_PickUp" ID="{B1F05538-8581-4BC0-9312-4B4013A58141}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
