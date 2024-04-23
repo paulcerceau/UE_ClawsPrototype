@@ -147,6 +147,19 @@
 								</GameParameter>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Fade_GP_PickUp" ID="{D143299C-41E4-4202-A43F-69A6C402DC04}" ShortID="1059660256">
+							<ChildrenList>
+								<GameParameter Name="Fade_GP_PickUp" ID="{B1F05538-8581-4BC0-9312-4B4013A58141}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+										<Property Name="InitialValue" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="WaterFall" ID="{4F88C29E-CBF7-4B52-8E43-5E509777C108}" ShortID="810720186">
