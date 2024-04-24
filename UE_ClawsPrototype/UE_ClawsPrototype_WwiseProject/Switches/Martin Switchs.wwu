@@ -54,6 +54,7 @@
 										<Switch Name="Corals_Boxing" ID="{657C0B99-5FC8-40E0-897E-6C9DF49CE974}"/>
 										<Switch Name="Crystals_Boxing" ID="{41129445-3FA0-4E4B-990E-0862C29C16F4}"/>
 										<Switch Name="Sand_Boxing" ID="{F1C4E4DF-D41C-4A5D-B8A2-58C0A572D6CF}"/>
+										<Switch Name="Concrete_Boxing" ID="{A9A3E4E9-586A-46F6-BD7E-98E325B1045E}"/>
 									</ChildrenList>
 								</SwitchGroup>
 							</ChildrenList>
