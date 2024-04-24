@@ -18,6 +18,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_Geod" ID="{634D514E-7F90-43B3-9316-9B9760222F9D}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Music" ID="{685755E9-FCFD-45B5-95AC-645CEFD78CC4}"/>
 							<Value>75</Value>
 						</RTPCValue>

@@ -509,6 +509,17 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="Play_AMB_Pink_Geod" ID="{EC23939E-5EF4-41CF-B574-AFBA4E74B721}">
+									<ChildrenList>
+										<Action Name="" ID="{6E0E96E4-D7DE-4FFF-9D21-889D41300FEA}" ShortID="697524543">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Pink_Geod_Lp" ID="{BCDB5F4A-BC61-4849-9A81-3623E8ED559A}" WorkUnitID="{1DCB5530-14CE-416A-ABC8-781FAADE7D2F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Cave_Garden" ID="{4D483806-A510-4F0A-93E5-6E551A7C1DD3}" ShortID="452554464">

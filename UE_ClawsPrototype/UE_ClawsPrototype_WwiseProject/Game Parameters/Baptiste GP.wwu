@@ -88,6 +88,16 @@
 										<Property Name="RTPCRamping" Type="int16" Value="2"/>
 									</PropertyList>
 								</GameParameter>
+								<GameParameter Name="Fade_GP_Geod" ID="{634D514E-7F90-43B3-9316-9B9760222F9D}">
+									<PropertyList>
+										<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+										<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+										<Property Name="InitialValue" Type="Real64" Value="0"/>
+										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="RTPCRamping" Type="int16" Value="2"/>
+										<Property Name="SlewRateUp" Type="Real64" Value="5"/>
+									</PropertyList>
+								</GameParameter>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fade_GP_CavePurple" ID="{73943B10-0D76-41E5-B799-7D35B44FF5A2}" ShortID="235762020">
