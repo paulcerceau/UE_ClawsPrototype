@@ -73,6 +73,10 @@
 							<GameParameterRef Name="Fade_Pad_caveBlue" ID="{D0D67EB0-B31D-4BA5-B649-2C66D152DFF4}"/>
 							<Value>1</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fade_GP_PickUp" ID="{B1F05538-8581-4BC0-9312-4B4013A58141}"/>
+							<Value>1</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{C0B1A4CF-96ED-48D9-94FC-385691C7AB64}"/>
