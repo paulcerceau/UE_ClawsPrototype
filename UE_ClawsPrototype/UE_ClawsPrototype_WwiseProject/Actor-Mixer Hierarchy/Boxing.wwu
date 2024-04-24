@@ -154,7 +154,7 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -167,6 +167,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="WallRush_Att" ID="{13A7960E-9EE3-49D6-B702-EDD7FFD2A3BB}" WorkUnitID="{701E2B79-4C46-4B70-87D7-17937F635789}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
 								</Reference>
