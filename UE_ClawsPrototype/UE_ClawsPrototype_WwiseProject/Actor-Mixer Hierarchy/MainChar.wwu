@@ -2655,6 +2655,11 @@
 										<Sound Name="REMI_GOLDENBOOTS_Loop_01" ID="{8EBCE682-6FF9-4116-9A7D-0375B7331444}" ShortID="942274147">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2693,6 +2698,11 @@
 													</ModifierList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2789,7 +2799,7 @@
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
