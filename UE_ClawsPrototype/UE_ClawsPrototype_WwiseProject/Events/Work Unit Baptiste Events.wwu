@@ -428,6 +428,87 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Music_Interact_GPE" ID="{4DF0C451-DDDE-4327-B82A-CD94D0B2DDF9}" ShortID="305364782">
+									<ChildrenList>
+										<Event Name="Play_Music_Interact_GPE_07" ID="{9FD0C104-8C9F-4B05-A57D-CC871A78D354}">
+											<ChildrenList>
+												<Action Name="" ID="{1566581C-388E-4E22-B815-44EDBD2E83DF}" ShortID="575937122">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_07" ID="{67569D29-36DE-41F4-9379-1644EC20DC5B}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_01" ID="{0C27412F-DB83-4C19-A766-E9062634CFE9}">
+											<ChildrenList>
+												<Action Name="" ID="{B838FA7B-4D38-4F7D-87CE-F8FF5D408E26}" ShortID="923412234">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_01" ID="{7944CCB1-55E9-4B4D-B0FD-10D36AD86B17}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_02" ID="{EAC67D93-D9C1-4392-BE41-7D6252B08AB3}">
+											<ChildrenList>
+												<Action Name="" ID="{D908C47F-6F27-4713-98E6-743000CB6D49}" ShortID="946939513">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_02" ID="{F81EEC70-5F07-45C8-B0FE-5CF27F6A6CBE}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_03" ID="{3E0EEC79-F2E6-479B-9E58-E404BF0B062D}">
+											<ChildrenList>
+												<Action Name="" ID="{9B6C5DE5-D9BE-45C9-B568-3F27D64F73E3}" ShortID="555027497">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_03" ID="{8E8F96CD-75AC-48F5-B73C-403E5E651BF3}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_04" ID="{10ECB837-9610-476C-A482-F8F3330A8904}">
+											<ChildrenList>
+												<Action Name="" ID="{725C80BE-0FB5-405B-9472-73602D6F72B3}" ShortID="172965864">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_04" ID="{8C7AECEC-DBD5-4DB7-BD6B-2A40B386C988}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_05" ID="{09D4A37E-90F4-462E-9760-D5EE4D7CEF1E}">
+											<ChildrenList>
+												<Action Name="" ID="{25864FE4-D8E6-400C-B7A3-8A0FC83F311F}" ShortID="934335716">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_05" ID="{3DCD4EAB-6A27-4427-A907-71B77888931A}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Music_Interact_GPE_06" ID="{EC3ABC4A-7BEF-41D4-9233-B5C9D38FD995}">
+											<ChildrenList>
+												<Action Name="" ID="{ECF79AED-1F7C-4CA6-ABF2-8B6AD2C26C42}" ShortID="957087238">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Music_Interact_GPE_06" ID="{6B1D5211-F6E9-4523-8AE0-58DAE1CC5154}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Cave_Garden" ID="{4D483806-A510-4F0A-93E5-6E551A7C1DD3}" ShortID="452554464">
