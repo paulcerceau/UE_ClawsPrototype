@@ -347,11 +347,6 @@
 						<SwitchContainer Name="SPEEDY_Movement" ID="{A4174FAB-C031-4C4C-8222-34ED25144279}" ShortID="286031867">
 							<PropertyList>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
