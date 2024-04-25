@@ -10,6 +10,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Menu" ID="{5EBC14A5-C4CD-411C-A424-14E48B7ED491}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Fade_Lead_CaveBlue" ID="{DF8BA078-C198-41E9-8289-F51E9C03975F}"/>
 							<Value>1</Value>
 						</RTPCValue>
