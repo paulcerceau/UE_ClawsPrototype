@@ -750,11 +750,38 @@
 								<Action Name="" ID="{8C4C4183-9012-4433-84E1-93591563D5E4}" ShortID="99620578">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_MainMenu" ID="{9946686E-B83D-471C-8C5C-722EF7CE1D18}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music_Credits" ID="{9891CFF4-DB94-4EC4-BF46-E40AE232E867}">
+							<ChildrenList>
+								<Action Name="" ID="{65D78272-70C0-4BA5-8676-DE3E1D5ED499}" ShortID="95542718">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CLAWS_CINEMATIQUE_FIN_V6_ LOOP" ID="{B782E6C2-445F-44D3-98F3-F785DA30BFB6}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Music_Credits" ID="{80B6215B-6908-410B-9C77-260619B485E7}">
+							<ChildrenList>
+								<Action Name="" ID="{770AF448-973D-4222-B2D9-DFA5D064E185}" ShortID="106416515">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CLAWS_CINEMATIQUE_FIN_V6_ LOOP" ID="{B782E6C2-445F-44D3-98F3-F785DA30BFB6}" WorkUnitID="{BECB2FC5-5A15-44A3-8101-94AC9F2FE2E6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
