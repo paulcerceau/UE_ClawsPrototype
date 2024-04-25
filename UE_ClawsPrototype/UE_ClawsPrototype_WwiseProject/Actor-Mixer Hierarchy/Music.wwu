@@ -943,6 +943,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Music_Credits" ID="{3774844B-2837-4278-8123-56CBE41F71D0}" ShortID="128362094">
 							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-10</Value>
@@ -961,6 +962,11 @@
 								<Sound Name="CLAWS_CINEMATIQUE_FIN_V6_ LOOP" ID="{B782E6C2-445F-44D3-98F3-F785DA30BFB6}" ShortID="58536039">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
