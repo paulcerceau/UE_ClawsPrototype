@@ -20,6 +20,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="SPIKY_Hides" ID="{BF1D56E0-D1E2-4147-8DA8-9BE5BD492433}" ShortID="984087043">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{99A883DE-BDA1-4577-B2D2-DD14231C34FB}"/>
@@ -104,6 +111,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -243,7 +255,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -394,6 +406,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
